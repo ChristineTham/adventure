@@ -1,7 +1,7 @@
 # Specification: Port Open Adventure to NextJS
 
 ## Overview
-This track handles the complete port of the original C99 Open Adventure game logic into a modern NextJS (App Router) web application. The game state will be managed by Zustand, and the UI will use shadcn/ui and Tailwind v4 to provide a modern hybrid text-adventure interface.
+This track handles the complete port of the original C99 Open Adventure game logic into a modern NextJS (App Router) web application. The game state will be managed by Zustand, and the UI will use shadcn/ui and Tailwind v4 to provide a modern hybrid text-adventure interface. Always use shadcn cli to add new components using Base not Radix. Do not manually create ui components.
 
 ## Functional Requirements
 1.  **Build-Time Data Generation**: Create a Node.js/TS script that parses `open-adventure/adventure.yaml` and outputs static JSON or TypeScript definitions.

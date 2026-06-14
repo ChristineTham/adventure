@@ -4,7 +4,7 @@
 - **Framework:** NextJS (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
-- **UI Components:** shadcn/ui (Radix primitives)
+- **UI Components:** shadcn/ui (Base primitives) - always use shadcn cli to add components, never add components manually
 
 ## Game Engine & State
 - **State Management:** Zustand
