@@ -1,10 +1,14 @@
 {
   "motions": {
     "MOT_0": {
-      "words": null
+      "words": [
+        "MOT_0"
+      ]
     },
     "HERE": {
-      "words": null
+      "words": [
+        "HERE"
+      ]
     },
     "MOT_2": {
       "words": [
@@ -536,9 +540,9 @@
       "travel": [
         {
           "verbs": [
-            "ROAD",
+            "MOT_2",
             "WEST",
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -548,8 +552,8 @@
         {
           "verbs": [
             "ENTER",
-            "BUILD",
-            "INWAR",
+            "MOT_12",
+            "INSIDE",
             "EAST"
           ],
           "action": [
@@ -559,9 +563,9 @@
         },
         {
           "verbs": [
-            "DOWNS",
-            "GULLY",
-            "STREA",
+            "MOT_5",
+            "MOT_13",
+            "STREAM",
             "SOUTH",
             "DOWN"
           ],
@@ -572,7 +576,7 @@
         },
         {
           "verbs": [
-            "FORES",
+            "MOT_6",
             "NORTH"
           ],
           "action": [
@@ -582,7 +586,7 @@
         },
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "action": [
             "goto",
@@ -604,7 +608,7 @@
       "travel": [
         {
           "verbs": [
-            "BUILD",
+            "MOT_12",
             "EAST"
           ],
           "action": [
@@ -633,7 +637,7 @@
         {
           "verbs": [
             "SOUTH",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -666,8 +670,8 @@
       "travel": [
         {
           "verbs": [
-            "OUT",
-            "OUTDO",
+            "OUTSIDE",
+            "MOT_32",
             "WEST"
           ],
           "action": [
@@ -695,8 +699,8 @@
         },
         {
           "verbs": [
-            "DOWNS",
-            "STREA"
+            "MOT_5",
+            "STREAM"
           ],
           "action": [
             "goto",
@@ -720,8 +724,8 @@
       "travel": [
         {
           "verbs": [
-            "UPSTR",
-            "BUILD",
+            "MOT_4",
+            "MOT_12",
             "NORTH"
           ],
           "action": [
@@ -732,7 +736,7 @@
         {
           "verbs": [
             "EAST",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -750,7 +754,7 @@
         },
         {
           "verbs": [
-            "DOWNS",
+            "MOT_5",
             "SOUTH",
             "DOWN"
           ],
@@ -761,7 +765,7 @@
         },
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "action": [
             "goto",
@@ -770,7 +774,7 @@
         },
         {
           "verbs": [
-            "STREA"
+            "STREAM"
           ],
           "action": [
             "speak",
@@ -792,9 +796,9 @@
       "travel": [
         {
           "verbs": [
-            "ROAD",
+            "MOT_2",
             "EAST",
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -803,7 +807,7 @@
         },
         {
           "verbs": [
-            "BUILD"
+            "MOT_12"
           ],
           "action": [
             "goto",
@@ -813,7 +817,7 @@
         {
           "verbs": [
             "SOUTH",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -865,7 +869,7 @@
         {
           "verbs": [
             "SOUTH",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -883,7 +887,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -907,7 +911,7 @@
       "travel": [
         {
           "verbs": [
-            "BUILD"
+            "MOT_12"
           ],
           "action": [
             "goto",
@@ -916,7 +920,7 @@
         },
         {
           "verbs": [
-            "UPSTR",
+            "MOT_4",
             "NORTH"
           ],
           "action": [
@@ -927,7 +931,7 @@
         {
           "verbs": [
             "EAST",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -945,10 +949,10 @@
         },
         {
           "verbs": [
-            "DOWNS",
-            "BED",
+            "MOT_5",
+            "MOT_16",
             "SOUTH",
-            "DEPRE"
+            "DEPRESSION"
           ],
           "action": [
             "goto",
@@ -957,10 +961,10 @@
         },
         {
           "verbs": [
-            "SLIT",
-            "STREA",
+            "MOT_60",
+            "STREAM",
             "DOWN",
-            "INWAR",
+            "INSIDE",
             "ENTER"
           ],
           "action": [
@@ -1002,7 +1006,7 @@
         {
           "verbs": [
             "EAST",
-            "FORES"
+            "MOT_6"
           ],
           "action": [
             "goto",
@@ -1029,7 +1033,7 @@
         },
         {
           "verbs": [
-            "BUILD"
+            "MOT_12"
           ],
           "action": [
             "goto",
@@ -1038,8 +1042,8 @@
         },
         {
           "verbs": [
-            "UPSTR",
-            "GULLY",
+            "MOT_4",
+            "MOT_13",
             "NORTH"
           ],
           "action": [
@@ -1050,7 +1054,7 @@
         {
           "verbs": [
             "ENTER",
-            "INWAR",
+            "INSIDE",
             "DOWN"
           ],
           "cond": [
@@ -1086,8 +1090,8 @@
       "travel": [
         {
           "verbs": [
-            "OUT",
-            "UPWAR"
+            "OUTSIDE",
+            "UP"
           ],
           "cond": [
             "not",
@@ -1101,7 +1105,7 @@
         },
         {
           "verbs": [
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "speak",
@@ -1111,8 +1115,8 @@
         {
           "verbs": [
             "CRAWL",
-            "COBBL",
-            "INWAR",
+            "MOT_18",
+            "INSIDE",
             "WEST"
           ],
           "action": [
@@ -1122,7 +1126,7 @@
         },
         {
           "verbs": [
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -1131,7 +1135,7 @@
         },
         {
           "verbs": [
-            "DEBRI"
+            "MOT_51"
           ],
           "action": [
             "goto",
@@ -1152,8 +1156,8 @@
       "travel": [
         {
           "verbs": [
-            "OUT",
-            "SURFA",
+            "OUTSIDE",
+            "MOT_20",
             "EAST"
           ],
           "action": [
@@ -1163,10 +1167,10 @@
         },
         {
           "verbs": [
-            "INWAR",
-            "DARK",
+            "INSIDE",
+            "MOT_22",
             "WEST",
-            "DEBRI"
+            "MOT_51"
           ],
           "action": [
             "goto",
@@ -1175,7 +1179,7 @@
         },
         {
           "verbs": [
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -1194,7 +1198,7 @@
       "travel": [
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "cond": [
             "not",
@@ -1208,7 +1212,7 @@
         },
         {
           "verbs": [
-            "ENTRA"
+            "ENTRANCE"
           ],
           "action": [
             "goto",
@@ -1218,9 +1222,9 @@
         {
           "verbs": [
             "CRAWL",
-            "COBBL",
-            "PASSA",
-            "LOW",
+            "MOT_18",
+            "MOT_23",
+            "MOT_24",
             "EAST"
           ],
           "action": [
@@ -1230,9 +1234,9 @@
         },
         {
           "verbs": [
-            "CANYO",
-            "INWAR",
-            "UPWAR",
+            "MOT_25",
+            "INSIDE",
+            "UP",
             "WEST"
           ],
           "action": [
@@ -1251,7 +1255,7 @@
         },
         {
           "verbs": [
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -1270,7 +1274,7 @@
       "travel": [
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "cond": [
             "not",
@@ -1284,7 +1288,7 @@
         },
         {
           "verbs": [
-            "ENTRA"
+            "ENTRANCE"
           ],
           "action": [
             "goto",
@@ -1295,7 +1299,7 @@
           "verbs": [
             "DOWN",
             "EAST",
-            "DEBRI"
+            "MOT_51"
           ],
           "action": [
             "goto",
@@ -1304,8 +1308,8 @@
         },
         {
           "verbs": [
-            "INWAR",
-            "UPWAR",
+            "INSIDE",
+            "UP",
             "WEST"
           ],
           "action": [
@@ -1315,7 +1319,7 @@
         },
         {
           "verbs": [
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -1344,7 +1348,7 @@
       "travel": [
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "cond": [
             "not",
@@ -1358,7 +1362,7 @@
         },
         {
           "verbs": [
-            "ENTRA"
+            "ENTRANCE"
           ],
           "action": [
             "goto",
@@ -1367,7 +1371,7 @@
         },
         {
           "verbs": [
-            "DEBRI"
+            "MOT_51"
           ],
           "action": [
             "goto",
@@ -1376,7 +1380,7 @@
         },
         {
           "verbs": [
-            "CANYO",
+            "MOT_25",
             "EAST"
           ],
           "action": [
@@ -1386,8 +1390,8 @@
         },
         {
           "verbs": [
-            "PASSA",
-            "PIT",
+            "MOT_23",
+            "MOT_31",
             "WEST"
           ],
           "action": [
@@ -1407,7 +1411,7 @@
       "travel": [
         {
           "verbs": [
-            "DEPRE"
+            "DEPRESSION"
           ],
           "cond": [
             "not",
@@ -1421,7 +1425,7 @@
         },
         {
           "verbs": [
-            "ENTRA"
+            "ENTRANCE"
           ],
           "action": [
             "goto",
@@ -1430,7 +1434,7 @@
         },
         {
           "verbs": [
-            "DEBRI"
+            "MOT_51"
           ],
           "action": [
             "goto",
@@ -1439,7 +1443,7 @@
         },
         {
           "verbs": [
-            "PASSA",
+            "MOT_23",
             "EAST"
           ],
           "action": [
@@ -1450,8 +1454,8 @@
         {
           "verbs": [
             "DOWN",
-            "PIT",
-            "STEPS"
+            "MOT_31",
+            "MOT_34"
           ],
           "cond": [
             "carry",
@@ -1473,7 +1477,7 @@
         },
         {
           "verbs": [
-            "CRACK",
+            "MOT_33",
             "WEST"
           ],
           "action": [
@@ -1516,8 +1520,8 @@
         },
         {
           "verbs": [
-            "FORWA",
-            "HALL",
+            "FORWARD",
+            "MOT_38",
             "WEST"
           ],
           "action": [
@@ -1527,7 +1531,7 @@
         },
         {
           "verbs": [
-            "STAIR",
+            "MOT_10",
             "DOWN",
             "NORTH"
           ],
@@ -1538,11 +1542,11 @@
         },
         {
           "verbs": [
-            "UPWAR",
-            "PIT",
-            "STEPS",
-            "DOME",
-            "PASSA",
+            "UP",
+            "MOT_31",
+            "MOT_34",
+            "MOT_35",
+            "MOT_23",
             "EAST"
           ],
           "cond": [
@@ -1556,7 +1560,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -1565,7 +1569,7 @@
         },
         {
           "verbs": [
-            "Y2"
+            "MOT_55"
           ],
           "action": [
             "goto",
@@ -1605,7 +1609,7 @@
       "travel": [
         {
           "verbs": [
-            "HALL",
+            "MOT_38",
             "EAST"
           ],
           "action": [
@@ -1615,7 +1619,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "cond": [
             "not",
@@ -1629,7 +1633,7 @@
         },
         {
           "verbs": [
-            "FORWA"
+            "FORWARD"
           ],
           "cond": [
             "not",
@@ -1643,8 +1647,8 @@
         },
         {
           "verbs": [
-            "OVER",
-            "ACROS",
+            "MOT_41",
+            "MOT_42",
             "WEST",
             "CROSS"
           ],
@@ -1660,7 +1664,7 @@
         },
         {
           "verbs": [
-            "OVER"
+            "MOT_41"
           ],
           "action": [
             "goto",
@@ -1681,8 +1685,8 @@
       "travel": [
         {
           "verbs": [
-            "HALL",
-            "OUT",
+            "MOT_38",
+            "OUTSIDE",
             "NORTH"
           ],
           "action": [
@@ -1714,8 +1718,8 @@
       "travel": [
         {
           "verbs": [
-            "STAIR",
-            "UPWAR",
+            "MOT_10",
+            "UP",
             "EAST"
           ],
           "action": [
@@ -1756,7 +1760,7 @@
         {
           "verbs": [
             "WEST",
-            "FORWA"
+            "FORWARD"
           ],
           "cond": [
             "not",
@@ -1805,7 +1809,7 @@
         },
         {
           "verbs": [
-            "SECRE"
+            "MOT_66"
           ],
           "action": [
             "goto",
@@ -1884,7 +1888,7 @@
         {
           "verbs": [
             "EAST",
-            "ACROS"
+            "MOT_42"
           ],
           "action": [
             "goto",
@@ -1894,7 +1898,7 @@
         {
           "verbs": [
             "WEST",
-            "SLAB"
+            "MOT_61"
           ],
           "action": [
             "goto",
@@ -1904,7 +1908,7 @@
         {
           "verbs": [
             "DOWN",
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -1913,7 +1917,7 @@
         },
         {
           "verbs": [
-            "HOLE"
+            "MOT_52"
           ],
           "action": [
             "speak",
@@ -1936,8 +1940,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -1958,8 +1962,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -1968,7 +1972,7 @@
         },
         {
           "verbs": [
-            "CLIMB"
+            "MOT_56"
           ],
           "cond": [
             "not",
@@ -1982,7 +1986,7 @@
         },
         {
           "verbs": [
-            "CLIMB"
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -2022,7 +2026,7 @@
       "travel": [
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "cond": [
             "not",
@@ -2036,7 +2040,7 @@
         },
         {
           "verbs": [
-            "FORWA"
+            "FORWARD"
           ],
           "cond": [
             "not",
@@ -2050,8 +2054,8 @@
         },
         {
           "verbs": [
-            "OVER",
-            "ACROS",
+            "MOT_41",
+            "MOT_42",
             "EAST",
             "CROSS"
           ],
@@ -2067,7 +2071,7 @@
         },
         {
           "verbs": [
-            "OVER"
+            "MOT_41"
           ],
           "action": [
             "goto",
@@ -2106,8 +2110,8 @@
       "travel": [
         {
           "verbs": [
-            "HALL",
-            "OUT",
+            "MOT_38",
+            "OUTSIDE",
             "SOUTH"
           ],
           "action": [
@@ -2118,7 +2122,7 @@
         {
           "verbs": [
             "NORTH",
-            "Y2"
+            "MOT_55"
           ],
           "action": [
             "goto",
@@ -2128,7 +2132,7 @@
         {
           "verbs": [
             "DOWN",
-            "HOLE"
+            "MOT_52"
           ],
           "action": [
             "goto",
@@ -2149,8 +2153,8 @@
       "travel": [
         {
           "verbs": [
-            "HALL",
-            "OUT",
+            "MOT_38",
+            "OUTSIDE",
             "NORTH"
           ],
           "action": [
@@ -2172,8 +2176,8 @@
       "travel": [
         {
           "verbs": [
-            "HALL",
-            "OUT",
+            "MOT_38",
+            "OUTSIDE",
             "EAST"
           ],
           "action": [
@@ -2184,7 +2188,7 @@
         {
           "verbs": [
             "WEST",
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -2274,8 +2278,8 @@
         {
           "verbs": [
             "EAST",
-            "WALL",
-            "BROKE"
+            "MOT_53",
+            "MOT_54"
           ],
           "action": [
             "goto",
@@ -2293,7 +2297,7 @@
         },
         {
           "verbs": [
-            "PLOVE"
+            "PLOVER"
           ],
           "cond": [
             "carry",
@@ -2306,7 +2310,7 @@
         },
         {
           "verbs": [
-            "PLOVE"
+            "PLOVER"
           ],
           "action": [
             "goto",
@@ -2328,7 +2332,7 @@
         {
           "verbs": [
             "DOWN",
-            "Y2"
+            "MOT_55"
           ],
           "action": [
             "goto",
@@ -2337,7 +2341,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -2359,7 +2363,7 @@
         {
           "verbs": [
             "EAST",
-            "Y2"
+            "MOT_55"
           ],
           "action": [
             "goto",
@@ -2368,7 +2372,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -2399,8 +2403,8 @@
         },
         {
           "verbs": [
-            "UPWAR",
-            "HOLE"
+            "UP",
+            "MOT_52"
           ],
           "action": [
             "goto",
@@ -2418,7 +2422,7 @@
         },
         {
           "verbs": [
-            "BEDQU"
+            "BEDQUILT"
           ],
           "action": [
             "goto",
@@ -2450,8 +2454,8 @@
         {
           "verbs": [
             "DOWN",
-            "PIT",
-            "CLIMB"
+            "MOT_31",
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -2474,9 +2478,9 @@
       "travel": [
         {
           "verbs": [
-            "CLIMB",
-            "UPWAR",
-            "OUT"
+            "MOT_56",
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -2485,13 +2489,13 @@
         },
         {
           "verbs": [
-            "SLIT",
-            "STREA",
+            "MOT_60",
+            "STREAM",
             "DOWN",
-            "UPSTR",
-            "DOWNS",
+            "MOT_4",
+            "MOT_5",
             "ENTER",
-            "INWAR"
+            "INSIDE"
           ],
           "action": [
             "speak",
@@ -2513,7 +2517,7 @@
         {
           "verbs": [
             "EAST",
-            "PASSA"
+            "MOT_23"
           ],
           "action": [
             "goto",
@@ -2523,8 +2527,8 @@
         {
           "verbs": [
             "DOWN",
-            "HOLE",
-            "FLOOR"
+            "MOT_52",
+            "MOT_58"
           ],
           "action": [
             "goto",
@@ -2533,7 +2537,7 @@
         },
         {
           "verbs": [
-            "BEDQU"
+            "BEDQUILT"
           ],
           "action": [
             "goto",
@@ -2574,9 +2578,9 @@
         {
           "verbs": [
             "SOUTH",
-            "UPWAR",
-            "PASSA",
-            "CLIMB"
+            "UP",
+            "MOT_23",
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -2637,7 +2641,7 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -2853,7 +2857,7 @@
         },
         {
           "verbs": [
-            "UPWAR",
+            "UP",
             "DOWN"
           ],
           "action": [
@@ -2888,7 +2892,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -2922,7 +2926,7 @@
         {
           "verbs": [
             "EAST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -2955,8 +2959,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -3100,7 +3104,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -3178,7 +3182,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -3281,7 +3285,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -3374,8 +3378,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -3399,7 +3403,7 @@
         {
           "verbs": [
             "DOWN",
-            "CLIMB"
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -3459,7 +3463,7 @@
         {
           "verbs": [
             "EAST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -3500,7 +3504,7 @@
         {
           "verbs": [
             "EAST",
-            "UPWAR",
+            "UP",
             "CRAWL"
           ],
           "action": [
@@ -3521,7 +3525,7 @@
           "verbs": [
             "NORTH",
             "DOWN",
-            "HOLE"
+            "MOT_52"
           ],
           "action": [
             "goto",
@@ -3633,7 +3637,7 @@
         {
           "verbs": [
             "SOUTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -3665,9 +3669,9 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "CLIMB",
-            "ROOM"
+            "UP",
+            "MOT_56",
+            "MOT_59"
           ],
           "action": [
             "goto",
@@ -3677,7 +3681,7 @@
         {
           "verbs": [
             "WEST",
-            "BEDQU"
+            "BEDQUILT"
           ],
           "action": [
             "goto",
@@ -3687,7 +3691,7 @@
         {
           "verbs": [
             "NORTH",
-            "SHELL"
+            "SHELLROOM"
           ],
           "action": [
             "goto",
@@ -3748,7 +3752,7 @@
         },
         {
           "verbs": [
-            "SLAB"
+            "MOT_61"
           ],
           "action": [
             "goto",
@@ -3757,7 +3761,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "cond": [
             "pct",
@@ -3770,7 +3774,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "cond": [
             "pct",
@@ -3783,7 +3787,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -3892,7 +3896,7 @@
         },
         {
           "verbs": [
-            "CANYO"
+            "MOT_25"
           ],
           "action": [
             "goto",
@@ -3923,7 +3927,7 @@
         },
         {
           "verbs": [
-            "ORIEN"
+            "ORIENTAL"
           ],
           "action": [
             "goto",
@@ -3954,7 +3958,7 @@
         {
           "verbs": [
             "WEST",
-            "ACROS"
+            "MOT_42"
           ],
           "action": [
             "goto",
@@ -3964,7 +3968,7 @@
         {
           "verbs": [
             "DOWN",
-            "PIT"
+            "MOT_31"
           ],
           "action": [
             "goto",
@@ -3994,8 +3998,8 @@
         },
         {
           "verbs": [
-            "UPWAR",
-            "CLIMB"
+            "UP",
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -4026,7 +4030,7 @@
         {
           "verbs": [
             "DOWN",
-            "SLAB"
+            "MOT_61"
           ],
           "action": [
             "goto",
@@ -4067,7 +4071,7 @@
         },
         {
           "verbs": [
-            "RESER"
+            "RESERVOIR"
           ],
           "action": [
             "goto",
@@ -4098,7 +4102,7 @@
         {
           "verbs": [
             "DOWN",
-            "PASSA"
+            "MOT_23"
           ],
           "action": [
             "goto",
@@ -4167,7 +4171,7 @@
       "travel": [
         {
           "verbs": [
-            "BEDQU"
+            "BEDQUILT"
           ],
           "action": [
             "goto",
@@ -4195,7 +4199,7 @@
         {
           "verbs": [
             "SE",
-            "ORIEN"
+            "ORIENTAL"
           ],
           "action": [
             "goto",
@@ -4218,7 +4222,7 @@
           "verbs": [
             "SOUTH",
             "CRAWL",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4495,7 +4499,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4529,7 +4533,7 @@
         {
           "verbs": [
             "SOUTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4635,7 +4639,7 @@
         {
           "verbs": [
             "EAST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4668,8 +4672,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4702,7 +4706,7 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
+            "UP",
             "DOWN"
           ],
           "action": [
@@ -4725,7 +4729,7 @@
         {
           "verbs": [
             "DOWN",
-            "CLIMB",
+            "MOT_56",
             "EAST"
           ],
           "action": [
@@ -4735,7 +4739,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -4745,7 +4749,7 @@
         {
           "verbs": [
             "WEST",
-            "GIANT"
+            "MOT_27"
           ],
           "action": [
             "goto",
@@ -4805,8 +4809,8 @@
         {
           "verbs": [
             "NORTH",
-            "CAVER",
-            "PASSA"
+            "CAVERN",
+            "MOT_23"
           ],
           "action": [
             "goto",
@@ -4816,7 +4820,7 @@
         {
           "verbs": [
             "DOWN",
-            "CLIMB"
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -4877,8 +4881,8 @@
         {
           "verbs": [
             "SOUTH",
-            "GIANT",
-            "OUT"
+            "MOT_27",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4901,8 +4905,8 @@
         {
           "verbs": [
             "SOUTH",
-            "GIANT",
-            "PASSA"
+            "MOT_27",
+            "MOT_23"
           ],
           "action": [
             "goto",
@@ -4913,7 +4917,7 @@
           "verbs": [
             "NORTH",
             "ENTER",
-            "CAVER"
+            "CAVERN"
           ],
           "cond": [
             "not",
@@ -4951,7 +4955,7 @@
         {
           "verbs": [
             "SOUTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -4960,7 +4964,7 @@
         },
         {
           "verbs": [
-            "GIANT"
+            "MOT_27"
           ],
           "action": [
             "goto",
@@ -4991,7 +4995,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -5031,9 +5035,9 @@
         },
         {
           "verbs": [
-            "UPWAR",
+            "UP",
             "NORTH",
-            "CAVER"
+            "CAVERN"
           ],
           "action": [
             "goto",
@@ -5056,7 +5060,7 @@
         {
           "verbs": [
             "SOUTH",
-            "ORIEN"
+            "ORIENTAL"
           ],
           "action": [
             "goto",
@@ -5097,7 +5101,7 @@
         {
           "verbs": [
             "NW",
-            "CAVER"
+            "CAVERN"
           ],
           "action": [
             "goto",
@@ -5107,7 +5111,7 @@
         {
           "verbs": [
             "EAST",
-            "PASSA"
+            "MOT_23"
           ],
           "action": [
             "special",
@@ -5149,8 +5153,8 @@
         {
           "verbs": [
             "WEST",
-            "PASSA",
-            "OUT"
+            "MOT_23",
+            "OUTSIDE"
           ],
           "action": [
             "special",
@@ -5168,7 +5172,7 @@
         },
         {
           "verbs": [
-            "PLOVE"
+            "PLOVER"
           ],
           "cond": [
             "carry",
@@ -5181,7 +5185,7 @@
         },
         {
           "verbs": [
-            "PLOVE"
+            "PLOVER"
           ],
           "action": [
             "goto",
@@ -5191,7 +5195,7 @@
         {
           "verbs": [
             "NE",
-            "DARK"
+            "MOT_22"
           ],
           "action": [
             "goto",
@@ -5223,8 +5227,8 @@
         {
           "verbs": [
             "SOUTH",
-            "PLOVE",
-            "OUT"
+            "PLOVER",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -5246,8 +5250,8 @@
         {
           "verbs": [
             "DOWN",
-            "SHELL",
-            "OUT"
+            "SHELLROOM",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -5268,8 +5272,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "HALL"
+            "UP",
+            "MOT_38"
           ],
           "action": [
             "goto",
@@ -5334,8 +5338,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "SHELL"
+            "UP",
+            "SHELLROOM"
           ],
           "action": [
             "goto",
@@ -5365,8 +5369,8 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -5375,7 +5379,7 @@
         },
         {
           "verbs": [
-            "SHELL"
+            "SHELLROOM"
           ],
           "action": [
             "goto",
@@ -5396,7 +5400,7 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -5473,7 +5477,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -5557,7 +5561,7 @@
             "SE",
             "SW",
             "NW",
-            "UPWAR",
+            "UP",
             "DOWN"
           ],
           "cond": [
@@ -5622,7 +5626,7 @@
         {
           "verbs": [
             "NORTH",
-            "RESER"
+            "RESERVOIR"
           ],
           "action": [
             "goto",
@@ -5652,7 +5656,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -5684,8 +5688,8 @@
         {
           "verbs": [
             "DOWN",
-            "JUMP",
-            "CLIMB"
+            "MOT_39",
+            "MOT_56"
           ],
           "cond": [
             "pct",
@@ -5806,7 +5810,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -5839,7 +5843,7 @@
         {
           "verbs": [
             "SOUTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -5849,7 +5853,7 @@
         {
           "verbs": [
             "NORTH",
-            "ACROS",
+            "MOT_42",
             "CROSS"
           ],
           "cond": [
@@ -5971,8 +5975,8 @@
         },
         {
           "verbs": [
-            "OVER",
-            "ACROS",
+            "MOT_41",
+            "MOT_42",
             "CROSS",
             "NE"
           ],
@@ -5987,7 +5991,7 @@
         },
         {
           "verbs": [
-            "OVER"
+            "MOT_41"
           ],
           "cond": [
             "not",
@@ -6001,7 +6005,7 @@
         },
         {
           "verbs": [
-            "OVER"
+            "MOT_41"
           ],
           "action": [
             "special",
@@ -6010,7 +6014,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "cond": [
             "not",
@@ -6024,7 +6028,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "speak",
@@ -6054,7 +6058,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -6076,7 +6080,7 @@
         {
           "verbs": [
             "NORTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -6086,7 +6090,7 @@
         {
           "verbs": [
             "EAST",
-            "FORWA"
+            "FORWARD"
           ],
           "action": [
             "speak",
@@ -6138,7 +6142,7 @@
         {
           "verbs": [
             "EAST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -6148,7 +6152,7 @@
         {
           "verbs": [
             "NORTH",
-            "FORWA"
+            "FORWARD"
           ],
           "action": [
             "speak",
@@ -6179,8 +6183,8 @@
         },
         {
           "verbs": [
-            "OVER",
-            "ACROS",
+            "MOT_41",
+            "MOT_42",
             "CROSS",
             "SW"
           ],
@@ -6195,7 +6199,7 @@
         },
         {
           "verbs": [
-            "OVER"
+            "MOT_41"
           ],
           "action": [
             "special",
@@ -6204,7 +6208,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "speak",
@@ -6213,7 +6217,7 @@
         },
         {
           "verbs": [
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6222,7 +6226,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6231,7 +6235,7 @@
         },
         {
           "verbs": [
-            "BARRE"
+            "MOT_40"
           ],
           "action": [
             "goto",
@@ -6264,7 +6268,7 @@
         {
           "verbs": [
             "EAST",
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6273,7 +6277,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6282,7 +6286,7 @@
         },
         {
           "verbs": [
-            "BARRE"
+            "MOT_40"
           ],
           "action": [
             "goto",
@@ -6335,7 +6339,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6344,7 +6348,7 @@
         },
         {
           "verbs": [
-            "BARRE"
+            "MOT_40"
           ],
           "action": [
             "goto",
@@ -6368,7 +6372,7 @@
         {
           "verbs": [
             "SOUTH",
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6378,7 +6382,7 @@
         {
           "verbs": [
             "NORTH",
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6424,8 +6428,8 @@
         {
           "verbs": [
             "SOUTH",
-            "PASSA",
-            "OUT"
+            "MOT_23",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -6434,7 +6438,7 @@
         },
         {
           "verbs": [
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6452,7 +6456,7 @@
         },
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -6476,7 +6480,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT",
+            "OUTSIDE",
             "CRAWL"
           ],
           "action": [
@@ -6486,7 +6490,7 @@
         },
         {
           "verbs": [
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6495,7 +6499,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6518,8 +6522,8 @@
         {
           "verbs": [
             "NORTH",
-            "UPWAR",
-            "FORK"
+            "UP",
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6530,7 +6534,7 @@
           "verbs": [
             "SOUTH",
             "DOWN",
-            "BARRE"
+            "MOT_40"
           ],
           "action": [
             "goto",
@@ -6539,7 +6543,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6562,7 +6566,7 @@
         {
           "verbs": [
             "WEST",
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -6571,7 +6575,7 @@
         },
         {
           "verbs": [
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6581,8 +6585,8 @@
         {
           "verbs": [
             "EAST",
-            "INWAR",
-            "BARRE",
+            "INSIDE",
+            "MOT_40",
             "ENTER"
           ],
           "action": [
@@ -6592,7 +6596,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6615,7 +6619,7 @@
         {
           "verbs": [
             "WEST",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -6624,7 +6628,7 @@
         },
         {
           "verbs": [
-            "FORK"
+            "MOT_15"
           ],
           "action": [
             "goto",
@@ -6633,7 +6637,7 @@
         },
         {
           "verbs": [
-            "VIEW"
+            "MOT_28"
           ],
           "action": [
             "goto",
@@ -6701,7 +6705,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -6769,7 +6773,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -6864,7 +6868,7 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7031,7 +7035,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7153,7 +7157,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7194,7 +7198,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7316,7 +7320,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7411,7 +7415,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7551,7 +7555,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -7592,7 +7596,7 @@
         {
           "verbs": [
             "NORTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -7739,7 +7743,7 @@
         {
           "verbs": [
             "SOUTH",
-            "OUT"
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -9033,7 +9037,7 @@
       "travel": [
         {
           "verbs": [
-            "JUMP"
+            "MOT_39"
           ],
           "action": [
             "goto",
@@ -9090,7 +9094,7 @@
         {
           "verbs": [
             "SOUTH",
-            "ACROS",
+            "MOT_42",
             "CROSS"
           ],
           "cond": [
@@ -9115,8 +9119,8 @@
         {
           "verbs": [
             "NW",
-            "UPWAR",
-            "OUT"
+            "UP",
+            "OUTSIDE"
           ],
           "action": [
             "goto",
@@ -9137,7 +9141,7 @@
       "travel": [
         {
           "verbs": [
-            "UPWAR",
+            "UP",
             "NW"
           ],
           "action": [
@@ -9179,7 +9183,7 @@
         },
         {
           "verbs": [
-            "UPWAR",
+            "UP",
             "NW"
           ],
           "action": [
@@ -9211,8 +9215,8 @@
         },
         {
           "verbs": [
-            "UPWAR",
-            "CLIMB"
+            "UP",
+            "MOT_56"
           ],
           "action": [
             "goto",
@@ -9242,7 +9246,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "cond": [
             "carry",
@@ -9255,7 +9259,7 @@
         },
         {
           "verbs": [
-            "UPWAR"
+            "UP"
           ],
           "action": [
             "goto",
@@ -9314,7 +9318,7 @@
       "travel": [
         {
           "verbs": [
-            "CLIMB",
+            "MOT_56",
             "DOWN"
           ],
           "action": [
@@ -9347,7 +9351,7 @@
         {
           "verbs": [
             "SW",
-            "OUT",
+            "OUTSIDE",
             "CRAWL"
           ],
           "action": [
@@ -10870,7 +10874,9 @@
   "actions": {
     "ACT_NULL": {
       "message": null,
-      "words": null
+      "words": [
+        "ACT_NULL"
+      ]
     },
     "CARRY": {
       "message": "You are already carrying it!",
@@ -11170,7 +11176,9 @@
     },
     "ACT_UNKNOWN": {
       "message": "Huh?",
-      "words": null
+      "words": [
+        "ACT_UNKNOWN"
+      ]
     },
     "THANKYOU": {
       "message": "You're quite welcome.",
@@ -11294,5 +11302,234 @@
       ],
       "noaction": true
     }
+  },
+  "vocabulary": {
+    "MOT_0": "MOT_0",
+    "HERE": "HERE",
+    "ROAD": "MOT_2",
+    "HILL": "MOT_2",
+    "ENTER": "ENTER",
+    "UPSTR": "MOT_4",
+    "DOWNS": "MOT_5",
+    "FORES": "MOT_6",
+    "FORWA": "FORWARD",
+    "CONTI": "GO",
+    "ONWAR": "FORWARD",
+    "BACK": "BACK",
+    "RETUR": "BACK",
+    "RETRE": "BACK",
+    "VALLE": "MOT_9",
+    "STAIR": "MOT_10",
+    "OUT": "OUTSIDE",
+    "OUTSI": "OUTSIDE",
+    "EXIT": "OUTSIDE",
+    "LEAVE": "OUTSIDE",
+    "BUILD": "MOT_12",
+    "HOUSE": "MOT_12",
+    "GULLY": "MOT_13",
+    "STREA": "STREAM",
+    "FORK": "MOT_15",
+    "BED": "MOT_16",
+    "CRAWL": "CRAWL",
+    "COBBL": "MOT_18",
+    "INWAR": "INSIDE",
+    "INSID": "INSIDE",
+    "IN": "INSIDE",
+    "SURFA": "MOT_20",
+    "NULL": "NUL",
+    "NOWHE": "NUL",
+    "DARK": "MOT_22",
+    "PASSA": "MOT_23",
+    "TUNNE": "MOT_23",
+    "LOW": "MOT_24",
+    "CANYO": "MOT_25",
+    "AWKWA": "MOT_26",
+    "GIANT": "MOT_27",
+    "VIEW": "MOT_28",
+    "UPWAR": "UP",
+    "UP": "UP",
+    "U": "UP",
+    "ABOVE": "UP",
+    "ASCEN": "UP",
+    "D": "DOWN",
+    "DOWNW": "DOWN",
+    "DOWN": "DOWN",
+    "DESCE": "DOWN",
+    "PIT": "MOT_31",
+    "OUTDO": "MOT_32",
+    "CRACK": "MOT_33",
+    "STEPS": "MOT_34",
+    "DOME": "MOT_35",
+    "LEFT": "LEFT",
+    "RIGHT": "RIGHT",
+    "HALL": "MOT_38",
+    "JUMP": "MOT_39",
+    "BARRE": "MOT_40",
+    "OVER": "MOT_41",
+    "ACROS": "MOT_42",
+    "EAST": "EAST",
+    "E": "EAST",
+    "WEST": "WEST",
+    "W": "WEST",
+    "NORTH": "NORTH",
+    "N": "NORTH",
+    "SOUTH": "SOUTH",
+    "S": "SOUTH",
+    "NE": "NE",
+    "SE": "SE",
+    "SW": "SW",
+    "NW": "NW",
+    "DEBRI": "MOT_51",
+    "HOLE": "MOT_52",
+    "WALL": "MOT_53",
+    "BROKE": "MOT_54",
+    "Y2": "MOT_55",
+    "CLIMB": "MOT_56",
+    "L": "LOOK",
+    "X": "LOOK",
+    "LOOK": "LOOK",
+    "EXAMI": "LOOK",
+    "TOUCH": "LOOK",
+    "DESCR": "LOOK",
+    "FLOOR": "MOT_58",
+    "ROOM": "MOT_59",
+    "SLIT": "MOT_60",
+    "SLAB": "MOT_61",
+    "SLABR": "MOT_61",
+    "XYZZY": "XYZZY",
+    "DEPRE": "DEPRESSION",
+    "ENTRA": "ENTRANCE",
+    "PLUGH": "PLUGH",
+    "SECRE": "MOT_66",
+    "CAVE": "CAVE",
+    "CROSS": "CROSS",
+    "BEDQU": "BEDQUILT",
+    "PLOVE": "PLOVER",
+    "ORIEN": "ORIENTAL",
+    "CAVER": "CAVERN",
+    "SHELL": "SHELLROOM",
+    "RESER": "RESERVOIR",
+    "MAIN": "OFFICE",
+    "OFFIC": "OFFICE",
+    "ACT_NULL": "ACT_NULL",
+    "G": "CARRY",
+    "CARRY": "CARRY",
+    "TAKE": "CARRY",
+    "KEEP": "CARRY",
+    "CATCH": "CARRY",
+    "STEAL": "CARRY",
+    "CAPTU": "CARRY",
+    "GET": "CARRY",
+    "TOTE": "CARRY",
+    "SNARF": "CARRY",
+    "DROP": "DROP",
+    "RELEA": "DROP",
+    "FREE": "DROP",
+    "DISCA": "DROP",
+    "DUMP": "DROP",
+    "SAY": "SAY",
+    "CHANT": "SAY",
+    "SING": "SAY",
+    "UTTER": "SAY",
+    "MUMBL": "SAY",
+    "UNLOC": "UNLOCK",
+    "OPEN": "UNLOCK",
+    "Z": "NOTHING",
+    "NOTHI": "NOTHING",
+    "LOCK": "LOCK",
+    "CLOSE": "LOCK",
+    "LIGHT": "LIGHT",
+    "ON": "LIGHT",
+    "EXTIN": "EXTINGUISH",
+    "OFF": "EXTINGUISH",
+    "WAVE": "WAVE",
+    "SHAKE": "WAVE",
+    "SWING": "WAVE",
+    "CALM": "TAME",
+    "PLACA": "TAME",
+    "TAME": "TAME",
+    "WALK": "GO",
+    "RUN": "GO",
+    "TRAVE": "GO",
+    "GO": "GO",
+    "PROCE": "GO",
+    "EXPLO": "GO",
+    "FOLLO": "GO",
+    "TURN": "GO",
+    "ATTAC": "ATTACK",
+    "KILL": "ATTACK",
+    "FIGHT": "ATTACK",
+    "HIT": "ATTACK",
+    "STRIK": "ATTACK",
+    "SLAY": "ATTACK",
+    "POUR": "POUR",
+    "EAT": "EAT",
+    "DEVOU": "EAT",
+    "DRINK": "DRINK",
+    "RUB": "RUB",
+    "THROW": "THROW",
+    "TOSS": "THROW",
+    "QUIT": "QUIT",
+    "FIND": "FIND",
+    "WHERE": "FIND",
+    "I": "INVENTORY",
+    "INVEN": "INVENTORY",
+    "FEED": "FEED",
+    "FILL": "FILL",
+    "BLAST": "BLAST",
+    "DETON": "BLAST",
+    "IGNIT": "BLAST",
+    "BLOWU": "BLAST",
+    "SCORE": "SCORE",
+    "FEE": "FEE",
+    "FIE": "FIE",
+    "FOE": "FOE",
+    "FOO": "FOO",
+    "FUM": "FUM",
+    "BRIEF": "BRIEF",
+    "READ": "READ",
+    "PERUS": "READ",
+    "BREAK": "BREAK",
+    "SHATT": "BREAK",
+    "SMASH": "BREAK",
+    "WAKE": "WAKE",
+    "DISTU": "WAKE",
+    "SUSPE": "SAVE",
+    "PAUSE": "SAVE",
+    "SAVE": "SAVE",
+    "RESUM": "RESUME",
+    "RESTA": "RESUME",
+    "FLY": "FLY",
+    "LISTE": "LISTEN",
+    "Z'ZZZ": "PART",
+    "SEED": "SEED",
+    "WASTE": "WASTE",
+    "ACT_UNKNOWN": "ACT_UNKNOWN",
+    "THANK": "THANKYOU",
+    "SESAM": "INVALIDMAGIC",
+    "OPENS": "INVALIDMAGIC",
+    "ABRA": "INVALIDMAGIC",
+    "ABRAC": "INVALIDMAGIC",
+    "SHAZA": "INVALIDMAGIC",
+    "HOCUS": "INVALIDMAGIC",
+    "POCUS": "INVALIDMAGIC",
+    "HELP": "HELP",
+    "?": "HELP",
+    "NO": "NO",
+    "TREE": "TREE",
+    "TREES": "TREE",
+    "DIG": "DIG",
+    "EXCAV": "DIG",
+    "LOST": "LOST",
+    "MIST": "MIST",
+    "FUCK": "FBOMB",
+    "STOP": "STOP",
+    "INFO": "INFO",
+    "INFOR": "INFO",
+    "SWIM": "SWIM",
+    "WIZAR": "WIZARD",
+    "YES": "YES",
+    "NEWS": "NEWS",
+    "VERSI": "ACT_VERSION"
   }
 }

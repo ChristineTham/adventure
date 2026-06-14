@@ -59,4 +59,5 @@ export interface GameData {
   classes: any[];
   turn_thresholds: Record<string, string>;
   obituaries: string[];
+  vocabulary: Record<string, string>;
 }

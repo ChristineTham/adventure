@@ -23,4 +23,32 @@ describe('Game Engine Core', () => {
     // For now, just check if it doesn't crash and maybe adds something to history
     expect(state.history.length).toBeGreaterThan(1);
   });
+
+  it('should handle movement commands (e.g., WEST)', () => {
+    initializeGame();
+    processCommand('WEST');
+    const state = useGameStore.getState();
+    // From LOC_START, WEST goes to LOC_HILL
+    expect(state.currentLocation).toBe('LOC_HILL');
+    expect(state.history.at(-1)).toContain('hill');
+  });
+
+  it('should handle movement synonyms (e.g., ROAD)', () => {
+    initializeGame();
+    processCommand('ROAD');
+    const state = useGameStore.getState();
+    // From LOC_START, ROAD/HILL/WEST/UPWAR all lead to LOC_HILL
+    expect(state.currentLocation).toBe('LOC_HILL');
+  });
+
+  it('should handle cardinal directions', () => {
+    initializeGame();
+    // From LOC_START, SOUTH goes to LOC_VALLEY
+    processCommand('SOUTH');
+    expect(useGameStore.getState().currentLocation).toBe('LOC_VALLEY');
+    
+    // From LOC_VALLEY, NORTH goes back to LOC_START
+    processCommand('NORTH');
+    expect(useGameStore.getState().currentLocation).toBe('LOC_START');
+  });
 });

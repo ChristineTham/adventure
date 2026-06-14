@@ -19,6 +19,56 @@ export function parseAdventureYaml() {
     }
   }
 
+  // Build vocabulary map (word -> key)
+  const vocabulary: Record<string, string> = {};
+  
+  // From motions
+  for (const [key, motion] of Object.entries(data.motions)) {
+    const m = motion as any;
+    if (m.words) {
+      m.words.forEach((w: string) => {
+        vocabulary[w.toUpperCase()] = key;
+      });
+    } else {
+      // Handle !!null words (e.g. ROAD) - though usually keys like HERE
+      vocabulary[key.toUpperCase()] = key;
+      m.words = [key];
+    }
+  }
+
+  // From actions
+  for (const [key, action] of Object.entries(data.actions)) {
+    const a = action as any;
+    if (a.words) {
+      a.words.forEach((w: string) => {
+        vocabulary[w.toUpperCase()] = key;
+      });
+    } else {
+      vocabulary[key.toUpperCase()] = key;
+      a.words = [key];
+    }
+  }
+
+  // Normalize travel rule verbs
+  for (const loc of Object.values(data.locations)) {
+    const l = loc as any;
+    if (l.travel) {
+      l.travel.forEach((rule: any) => {
+        if (rule.verbs) {
+          rule.verbs = rule.verbs.map((v: string) => {
+            const key = vocabulary[v.toUpperCase()];
+            if (!key) {
+              console.warn(`Warning: Verb ${v} not found in vocabulary`);
+              return v;
+            }
+            return key;
+          });
+        }
+      });
+    }
+  }
+
+  data.vocabulary = vocabulary;
   return data;
 }
 
