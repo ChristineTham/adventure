@@ -37,7 +37,7 @@
     - [ ] Add tests for special actions.
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Core Game Logic (The Big Port)' (Protocol in workflow.md) c1c7236
 
-## Phase 4: User Interface (Modern Hybrid)
+## Phase 4: User Interface (Modern Hybrid) [checkpoint: 31f9a17]
 - [x] Task: Main Layout 996160d
     - [ ] Set up the main page layout with Tailwind CSS.
     - [ ] Create a retro-styled but modern typography theme.
@@ -49,4 +49,4 @@
 - [x] Task: Wire UI to Engine 996160d
     - [ ] Connect the input and buttons to `processCommand`.
     - [ ] Connect the history component to the Zustand store.
-- [ ] Task: Conductor - User Manual Verification 'Phase 4: User Interface (Modern Hybrid)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 4: User Interface (Modern Hybrid)' (Protocol in workflow.md) 31f9a17
