@@ -15,7 +15,7 @@
 - [x] Task: Define Zustand Store ed54055
     - [ ] Create `src/store/gameStore.ts`.
     - [ ] Define the initial state structure (current location, inventory array, flags, history of messages).
-- [ ] Task: Create Engine Core
+- [~] Task: Create Engine Core
     - [ ] Port `init.c` logic to initialize the game state.
     - [ ] Create a `processCommand(input: string)` function skeleton.
 - [ ] Task: Write initial tests
