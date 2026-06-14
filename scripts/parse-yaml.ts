@@ -22,8 +22,21 @@ export function parseAdventureYaml() {
   return data;
 }
 
+export function generateGameData() {
+  const data = parseAdventureYaml();
+  const outputPath = path.resolve(process.cwd(), 'src/data/game-data.json');
+  
+  // Ensure directory exists
+  const dir = path.dirname(outputPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+}
+
 // If run directly
 if (require.main === module) {
-  const data = parseAdventureYaml();
-  console.log(JSON.stringify(data, null, 2));
+  generateGameData();
+  console.log('Game data generated successfully to src/data/game-data.json');
 }
