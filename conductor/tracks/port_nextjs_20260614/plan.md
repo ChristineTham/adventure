@@ -6,7 +6,7 @@
     - [ ] Add `js-yaml` or similar dependency.
 - [x] Task: Define TypeScript types for game data 474e929
     - [ ] Create interfaces for Locations, Objects, Motions, Actions, and Messages based on the YAML structure.
-- [~] Task: Implement generation logic
+- [x] Task: Implement generation logic 8cb87d7
     - [ ] Parse the YAML and generate a `src/data/game-data.json` or `.ts` file.
     - [ ] Hook this script into the NextJS build process (e.g., `prebuild` in `package.json`).
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Build-Time Data Generation' (Protocol in workflow.md)
