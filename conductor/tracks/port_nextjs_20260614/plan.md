@@ -38,15 +38,15 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 3: Core Game Logic (The Big Port)' (Protocol in workflow.md) c1c7236
 
 ## Phase 4: User Interface (Modern Hybrid)
-- [ ] Task: Main Layout
+- [x] Task: Main Layout ad5ef89
     - [ ] Set up the main page layout with Tailwind CSS.
     - [ ] Create a retro-styled but modern typography theme.
-- [ ] Task: History & Input
+- [~] Task: History & Input
     - [ ] Create a component to render the game history (messages).
     - [ ] Create a text input component for classic commands.
-- [ ] Task: Interactive Elements
+- [~] Task: Interactive Elements
     - [ ] Add shadcn/ui buttons for contextual actions (e.g., compass directions, visible objects).
-- [ ] Task: Wire UI to Engine
+- [~] Task: Wire UI to Engine
     - [ ] Connect the input and buttons to `processCommand`.
     - [ ] Connect the history component to the Zustand store.
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: User Interface (Modern Hybrid)' (Protocol in workflow.md)
