@@ -18,7 +18,7 @@
 - [x] Task: Create Engine Core 95b721a
     - [ ] Port `init.c` logic to initialize the game state.
     - [ ] Create a `processCommand(input: string)` function skeleton.
-- [ ] Task: Write initial tests
+- [~] Task: Write initial tests
     - [ ] Set up Vitest.
     - [ ] Write a test verifying initial state setup.
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Game State & Engine Skeleton' (Protocol in workflow.md)

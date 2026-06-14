@@ -19,4 +19,18 @@ describe('gameStore', () => {
     useGameStore.getState().addMessage('Welcome to Adventure!');
     expect(useGameStore.getState().history).toEqual(['Welcome to Adventure!']);
   });
+
+  it('should allow adding to and removing from inventory', () => {
+    useGameStore.getState().addToInventory('LAMP');
+    expect(useGameStore.getState().inventory).toContain('LAMP');
+    useGameStore.getState().removeFromInventory('LAMP');
+    expect(useGameStore.getState().inventory).not.toContain('LAMP');
+  });
+
+  it('should allow setting and getting flags', () => {
+    useGameStore.getState().setFlag('LIT', true);
+    expect(useGameStore.getState().flags['LIT']).toBe(true);
+    useGameStore.getState().setFlag('TRIES', 5);
+    expect(useGameStore.getState().flags['TRIES']).toBe(5);
+  });
 });
