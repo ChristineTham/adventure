@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useGameStore } from '@/store/gameStore';
 import { initializeGame, processCommand } from '@/engine/core';
+import gameDataRaw from '@/data/game-data.json';
+import { GameData } from '@/types/game';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -10,6 +12,8 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Separator } from '@/components/ui/separator';
 
 import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, ArrowUpLeft, ArrowUpRight, ArrowDownLeft, ArrowDownRight, Compass, Package, MapPin } from 'lucide-react';
+
+const gameData = gameDataRaw as unknown as GameData;
 
 export function GameClient() {
   const { history, currentLocation, objectLocations, inventory } = useGameStore();
@@ -34,9 +38,18 @@ export function GameClient() {
   const visibleObjects = Object.entries(objectLocations)
     .filter(([_, locId]) => locId === currentLocation);
 
+  // Helper to check if a direction is valid for the current location
+  const isDirectionValid = (dir: string) => {
+    const loc = gameData.locations[currentLocation];
+    if (!loc) return false;
+    const resolvedKey = gameData.vocabulary[dir];
+    if (!resolvedKey) return false;
+    return loc.travel.some(rule => rule.verbs.includes(resolvedKey));
+  };
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 h-screen max-h-screen p-4 bg-zinc-950 text-zinc-100 font-mono gap-4">
-      {/* Sidebar: Status & Inventory */}
+      {/* ... (Sidebar remains the same) */}
       <div className="hidden lg:flex flex-col gap-4">
         <Card className="border-zinc-800 bg-zinc-900 shadow-xl">
           <CardHeader className="pb-3">
@@ -79,7 +92,7 @@ export function GameClient() {
         </Card>
       </div>
 
-      {/* Main Terminal */}
+      {/* ... (Main Terminal remains the same) */}
       <Card className="lg:col-span-2 flex flex-col border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
           <CardTitle className="text-xl font-bold tracking-tight text-zinc-100 flex items-center gap-2">
@@ -119,7 +132,7 @@ export function GameClient() {
         </CardFooter>
       </Card>
 
-      {/* Modern Controls */}
+      {/* Modern Controls with Dynamic Disabling */}
       <div className="flex flex-col gap-4">
         <Card className="border-zinc-800 bg-zinc-900 shadow-xl">
           <CardHeader className="pb-3 text-center">
@@ -128,15 +141,15 @@ export function GameClient() {
             </CardTitle>
           </CardHeader>
           <CardContent className="grid grid-cols-3 gap-2 justify-items-center pb-6">
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('NW')}><ArrowUpLeft size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('N')}><ArrowUp size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('NE')}><ArrowUpRight size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('W')}><ArrowLeft size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('NW')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('NW')}><ArrowUpLeft size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('N')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('N')}><ArrowUp size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('NE')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('NE')}><ArrowUpRight size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('W')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('W')}><ArrowLeft size={18}/></Button>
             <Button variant="secondary" size="icon" className="bg-zinc-800 border-zinc-700 hover:bg-zinc-700" onClick={() => handleAction('LOOK')}>L</Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('E')}><ArrowRight size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('SW')}><ArrowDownLeft size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('S')}><ArrowDown size={18}/></Button>
-            <Button variant="outline" size="icon" className="border-zinc-700 hover:bg-zinc-800" onClick={() => handleAction('SE')}><ArrowDownRight size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('E')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('E')}><ArrowRight size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('SW')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('SW')}><ArrowDownLeft size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('S')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('S')}><ArrowDown size={18}/></Button>
+            <Button variant="outline" size="icon" disabled={!isDirectionValid('SE')} className="border-zinc-700 hover:bg-zinc-800 disabled:opacity-20" onClick={() => handleAction('SE')}><ArrowDownRight size={18}/></Button>
           </CardContent>
         </Card>
 
