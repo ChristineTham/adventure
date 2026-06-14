@@ -11,7 +11,7 @@
     - [ ] Hook this script into the NextJS build process (e.g., `prebuild` in `package.json`).
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Build-Time Data Generation' (Protocol in workflow.md) f48e99b
 
-## Phase 2: Game State & Engine Skeleton
+## Phase 2: Game State & Engine Skeleton [checkpoint: 64b0d0c]
 - [x] Task: Define Zustand Store ed54055
     - [ ] Create `src/store/gameStore.ts`.
     - [ ] Define the initial state structure (current location, inventory array, flags, history of messages).
@@ -21,7 +21,9 @@
 - [x] Task: Write initial tests abb6537
     - [ ] Set up Vitest.
     - [ ] Write a test verifying initial state setup.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: Game State & Engine Skeleton' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: Game State & Engine Skeleton' (Protocol in workflow.md) 64b0d0c
+
+## Phase 3: Core Game Logic (The Big Port)
 
 ## Phase 3: Core Game Logic (The Big Port)
 - [ ] Task: Port Movement & Navigation
