@@ -26,7 +26,7 @@
 ## Phase 3: Core Game Logic (The Big Port)
 
 ## Phase 3: Core Game Logic (The Big Port)
-- [~] Task: Port Movement & Navigation
+- [x] Task: Port Movement & Navigation ddc9ffb
     - [ ] Translate logic for moving between rooms based on `motions`.
     - [ ] Add tests for movement commands (N, S, E, W).
 - [ ] Task: Port Object Interaction
