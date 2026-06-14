@@ -12,7 +12,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Build-Time Data Generation' (Protocol in workflow.md) f48e99b
 
 ## Phase 2: Game State & Engine Skeleton
-- [ ] Task: Define Zustand Store
+- [~] Task: Define Zustand Store
     - [ ] Create `src/store/gameStore.ts`.
     - [ ] Define the initial state structure (current location, inventory array, flags, history of messages).
 - [ ] Task: Create Engine Core
