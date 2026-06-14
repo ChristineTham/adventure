@@ -4,7 +4,7 @@
 - [x] Task: Set up build scripts 6204446
     - [ ] Create `scripts/parse-yaml.ts` to read `open-adventure/adventure.yaml`.
     - [ ] Add `js-yaml` or similar dependency.
-- [~] Task: Define TypeScript types for game data
+- [x] Task: Define TypeScript types for game data 474e929
     - [ ] Create interfaces for Locations, Objects, Motions, Actions, and Messages based on the YAML structure.
 - [ ] Task: Implement generation logic
     - [ ] Parse the YAML and generate a `src/data/game-data.json` or `.ts` file.
