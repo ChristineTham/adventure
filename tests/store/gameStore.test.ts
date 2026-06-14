@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 // @ts-ignore
-import { useGameStore } from '../../src/store/gameStore';
+import { useGameStore } from '../../store/gameStore';
 
 describe('gameStore', () => {
   it('should have a default initial state', () => {

@@ -95,7 +95,7 @@ export function parseAdventureYaml() {
 
 export function generateGameData() {
   const data = parseAdventureYaml();
-  const outputPath = path.resolve(process.cwd(), 'src/data/game-data.json');
+  const outputPath = path.resolve(process.cwd(), 'data/game-data.json');
   
   // Ensure directory exists
   const dir = path.dirname(outputPath);
@@ -109,5 +109,5 @@ export function generateGameData() {
 // If run directly
 if (require.main === module) {
   generateGameData();
-  console.log('Game data generated successfully to src/data/game-data.json');
+  console.log('Game data generated successfully to data/game-data.json');
 }

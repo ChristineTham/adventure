@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { parseAdventureYaml } from '../../scripts/parse-yaml';
-import { GameData } from '../../src/types/game';
+import { GameData } from '../../types/game';
 
 describe('Game Data Types', () => {
   it('should be compatible with the parsed YAML', () => {

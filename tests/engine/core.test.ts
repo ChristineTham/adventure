@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 // @ts-ignore
-import { initializeGame, processCommand } from '../../src/engine/core';
+import { initializeGame, processCommand } from '../../engine/core';
 // @ts-ignore
-import { useGameStore } from '../../src/store/gameStore';
+import { useGameStore } from '../../store/gameStore';
 
 describe('Game Engine Core', () => {
   beforeEach(() => {

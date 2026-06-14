@@ -17,7 +17,7 @@ describe('parseAdventureYaml', () => {
 });
 
 describe('generateGameData', () => {
-  const outputPath = path.resolve(process.cwd(), 'src/data/game-data.json');
+  const outputPath = path.resolve(process.cwd(), 'data/game-data.json');
 
   beforeEach(() => {
     if (fs.existsSync(outputPath)) {
