@@ -32,7 +32,7 @@
 - [x] Task: Port Object Interaction e366994
     - [ ] Translate logic for taking, dropping, and examining objects.
     - [ ] Add tests for inventory commands.
-- [ ] Task: Port Special Actions
+- [~] Task: Port Special Actions
     - [ ] Translate complex verbs from `actions.c` (e.g., ATTACK, FILL, THROW).
     - [ ] Add tests for special actions.
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Core Game Logic (The Big Port)' (Protocol in workflow.md)

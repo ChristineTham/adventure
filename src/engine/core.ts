@@ -11,8 +11,9 @@ export function initializeGame() {
   // Initial location as per Open Adventure LOC_START
   store.setLocation('LOC_START');
 
-  // Initialize object locations
+  // Initialize object locations and states
   for (const [key, obj] of Object.entries(gameData.objects)) {
+    store.setObjectState(key, 0);
     if (obj.locations && obj.locations.length > 0) {
       // For now, take the first location. 
       // Open Adventure objects can have up to 2 locations (e.g. grate)
@@ -49,13 +50,13 @@ export function processCommand(input: string) {
       
       // List visible objects
       const visibleObjects = Object.entries(store.objectLocations)
-        .filter(([_, locId]) => locId === store.currentLocation)
-        .map(([objId, _]) => gameData.objects[objId]);
+        .filter(([_, locId]) => locId === store.currentLocation);
       
-      visibleObjects.forEach(obj => {
-        if (obj.descriptions && obj.descriptions.length > 0) {
-          // For now, use the first description (state 0)
-          store.addMessage(obj.descriptions[0]);
+      visibleObjects.forEach(([objId, _]) => {
+        const obj = gameData.objects[objId];
+        const state = store.objectStates[objId] || 0;
+        if (obj.descriptions && obj.descriptions[state]) {
+          store.addMessage(obj.descriptions[state]);
         }
       });
     }
@@ -120,7 +121,35 @@ export function processCommand(input: string) {
     return;
   }
 
-  // 6. Handle Movement
+  // 6. Handle FILL
+  if (resolvedKey === 'FILL') {
+    if (!store.inventory.includes('BOTTLE')) {
+      store.addMessage("You have nothing in which to carry it.");
+      return;
+    }
+    
+    const loc = gameData.locations[store.currentLocation];
+    if (loc?.conditions['FLUID']) {
+      const isOily = loc.conditions['OILY'];
+      store.setObjectState('BOTTLE', isOily ? 2 : 0); // 2: Oil, 0: Water
+      store.addMessage("Your bottle is now full of " + (isOily ? "oil." : "water."));
+    } else {
+      store.addMessage("There is nothing here with which to fill the bottle.");
+    }
+    return;
+  }
+
+  // 7. Handle ATTACK
+  if (resolvedKey === 'ATTACK') {
+    if (!objName) {
+      store.addMessage("What do you want to attack?");
+      return;
+    }
+    store.addMessage("Attacking things doesn't seem to help much here.");
+    return;
+  }
+
+  // 8. Handle Movement
   const currentLocation = gameData.locations[store.currentLocation];
   if (currentLocation && resolvedKey) {
     // Find a rule where one of the verbs matches our resolvedKey

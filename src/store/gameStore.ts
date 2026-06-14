@@ -4,12 +4,14 @@ interface GameState {
   currentLocation: string;
   inventory: string[];
   objectLocations: Record<string, string>; // Maps objectId -> locationId
+  objectStates: Record<string, number>; // Maps objectId -> state (0-indexed)
   history: string[];
   flags: Record<string, boolean | number>;
   
   // Actions
   setLocation: (location: string) => void;
   setObjectLocation: (objectId: string, locationId: string) => void;
+  setObjectState: (objectId: string, state: number) => void;
   addToInventory: (item: string) => void;
   removeFromInventory: (item: string) => void;
   addMessage: (message: string) => void;
@@ -21,6 +23,7 @@ const initialState = {
   currentLocation: '',
   inventory: [],
   objectLocations: {},
+  objectStates: {},
   history: [],
   flags: {},
 };
@@ -32,6 +35,9 @@ export const useGameStore = create<GameState>((set) => ({
   
   setObjectLocation: (objectId, locationId) =>
     set((state) => ({ objectLocations: { ...state.objectLocations, [objectId]: locationId } })),
+  
+  setObjectState: (objectId, state) =>
+    set((s) => ({ objectStates: { ...s.objectStates, [objectId]: state } })),
   
   addToInventory: (item) => 
     set((state) => ({ inventory: [...state.inventory, item] })),

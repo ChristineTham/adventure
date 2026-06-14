@@ -80,4 +80,24 @@ describe('Game Engine Core', () => {
     processCommand('LOOK');
     expect(useGameStore.getState().history.at(-1)).toContain('keys');
   });
+
+  it('should handle FILL', () => {
+    initializeGame();
+    // From START to BUILDING
+    processCommand('EAST');
+    // There is a BOTTLE in the building
+    processCommand('TAKE BOTTLE');
+    expect(useGameStore.getState().inventory).toContain('BOTTLE');
+    
+    // There is a stream in the building (FLUID condition)
+    processCommand('FILL BOTTLE');
+    expect(useGameStore.getState().history.at(-1)).toContain('water');
+    expect(useGameStore.getState().objectStates['BOTTLE']).toBe(0); // 0: Water
+  });
+
+  it('should handle ATTACK', () => {
+    initializeGame();
+    processCommand('ATTACK BEAR');
+    expect(useGameStore.getState().history.at(-1)).toContain('Attacking');
+  });
 });

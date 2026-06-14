@@ -25,13 +25,12 @@ export function parseAdventureYaml() {
   // From motions
   for (const [key, motion] of Object.entries(data.motions)) {
     const m = motion as any;
+    vocabulary[key.toUpperCase()] = key;
     if (m.words) {
       m.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      // Handle !!null words (e.g. ROAD) - though usually keys like HERE
-      vocabulary[key.toUpperCase()] = key;
       m.words = [key];
     }
   }
@@ -39,12 +38,12 @@ export function parseAdventureYaml() {
   // From actions
   for (const [key, action] of Object.entries(data.actions)) {
     const a = action as any;
+    vocabulary[key.toUpperCase()] = key;
     if (a.words) {
       a.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      vocabulary[key.toUpperCase()] = key;
       a.words = [key];
     }
   }
@@ -52,12 +51,12 @@ export function parseAdventureYaml() {
   // From objects
   for (const [key, obj] of Object.entries(data.objects)) {
     const o = obj as any;
+    vocabulary[key.toUpperCase()] = key;
     if (o.words) {
       o.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      vocabulary[key.toUpperCase()] = key;
       o.words = [key];
     }
 
