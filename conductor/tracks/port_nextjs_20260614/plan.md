@@ -1,6 +1,6 @@
 # Implementation Plan: Port Open Adventure to NextJS
 
-## Phase 1: Build-Time Data Generation
+## Phase 1: Build-Time Data Generation [checkpoint: f48e99b]
 - [x] Task: Set up build scripts 6204446
     - [ ] Create `scripts/parse-yaml.ts` to read `open-adventure/adventure.yaml`.
     - [ ] Add `js-yaml` or similar dependency.
@@ -9,7 +9,7 @@
 - [x] Task: Implement generation logic 8cb87d7
     - [ ] Parse the YAML and generate a `src/data/game-data.json` or `.ts` file.
     - [ ] Hook this script into the NextJS build process (e.g., `prebuild` in `package.json`).
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Build-Time Data Generation' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Build-Time Data Generation' (Protocol in workflow.md) f48e99b
 
 ## Phase 2: Game State & Engine Skeleton
 - [ ] Task: Define Zustand Store
