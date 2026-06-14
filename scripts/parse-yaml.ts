@@ -49,6 +49,28 @@ export function parseAdventureYaml() {
     }
   }
 
+  // From objects
+  for (const [key, obj] of Object.entries(data.objects)) {
+    const o = obj as any;
+    if (o.words) {
+      o.words.forEach((w: string) => {
+        vocabulary[w.toUpperCase()] = key;
+      });
+    } else {
+      vocabulary[key.toUpperCase()] = key;
+      o.words = [key];
+    }
+
+    // Normalize locations to array
+    if (o.locations) {
+      if (typeof o.locations === 'string') {
+        o.locations = [o.locations];
+      }
+    } else {
+      o.locations = [];
+    }
+  }
+
   // Normalize travel rule verbs
   for (const loc of Object.values(data.locations)) {
     const l = loc as any;

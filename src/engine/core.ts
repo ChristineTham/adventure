@@ -10,6 +10,15 @@ export function initializeGame() {
   
   // Initial location as per Open Adventure LOC_START
   store.setLocation('LOC_START');
+
+  // Initialize object locations
+  for (const [key, obj] of Object.entries(gameData.objects)) {
+    if (obj.locations && obj.locations.length > 0) {
+      // For now, take the first location. 
+      // Open Adventure objects can have up to 2 locations (e.g. grate)
+      store.setObjectLocation(key, obj.locations[0]);
+    }
+  }
   
   // Add initial long description
   const startLoc = gameData.locations['LOC_START'];
@@ -20,25 +29,98 @@ export function initializeGame() {
 
 export function processCommand(input: string) {
   const store = useGameStore.getState();
-  const command = input.trim().toUpperCase();
-  
-  if (!command) return;
+  const rawInput = input.trim().toUpperCase();
+  if (!rawInput) return;
+
+  const parts = rawInput.split(/\s+/);
+  const command = parts[0];
+  const objName = parts[1]; // Handle simple two-word commands
 
   store.addMessage(`> ${input}`);
 
   // 1. Resolve command to a motion or action key using vocabulary
   const resolvedKey = gameData.vocabulary[command];
 
-  // 2. Handle LOOK separately (as it can be an action OR just the word)
+  // 2. Handle LOOK
   if (command === 'LOOK' || command === 'L' || resolvedKey === 'LOOK') {
     const loc = gameData.locations[store.currentLocation];
     if (loc && loc.description.long) {
       store.addMessage(loc.description.long);
+      
+      // List visible objects
+      const visibleObjects = Object.entries(store.objectLocations)
+        .filter(([_, locId]) => locId === store.currentLocation)
+        .map(([objId, _]) => gameData.objects[objId]);
+      
+      visibleObjects.forEach(obj => {
+        if (obj.descriptions && obj.descriptions.length > 0) {
+          // For now, use the first description (state 0)
+          store.addMessage(obj.descriptions[0]);
+        }
+      });
     }
     return;
   }
 
-  // 3. Handle Movement
+  // 3. Handle TAKE / GET
+  if (resolvedKey === 'CARRY' || command === 'TAKE' || command === 'GET') {
+    if (!objName) {
+      store.addMessage("What do you want to take?");
+      return;
+    }
+
+    const resolvedObjId = gameData.vocabulary[objName];
+    if (!resolvedObjId || !gameData.objects[resolvedObjId]) {
+      store.addMessage("I see no such thing here.");
+      return;
+    }
+
+    if (store.objectLocations[resolvedObjId] === store.currentLocation) {
+      store.addToInventory(resolvedObjId);
+      store.setObjectLocation(resolvedObjId, 'IN_INVENTORY'); // Use special ID or just logic
+      store.addMessage("OK");
+    } else if (store.inventory.includes(resolvedObjId)) {
+      store.addMessage("You are already carrying it!");
+    } else {
+      store.addMessage("I see no such thing here.");
+    }
+    return;
+  }
+
+  // 4. Handle DROP
+  if (resolvedKey === 'DROP') {
+    if (!objName) {
+      store.addMessage("What do you want to drop?");
+      return;
+    }
+
+    const resolvedObjId = gameData.vocabulary[objName];
+    if (!resolvedObjId || !store.inventory.includes(resolvedObjId)) {
+      store.addMessage("You aren't carrying that!");
+      return;
+    }
+
+    store.removeFromInventory(resolvedObjId);
+    store.setObjectLocation(resolvedObjId, store.currentLocation);
+    store.addMessage("OK");
+    return;
+  }
+
+  // 5. Handle INVENTORY
+  if (command === 'INVENTORY' || command === 'I') {
+    if (store.inventory.length === 0) {
+      store.addMessage("You are empty-handed.");
+    } else {
+      store.addMessage("You are currently holding the following:");
+      store.inventory.forEach(objId => {
+        const obj = gameData.objects[objId];
+        store.addMessage(` - ${obj.inventory}`);
+      });
+    }
+    return;
+  }
+
+  // 6. Handle Movement
   const currentLocation = gameData.locations[store.currentLocation];
   if (currentLocation && resolvedKey) {
     // Find a rule where one of the verbs matches our resolvedKey

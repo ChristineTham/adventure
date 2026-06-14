@@ -51,4 +51,33 @@ describe('Game Engine Core', () => {
     processCommand('NORTH');
     expect(useGameStore.getState().currentLocation).toBe('LOC_START');
   });
+
+  it('should handle TAKE and INVENTORY', () => {
+    initializeGame();
+    // From LOC_START, the building is EAST
+    processCommand('EAST');
+    expect(useGameStore.getState().currentLocation).toBe('LOC_BUILDING');
+    
+    // There are keys in the building
+    processCommand('TAKE KEYS');
+    expect(useGameStore.getState().inventory).toContain('KEYS');
+    expect(useGameStore.getState().history.at(-1)).toBe('OK');
+    
+    processCommand('INVENTORY');
+    expect(useGameStore.getState().history.at(-1)).toContain('Set of keys');
+  });
+
+  it('should handle DROP', () => {
+    initializeGame();
+    processCommand('EAST');
+    processCommand('TAKE KEYS');
+    processCommand('WEST'); // Back to LOC_START
+    
+    processCommand('DROP KEYS');
+    expect(useGameStore.getState().inventory).not.toContain('KEYS');
+    expect(useGameStore.getState().objectLocations['KEYS']).toBe('LOC_START');
+    
+    processCommand('LOOK');
+    expect(useGameStore.getState().history.at(-1)).toContain('keys');
+  });
 });

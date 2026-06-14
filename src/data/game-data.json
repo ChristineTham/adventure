@@ -1455,7 +1455,7 @@
           "verbs": [
             "DOWN",
             "MOT_31",
-            "MOT_34"
+            "STEPS"
           ],
           "cond": [
             "carry",
@@ -1544,7 +1544,7 @@
           "verbs": [
             "UP",
             "MOT_31",
-            "MOT_34",
+            "STEPS",
             "MOT_35",
             "MOT_23",
             "EAST"
@@ -4071,7 +4071,7 @@
         },
         {
           "verbs": [
-            "RESERVOIR"
+            "RESER"
           ],
           "action": [
             "goto",
@@ -5626,7 +5626,7 @@
         {
           "verbs": [
             "NORTH",
-            "RESERVOIR"
+            "RESER"
           ],
           "action": [
             "goto",
@@ -9768,7 +9768,11 @@
   "objects": {
     "NO_OBJECT": {
       "inventory": null,
-      "descriptions": null
+      "descriptions": null,
+      "words": [
+        "NO_OBJECT"
+      ],
+      "locations": []
     },
     "KEYS": {
       "words": [
@@ -9776,7 +9780,9 @@
         "key"
       ],
       "inventory": "Set of keys",
-      "locations": "LOC_BUILDING",
+      "locations": [
+        "LOC_BUILDING"
+      ],
       "descriptions": [
         "There are some keys on the ground here."
       ]
@@ -9787,7 +9793,9 @@
         "lante"
       ],
       "inventory": "Brass lantern",
-      "locations": "LOC_BUILDING",
+      "locations": [
+        "LOC_BUILDING"
+      ],
       "states": [
         "LAMP_DARK",
         "LAMP_BRIGHT"
@@ -9829,7 +9837,9 @@
         "cage"
       ],
       "inventory": "Wicker cage",
-      "locations": "LOC_COBBLE",
+      "locations": [
+        "LOC_COBBLE"
+      ],
       "descriptions": [
         "There is a small wicker cage discarded nearby."
       ]
@@ -9839,7 +9849,9 @@
         "rod"
       ],
       "inventory": "Black rod",
-      "locations": "LOC_DEBRIS",
+      "locations": [
+        "LOC_DEBRIS"
+      ],
       "descriptions": [
         "A three foot black rod with a rusty star on an end lies nearby."
       ]
@@ -9849,7 +9861,9 @@
         "rod"
       ],
       "inventory": "Black rod",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "descriptions": [
         "A three foot black rod with a rusty mark on an end lies nearby."
       ]
@@ -9878,7 +9892,9 @@
         "bird"
       ],
       "inventory": "Little bird in cage",
-      "locations": "LOC_BIRDCHAMBER",
+      "locations": [
+        "LOC_BIRDCHAMBER"
+      ],
       "states": [
         "BIRD_UNCAGED",
         "BIRD_CAGED",
@@ -9903,7 +9919,9 @@
         "door"
       ],
       "inventory": "*rusty door",
-      "locations": "LOC_IMMENSE",
+      "locations": [
+        "LOC_IMMENSE"
+      ],
       "immovable": true,
       "states": [
         "DOOR_RUSTED",
@@ -9924,7 +9942,9 @@
         "velve"
       ],
       "inventory": "Velvet pillow",
-      "locations": "LOC_SOFTROOM",
+      "locations": [
+        "LOC_SOFTROOM"
+      ],
       "descriptions": [
         "A small velvet pillow lies on the floor."
       ]
@@ -9934,7 +9954,9 @@
         "snake"
       ],
       "inventory": "*snake",
-      "locations": "LOC_KINGHALL",
+      "locations": [
+        "LOC_KINGHALL"
+      ],
       "immovable": true,
       "states": [
         "SNAKE_BLOCKS",
@@ -9977,7 +9999,9 @@
         "table"
       ],
       "inventory": "*stone tablet",
-      "locations": "LOC_DARKROOM",
+      "locations": [
+        "LOC_DARKROOM"
+      ],
       "immovable": true,
       "descriptions": [
         "A massive stone tablet embedded in the wall reads:\n\"Congratulations on bringing light into the dark-room!\""
@@ -9991,7 +10015,9 @@
         "clam"
       ],
       "inventory": "Giant clam  >GRUNT!<",
-      "locations": "LOC_SHELLROOM",
+      "locations": [
+        "LOC_SHELLROOM"
+      ],
       "descriptions": [
         "There is an enormous clam here with its shell tightly closed."
       ],
@@ -10004,7 +10030,9 @@
         "oyste"
       ],
       "inventory": "Giant oyster  >GROAN!<",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "descriptions": [
         "There is an enormous oyster here with its shell tightly closed.",
         "Interesting.  There seems to be something written on the underside of\\nthe oyster."
@@ -10022,7 +10050,9 @@
         "\"spel"
       ],
       "inventory": "\"Spelunker Today\"",
-      "locations": "LOC_ANTEROOM",
+      "locations": [
+        "LOC_ANTEROOM"
+      ],
       "descriptions": [
         "There are a few recent issues of \"Spelunker Today\" magazine here."
       ],
@@ -10036,7 +10066,9 @@
         "dwarv"
       ],
       "inventory": null,
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "immovable": true,
       "descriptions": null
     },
@@ -10046,7 +10078,9 @@
         "knive"
       ],
       "inventory": null,
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "descriptions": null
     },
     "FOOD": {
@@ -10055,7 +10089,9 @@
         "ratio"
       ],
       "inventory": "Tasty food",
-      "locations": "LOC_BUILDING",
+      "locations": [
+        "LOC_BUILDING"
+      ],
       "descriptions": [
         "There is food here."
       ]
@@ -10066,7 +10102,9 @@
         "jar"
       ],
       "inventory": "Small bottle",
-      "locations": "LOC_BUILDING",
+      "locations": [
+        "LOC_BUILDING"
+      ],
       "states": [
         "WATER_BOTTLE",
         "EMPTY_BOTTLE",
@@ -10089,7 +10127,9 @@
         "h2o"
       ],
       "inventory": "Water in the bottle",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "descriptions": null
     },
     "OIL": {
@@ -10097,7 +10137,9 @@
         "oil"
       ],
       "inventory": "Oil in the bottle",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "descriptions": null
     },
     "MIRROR": {
@@ -10105,7 +10147,9 @@
         "mirro"
       ],
       "inventory": "*mirror",
-      "locations": "LOC_MIRRORCANYON",
+      "locations": [
+        "LOC_MIRRORCANYON"
+      ],
       "immovable": true,
       "states": [
         "MIRROR_UNBROKEN",
@@ -10126,7 +10170,9 @@
         "beans"
       ],
       "inventory": "*plant",
-      "locations": "LOC_WESTPIT",
+      "locations": [
+        "LOC_WESTPIT"
+      ],
       "immovable": true,
       "states": [
         "PLANT_THIRSTY",
@@ -10170,7 +10216,9 @@
         "stala"
       ],
       "inventory": "*stalactite",
-      "locations": "LOC_TOPSTALACTITE",
+      "locations": [
+        "LOC_TOPSTALACTITE"
+      ],
       "immovable": true,
       "descriptions": [
         ""
@@ -10197,7 +10245,9 @@
         "axe"
       ],
       "inventory": "Dwarf's axe",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "states": [
         "AXE_HERE",
         "AXE_LOST"
@@ -10216,7 +10266,9 @@
         "drawi"
       ],
       "inventory": "*cave drawings",
-      "locations": "LOC_ORIENTAL",
+      "locations": [
+        "LOC_ORIENTAL"
+      ],
       "immovable": true,
       "descriptions": null
     },
@@ -10227,7 +10279,9 @@
         "djinn"
       ],
       "inventory": "*pirate/genie",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "immovable": true,
       "descriptions": null
     },
@@ -10335,7 +10389,9 @@
         "bear"
       ],
       "inventory": null,
-      "locations": "LOC_BARRENROOM",
+      "locations": [
+        "LOC_BARRENROOM"
+      ],
       "immovable": true,
       "states": [
         "UNTAMED_BEAR",
@@ -10361,7 +10417,9 @@
         "messa"
       ],
       "inventory": "*message in second maze",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "immovable": true,
       "descriptions": [
         "There is a message scrawled in the dust in a flowery script, reading:\n\"This is not the maze where the pirate leaves his treasure chest.\""
@@ -10376,7 +10434,9 @@
         "geyse"
       ],
       "inventory": "*volcano and/or geyser",
-      "locations": "LOC_BREATHTAKING",
+      "locations": [
+        "LOC_BREATHTAKING"
+      ],
       "immovable": true,
       "descriptions": null
     },
@@ -10386,7 +10446,9 @@
         "vendi"
       ],
       "inventory": "*vending machine",
-      "locations": "LOC_DEADEND13",
+      "locations": [
+        "LOC_DEADEND13"
+      ],
       "immovable": true,
       "states": [
         "VEND_BLOCKS",
@@ -10410,7 +10472,9 @@
         "batte"
       ],
       "inventory": "Batteries",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "states": [
         "FRESH_BATTERIES",
         "DEAD_BATTERIES"
@@ -10426,7 +10490,9 @@
         "moss"
       ],
       "inventory": "*carpet and/or moss and/or curtains",
-      "locations": "LOC_SOFTROOM",
+      "locations": [
+        "LOC_SOFTROOM"
+      ],
       "immovable": true,
       "descriptions": null
     },
@@ -10435,7 +10501,9 @@
         "ogre"
       ],
       "inventory": "*ogre",
-      "locations": "LOC_LARGE",
+      "locations": [
+        "LOC_LARGE"
+      ],
       "immovable": true,
       "descriptions": [
         "A formidable ogre bars the northern exit."
@@ -10449,7 +10517,9 @@
         "urn"
       ],
       "inventory": "*urn",
-      "locations": "LOC_CLIFF",
+      "locations": [
+        "LOC_CLIFF"
+      ],
       "immovable": true,
       "states": [
         "URN_EMPTY",
@@ -10472,7 +10542,9 @@
         "cavit"
       ],
       "inventory": "*cavity",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "immovable": true,
       "states": [
         "CAVITY_FULL",
@@ -10488,7 +10560,9 @@
         "blood"
       ],
       "inventory": "*blood",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "immovable": true,
       "descriptions": [
         ""
@@ -10523,7 +10597,9 @@
         "lepor"
       ],
       "inventory": "Leporine appendage",
-      "locations": "LOC_FOREST22",
+      "locations": [
+        "LOC_FOREST22"
+      ],
       "descriptions": [
         "Your keen eye spots a severed leporine appendage lying on the ground."
       ]
@@ -10533,7 +10609,9 @@
         "mud"
       ],
       "inventory": "*mud",
-      "locations": "LOC_DEBRIS",
+      "locations": [
+        "LOC_DEBRIS"
+      ],
       "immovable": true,
       "descriptions": [
         ""
@@ -10547,7 +10625,9 @@
         "note"
       ],
       "inventory": "*note",
-      "locations": "LOC_NUGGET",
+      "locations": [
+        "LOC_NUGGET"
+      ],
       "immovable": true,
       "descriptions": [
         ""
@@ -10561,7 +10641,9 @@
         "sign"
       ],
       "inventory": "*sign",
-      "locations": "LOC_ANTEROOM",
+      "locations": [
+        "LOC_ANTEROOM"
+      ],
       "immovable": true,
       "states": [
         "INGAME_SIGN",
@@ -10582,7 +10664,9 @@
         "nugge"
       ],
       "inventory": "Large gold nugget",
-      "locations": "LOC_NUGGET",
+      "locations": [
+        "LOC_NUGGET"
+      ],
       "treasure": true,
       "descriptions": [
         "There is a large sparkling nugget of gold here!"
@@ -10593,7 +10677,9 @@
         "diamo"
       ],
       "inventory": "Several diamonds",
-      "locations": "LOC_WESTBANK",
+      "locations": [
+        "LOC_WESTBANK"
+      ],
       "treasure": true,
       "descriptions": [
         "There are diamonds here!"
@@ -10605,7 +10691,9 @@
         "bars"
       ],
       "inventory": "Bars of silver",
-      "locations": "LOC_FLOORHOLE",
+      "locations": [
+        "LOC_FLOORHOLE"
+      ],
       "treasure": true,
       "descriptions": [
         "There are bars of silver here!"
@@ -10616,7 +10704,9 @@
         "jewel"
       ],
       "inventory": "Precious jewelry",
-      "locations": "LOC_SOUTHSIDE",
+      "locations": [
+        "LOC_SOUTHSIDE"
+      ],
       "treasure": true,
       "descriptions": [
         "There is precious jewelry here!"
@@ -10627,7 +10717,9 @@
         "coins"
       ],
       "inventory": "Rare coins",
-      "locations": "LOC_WESTSIDE",
+      "locations": [
+        "LOC_WESTSIDE"
+      ],
       "treasure": true,
       "descriptions": [
         "There are many coins here!"
@@ -10640,7 +10732,9 @@
         "treas"
       ],
       "inventory": "Treasure chest",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "treasure": true,
       "descriptions": [
         "The pirate's treasure chest is here!"
@@ -10653,7 +10747,9 @@
         "nest"
       ],
       "inventory": "Golden eggs",
-      "locations": "LOC_GIANTROOM",
+      "locations": [
+        "LOC_GIANTROOM"
+      ],
       "treasure": true,
       "states": [
         "EGGS_HERE",
@@ -10671,7 +10767,9 @@
         "tride"
       ],
       "inventory": "Jeweled trident",
-      "locations": "LOC_WATERFALL",
+      "locations": [
+        "LOC_WATERFALL"
+      ],
       "treasure": true,
       "descriptions": [
         "There is a jewel-encrusted trident here!"
@@ -10685,7 +10783,9 @@
         "potte"
       ],
       "inventory": "Ming vase",
-      "locations": "LOC_ORIENTAL",
+      "locations": [
+        "LOC_ORIENTAL"
+      ],
       "treasure": true,
       "states": [
         "VASE_WHOLE",
@@ -10708,7 +10808,9 @@
         "emera"
       ],
       "inventory": "Egg-sized emerald",
-      "locations": "LOC_PLOVER",
+      "locations": [
+        "LOC_PLOVER"
+      ],
       "treasure": true,
       "descriptions": [
         "There is an emerald here the size of a plover's egg!",
@@ -10721,7 +10823,9 @@
         "pyram"
       ],
       "inventory": "Platinum pyramid",
-      "locations": "LOC_DARKROOM",
+      "locations": [
+        "LOC_DARKROOM"
+      ],
       "treasure": true,
       "descriptions": [
         "There is a platinum pyramid here, 8 inches on a side!"
@@ -10732,7 +10836,9 @@
         "pearl"
       ],
       "inventory": "Glistening pearl",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "treasure": true,
       "descriptions": [
         "Off to one side lies a glistening pearl!"
@@ -10766,7 +10872,9 @@
         "spice"
       ],
       "inventory": "Rare spices",
-      "locations": "LOC_BOULDERS2",
+      "locations": [
+        "LOC_BOULDERS2"
+      ],
       "treasure": true,
       "descriptions": [
         "There are rare spices here!"
@@ -10777,7 +10885,9 @@
         "chain"
       ],
       "inventory": "Golden chain",
-      "locations": "LOC_BARRENROOM",
+      "locations": [
+        "LOC_BARRENROOM"
+      ],
       "immovable": true,
       "treasure": true,
       "states": [
@@ -10796,7 +10906,9 @@
         "ruby"
       ],
       "inventory": "Giant ruby",
-      "locations": "LOC_STOREROOM",
+      "locations": [
+        "LOC_STOREROOM"
+      ],
       "treasure": true,
       "descriptions": [
         "There is an enormous ruby here!",
@@ -10809,7 +10921,9 @@
         "neckl"
       ],
       "inventory": "Jade necklace",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "treasure": true,
       "descriptions": [
         "A precious jade necklace has been dropped here!"
@@ -10821,7 +10935,9 @@
         "gemst"
       ],
       "inventory": "Amber gemstone",
-      "locations": "LOC_NOWHERE",
+      "locations": [
+        "LOC_NOWHERE"
+      ],
       "treasure": true,
       "states": [
         "AMBER_IN_URN",
@@ -10837,7 +10953,9 @@
         "sapph"
       ],
       "inventory": "Star sapphire",
-      "locations": "LOC_LEDGE",
+      "locations": [
+        "LOC_LEDGE"
+      ],
       "treasure": true,
       "descriptions": [
         "A brilliant blue star sapphire is here!",
@@ -10850,7 +10968,9 @@
         "statu"
       ],
       "inventory": "Ebony statuette",
-      "locations": "LOC_REACHDEAD",
+      "locations": [
+        "LOC_REACHDEAD"
+      ],
       "treasure": true,
       "descriptions": [
         "There is a richly-carved ebony statuette here!"
@@ -11358,7 +11478,7 @@
     "PIT": "MOT_31",
     "OUTDO": "MOT_32",
     "CRACK": "MOT_33",
-    "STEPS": "MOT_34",
+    "STEPS": "STEPS",
     "DOME": "MOT_35",
     "LEFT": "LEFT",
     "RIGHT": "RIGHT",
@@ -11408,7 +11528,7 @@
     "ORIEN": "ORIENTAL",
     "CAVER": "CAVERN",
     "SHELL": "SHELLROOM",
-    "RESER": "RESERVOIR",
+    "RESER": "RESER",
     "MAIN": "OFFICE",
     "OFFIC": "OFFICE",
     "ACT_NULL": "ACT_NULL",
@@ -11530,6 +11650,105 @@
     "WIZAR": "WIZARD",
     "YES": "YES",
     "NEWS": "NEWS",
-    "VERSI": "ACT_VERSION"
+    "VERSI": "ACT_VERSION",
+    "NO_OBJECT": "NO_OBJECT",
+    "KEYS": "KEYS",
+    "KEY": "KEYS",
+    "LAMP": "LAMP",
+    "LANTE": "LAMP",
+    "GRATE": "GRATE",
+    "CAGE": "CAGE",
+    "ROD": "ROD2",
+    "BIRD": "BIRD",
+    "DOOR": "DOOR",
+    "PILLO": "PILLOW",
+    "VELVE": "PILLOW",
+    "SNAKE": "SNAKE",
+    "FISSU": "FISSURE",
+    "TABLE": "OBJ_13",
+    "CLAM": "CLAM",
+    "OYSTE": "OYSTER",
+    "MAGAZ": "MAGAZINE",
+    "ISSUE": "MAGAZINE",
+    "SPELU": "MAGAZINE",
+    "\"SPEL": "MAGAZINE",
+    "DWARF": "DWARF",
+    "DWARV": "DWARF",
+    "KNIFE": "KNIFE",
+    "KNIVE": "KNIFE",
+    "FOOD": "FOOD",
+    "RATIO": "FOOD",
+    "BOTTL": "BOTTLE",
+    "JAR": "BOTTLE",
+    "WATER": "WATER",
+    "H2O": "WATER",
+    "OIL": "OIL",
+    "MIRRO": "MIRROR",
+    "PLANT": "PLANT2",
+    "BEANS": "PLANT",
+    "STALA": "OBJ_26",
+    "SHADO": "OBJ_27",
+    "FIGUR": "OBJ_27",
+    "WINDO": "OBJ_27",
+    "AXE": "AXE",
+    "DRAWI": "OBJ_29",
+    "PIRAT": "OBJ_30",
+    "GENIE": "OBJ_30",
+    "DJINN": "OBJ_30",
+    "DRAGO": "DRAGON",
+    "CHASM": "CHASM",
+    "TROLL": "TROLL2",
+    "BEAR": "BEAR",
+    "MESSA": "MESSAG",
+    "VOLCA": "VOLCANO",
+    "GEYSE": "VOLCANO",
+    "MACHI": "VEND",
+    "VENDI": "VEND",
+    "BATTE": "BATTERY",
+    "CARPE": "OBJ_40",
+    "MOSS": "OBJ_40",
+    "OGRE": "OGRE",
+    "URN": "URN",
+    "CAVIT": "CAVITY",
+    "BLOOD": "BLOOD",
+    "APPEN": "RABBITFOOT",
+    "LEPOR": "RABBITFOOT",
+    "MUD": "OBJ_47",
+    "NOTE": "OBJ_48",
+    "SIGN": "SIGN",
+    "GOLD": "NUGGET",
+    "NUGGE": "NUGGET",
+    "DIAMO": "OBJ_51",
+    "SILVE": "OBJ_52",
+    "BARS": "OBJ_52",
+    "JEWEL": "OBJ_53",
+    "COINS": "COINS",
+    "CHEST": "CHEST",
+    "BOX": "CHEST",
+    "TREAS": "CHEST",
+    "EGGS": "EGGS",
+    "EGG": "EGGS",
+    "NEST": "EGGS",
+    "TRIDE": "TRIDENT",
+    "VASE": "VASE",
+    "MING": "VASE",
+    "SHARD": "VASE",
+    "POTTE": "VASE",
+    "EMERA": "EMERALD",
+    "PLATI": "PYRAMID",
+    "PYRAM": "PYRAMID",
+    "PEARL": "PEARL",
+    "RUG": "RUG",
+    "PERSI": "RUG",
+    "SPICE": "OBJ_63",
+    "CHAIN": "CHAIN",
+    "RUBY": "RUBY",
+    "JADE": "JADE",
+    "NECKL": "JADE",
+    "AMBER": "AMBER",
+    "GEMST": "AMBER",
+    "SAPPH": "SAPPH",
+    "EBONY": "OBJ_69",
+    "STATU": "OBJ_69"
   }
 }
