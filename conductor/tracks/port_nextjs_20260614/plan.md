@@ -1,7 +1,7 @@
 # Implementation Plan: Port Open Adventure to NextJS
 
 ## Phase 1: Build-Time Data Generation
-- [~] Task: Set up build scripts
+- [x] Task: Set up build scripts 6204446
     - [ ] Create `scripts/parse-yaml.ts` to read `open-adventure/adventure.yaml`.
     - [ ] Add `js-yaml` or similar dependency.
 - [ ] Task: Define TypeScript types for game data
