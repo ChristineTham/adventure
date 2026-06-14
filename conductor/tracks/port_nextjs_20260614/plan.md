@@ -25,7 +25,7 @@
 
 ## Phase 3: Core Game Logic (The Big Port)
 
-## Phase 3: Core Game Logic (The Big Port)
+## Phase 3: Core Game Logic (The Big Port) [checkpoint: c1c7236]
 - [x] Task: Port Movement & Navigation ddc9ffb
     - [ ] Translate logic for moving between rooms based on `motions`.
     - [ ] Add tests for movement commands (N, S, E, W).
@@ -35,7 +35,7 @@
 - [x] Task: Port Special Actions f89763c
     - [ ] Translate complex verbs from `actions.c` (e.g., ATTACK, FILL, THROW).
     - [ ] Add tests for special actions.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Core Game Logic (The Big Port)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Core Game Logic (The Big Port)' (Protocol in workflow.md) c1c7236
 
 ## Phase 4: User Interface (Modern Hybrid)
 - [ ] Task: Main Layout
