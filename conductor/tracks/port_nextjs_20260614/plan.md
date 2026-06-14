@@ -29,7 +29,7 @@
 - [x] Task: Port Movement & Navigation ddc9ffb
     - [ ] Translate logic for moving between rooms based on `motions`.
     - [ ] Add tests for movement commands (N, S, E, W).
-- [~] Task: Port Object Interaction
+- [x] Task: Port Object Interaction e366994
     - [ ] Translate logic for taking, dropping, and examining objects.
     - [ ] Add tests for inventory commands.
 - [ ] Task: Port Special Actions
