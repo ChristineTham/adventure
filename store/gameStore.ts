@@ -19,7 +19,7 @@ interface GameState {
   reset: () => void;
 }
 
-const initialState = {
+const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLocations' | 'objectStates' | 'history' | 'flags'> = {
   currentLocation: '',
   inventory: [],
   objectLocations: {},
@@ -31,25 +31,25 @@ const initialState = {
 export const useGameStore = create<GameState>((set) => ({
   ...initialState,
 
-  setLocation: (location) => set({ currentLocation: location }),
+  setLocation: (location: string): void => set({ currentLocation: location }),
   
-  setObjectLocation: (objectId, locationId) =>
-    set((state) => ({ objectLocations: { ...state.objectLocations, [objectId]: locationId } })),
+  setObjectLocation: (objectId: string, locationId: string): void =>
+    set((state: GameState) => ({ objectLocations: { ...state.objectLocations, [objectId]: locationId } })),
   
-  setObjectState: (objectId, state) =>
-    set((s) => ({ objectStates: { ...s.objectStates, [objectId]: state } })),
+  setObjectState: (objectId: string, state: number): void =>
+    set((s: GameState) => ({ objectStates: { ...s.objectStates, [objectId]: state } })),
   
-  addToInventory: (item) => 
-    set((state) => ({ inventory: [...state.inventory, item] })),
+  addToInventory: (item: string): void => 
+    set((state: GameState) => ({ inventory: [...state.inventory, item] })),
     
-  removeFromInventory: (item) =>
-    set((state) => ({ inventory: state.inventory.filter((i) => i !== item) })),
+  removeFromInventory: (item: string): void =>
+    set((state: GameState) => ({ inventory: state.inventory.filter((i: string) => i !== item) })),
     
-  addMessage: (message) =>
-    set((state) => ({ history: [...state.history, message] })),
+  addMessage: (message: string): void =>
+    set((state: GameState) => ({ history: [...state.history, message] })),
     
-  setFlag: (flag, value) =>
-    set((state) => ({ flags: { ...state.flags, [flag]: value } })),
+  setFlag: (flag: string, value: boolean | number): void =>
+    set((state: GameState) => ({ flags: { ...state.flags, [flag]: value } })),
     
-  reset: () => set(initialState),
+  reset: (): void => set(initialState),
 }));

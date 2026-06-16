@@ -1,10 +1,10 @@
 import { useGameStore } from '../store/gameStore';
 import gameDataRaw from '../data/game-data.json';
-import { GameData } from '../types/game';
+import { GameData, GameLocation, ObjectData, TravelRule } from '../types/game';
 
-const gameData = gameDataRaw as unknown as GameData;
+const gameData: GameData = gameDataRaw as unknown as GameData;
 
-export function initializeGame() {
+export function initializeGame(): void {
   const store = useGameStore.getState();
   store.reset();
   
@@ -13,49 +13,51 @@ export function initializeGame() {
 
   // Initialize object locations and states
   for (const [key, obj] of Object.entries(gameData.objects)) {
-    store.setObjectState(key, 0);
-    if (obj.locations && obj.locations.length > 0) {
+    const objectKey: string = key;
+    const objectData: ObjectData = obj;
+    store.setObjectState(objectKey, 0);
+    if (objectData.locations && objectData.locations.length > 0) {
       // For now, take the first location. 
       // Open Adventure objects can have up to 2 locations (e.g. grate)
-      store.setObjectLocation(key, obj.locations[0]);
+      store.setObjectLocation(objectKey, objectData.locations[0]);
     }
   }
   
   // Add initial long description
-  const startLoc = gameData.locations['LOC_START'];
+  const startLoc: GameLocation | undefined = gameData.locations['LOC_START'];
   if (startLoc && startLoc.description.long) {
     store.addMessage(startLoc.description.long);
   }
 }
 
-export function processCommand(input: string) {
+export function processCommand(input: string): void {
   const store = useGameStore.getState();
-  const rawInput = input.trim().toUpperCase();
+  const rawInput: string = input.trim().toUpperCase();
   if (!rawInput) return;
 
-  const parts = rawInput.split(/\s+/);
-  const command = parts[0];
-  const objName = parts[1]; // Handle simple two-word commands
+  const parts: string[] = rawInput.split(/\s+/);
+  const command: string = parts[0];
+  const objName: string | undefined = parts[1]; // Handle simple two-word commands
 
   store.addMessage(`> ${input}`);
 
   // 1. Resolve command to a motion or action key using vocabulary
-  const resolvedKey = gameData.vocabulary[command];
+  const resolvedKey: string | undefined = gameData.vocabulary[command];
 
   // 2. Handle LOOK
   if (command === 'LOOK' || command === 'L' || resolvedKey === 'LOOK') {
-    const loc = gameData.locations[store.currentLocation];
+    const loc: GameLocation | undefined = gameData.locations[store.currentLocation];
     if (loc && loc.description.long) {
       store.addMessage(loc.description.long);
       
       // List visible objects
-      const visibleObjects = Object.entries(store.objectLocations)
-        .filter(([_, locId]) => locId === store.currentLocation);
+      const visibleObjects: [string, string][] = Object.entries(store.objectLocations)
+        .filter(([, locId]) => locId === store.currentLocation);
       
-      visibleObjects.forEach(([objId, _]) => {
-        const obj = gameData.objects[objId];
-        const state = store.objectStates[objId] || 0;
-        if (obj.descriptions && obj.descriptions[state]) {
+      visibleObjects.forEach(([objId]) => {
+        const obj: ObjectData | undefined = gameData.objects[objId];
+        const state: number = store.objectStates[objId] || 0;
+        if (obj && obj.descriptions && obj.descriptions[state]) {
           store.addMessage(obj.descriptions[state]);
         }
       });
@@ -70,7 +72,7 @@ export function processCommand(input: string) {
       return;
     }
 
-    const resolvedObjId = gameData.vocabulary[objName];
+    const resolvedObjId: string | undefined = gameData.vocabulary[objName];
     if (!resolvedObjId || !gameData.objects[resolvedObjId]) {
       store.addMessage("I see no such thing here.");
       return;
@@ -95,7 +97,7 @@ export function processCommand(input: string) {
       return;
     }
 
-    const resolvedObjId = gameData.vocabulary[objName];
+    const resolvedObjId: string | undefined = gameData.vocabulary[objName];
     if (!resolvedObjId || !store.inventory.includes(resolvedObjId)) {
       store.addMessage("You aren't carrying that!");
       return;
@@ -114,8 +116,10 @@ export function processCommand(input: string) {
     } else {
       store.addMessage("You are currently holding the following:");
       store.inventory.forEach(objId => {
-        const obj = gameData.objects[objId];
-        store.addMessage(` - ${obj.inventory}`);
+        const obj: ObjectData | undefined = gameData.objects[objId];
+        if (obj) {
+          store.addMessage(` - ${obj.inventory}`);
+        }
       });
     }
     return;
@@ -128,9 +132,9 @@ export function processCommand(input: string) {
       return;
     }
     
-    const loc = gameData.locations[store.currentLocation];
+    const loc: GameLocation | undefined = gameData.locations[store.currentLocation];
     if (loc?.conditions['FLUID']) {
-      const isOily = loc.conditions['OILY'];
+      const isOily: boolean | number = loc.conditions['OILY'];
       store.setObjectState('BOTTLE', isOily ? 2 : 0); // 2: Oil, 0: Water
       store.addMessage("Your bottle is now full of " + (isOily ? "oil." : "water."));
     } else {
@@ -150,25 +154,25 @@ export function processCommand(input: string) {
   }
 
   // 8. Handle Movement
-  const currentLocation = gameData.locations[store.currentLocation];
+  const currentLocation: GameLocation | undefined = gameData.locations[store.currentLocation];
   if (currentLocation && resolvedKey) {
     // Find a rule where one of the verbs matches our resolvedKey
-    const travelRule = currentLocation.travel.find((rule) => 
+    const travelRule: TravelRule | undefined = currentLocation.travel.find((rule) => 
       rule.verbs.includes(resolvedKey)
     );
 
     if (travelRule) {
       const [actionType, target] = travelRule.action;
       if (actionType === 'goto') {
-        const nextLocId = target as string;
+        const nextLocId: string = target as string;
         store.setLocation(nextLocId);
-        const nextLoc = gameData.locations[nextLocId];
+        const nextLoc: GameLocation | undefined = gameData.locations[nextLocId];
         if (nextLoc && nextLoc.description.long) {
           store.addMessage(nextLoc.description.long);
         }
         return;
       } else if (actionType === 'speak') {
-        const msg = gameData.arbitrary_messages[target as string];
+        const msg: string | string[] | undefined = gameData.arbitrary_messages[target as string];
         if (msg) {
           store.addMessage(Array.isArray(msg) ? msg[0] : msg);
         }

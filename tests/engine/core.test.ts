@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-// @ts-ignore
+// @ts-expect-error: module resolution issue in tests
 import { initializeGame, processCommand } from '../../engine/core';
-// @ts-ignore
+// @ts-expect-error: module resolution issue in tests
 import { useGameStore } from '../../store/gameStore';
 
 describe('Game Engine Core', () => {

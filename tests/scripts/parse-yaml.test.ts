@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import fs from 'fs';
 import path from 'path';
-// @ts-ignore
+// @ts-expect-error: module resolution issue in tests
 import { parseAdventureYaml, generateGameData } from '../../scripts/parse-yaml';
 
 describe('parseAdventureYaml', () => {

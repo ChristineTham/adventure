@@ -3,7 +3,7 @@ export interface Words {
   oldstyle?: boolean;
 }
 
-export interface Motion extends Words {}
+export type Motion = Words;
 
 export interface Action extends Words {
   message?: string;
@@ -18,13 +18,25 @@ export interface Hint {
   hint: string;
 }
 
+export type TravelCondition = 
+  | ['pct', number]
+  | ['carry', string]
+  | ['with', string]
+  | ['not', string, string | number]
+  | ['nodwarves'];
+
 export interface TravelRule {
   verbs: string[];
   action: [string, string | number];
-  condition?: any[]; // Simplified for now, will refine as needed
+  condition?: TravelCondition; 
 }
 
-export interface Location {
+export interface PlayerClass {
+  threshold: number;
+  message: string;
+}
+
+export interface GameLocation {
   description: {
     long: string | null;
     short: string | null;
@@ -52,11 +64,11 @@ export interface GameData {
   motions: Record<string, Motion>;
   actions: Record<string, Action>;
   hints: Hint[];
-  locations: Record<string, Location>;
+  locations: Record<string, GameLocation>;
   objects: Record<string, ObjectData>;
   arbitrary_messages: Record<string, string | string[]>;
   dwarflocs: string[];
-  classes: any[];
+  classes: PlayerClass[];
   turn_thresholds: Record<string, string>;
   obituaries: string[];
   vocabulary: Record<string, string>;

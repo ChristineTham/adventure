@@ -1,21 +1,54 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
+import { GameData, ObjectData, GameLocation, PlayerClass, Motion, Action, TravelCondition, Hint } from '../types/game';
 
-export function parseAdventureYaml() {
-  const yamlPath = path.resolve(process.cwd(), 'open-adventure/adventure.yaml');
-  const fileContents = fs.readFileSync(yamlPath, 'utf8');
-  const data = yaml.load(fileContents) as any;
+interface RawObjectData extends Partial<ObjectData> {
+  words?: string[];
+}
+
+interface RawTravelRule {
+  verbs?: string[];
+  action?: [string, string | number];
+  condition?: TravelCondition;
+}
+
+interface RawLocation extends Partial<Omit<GameLocation, 'travel'>> {
+  travel?: RawTravelRule[];
+}
+
+interface RawGameData {
+  motions: Record<string, Motion>;
+  locations: Record<string, RawLocation>;
+  actions: Record<string, Action>;
+  objects: Record<string, RawObjectData>;
+  arbitrary_messages: Record<string, string | string[]>;
+  turn_thresholds: Record<string, string>;
+  hints: Hint[];
+  dwarflocs: string[];
+  classes: (PlayerClass | Record<string, string>)[];
+  obituaries: string[];
+}
+
+export function parseAdventureYaml(): GameData {
+  const yamlPath: string = path.resolve(process.cwd(), 'open-adventure/adventure.yaml');
+  const fileContents: string = fs.readFileSync(yamlPath, 'utf8');
+  const rawData: RawGameData = yaml.load(fileContents) as RawGameData;
 
   // Flatten !!omap arrays into objects
-  const omapKeys = ['motions', 'locations', 'actions', 'objects', 'arbitrary_messages', 'turn_thresholds'];
+  const omapKeys = ['motions', 'locations', 'actions', 'objects', 'arbitrary_messages', 'turn_thresholds'] as const;
   for (const key of omapKeys) {
-    if (Array.isArray(data[key])) {
-      data[key] = data[key].reduce((acc: any, item: any) => {
-        const itemKey = Object.keys(item)[0];
-        acc[itemKey] = item[itemKey];
+    const value: unknown = rawData[key];
+    if (Array.isArray(value)) {
+      const flattened: Record<string, unknown> = value.reduce((acc: Record<string, unknown>, item: unknown) => {
+        const itemObj: Record<string, unknown> = item as Record<string, unknown>;
+        const itemKey: string = Object.keys(itemObj)[0];
+        acc[itemKey] = itemObj[itemKey];
         return acc;
       }, {});
+      
+      // Use a type-safe way to update rawData
+      (rawData as unknown as Record<string, unknown>)[key] = flattened;
     }
   }
 
@@ -23,73 +56,102 @@ export function parseAdventureYaml() {
   const vocabulary: Record<string, string> = {};
   
   // From motions
-  for (const [key, motion] of Object.entries(data.motions)) {
-    const m = motion as any;
+  const motions: Record<string, Motion> = rawData.motions;
+  for (const [key, motion] of Object.entries(motions)) {
     vocabulary[key.toUpperCase()] = key;
-    if (m.words) {
-      m.words.forEach((w: string) => {
+    if (Array.isArray(motion.words)) {
+      motion.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      m.words = [key];
+      motion.words = [key];
     }
   }
 
   // From actions
-  for (const [key, action] of Object.entries(data.actions)) {
-    const a = action as any;
+  const actions: Record<string, Action> = rawData.actions;
+  for (const [key, action] of Object.entries(actions)) {
     vocabulary[key.toUpperCase()] = key;
-    if (a.words) {
-      a.words.forEach((w: string) => {
+    if (Array.isArray(action.words)) {
+      action.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      a.words = [key];
+      action.words = [key];
     }
   }
 
   // From objects
-  for (const [key, obj] of Object.entries(data.objects)) {
-    const o = obj as any;
+  const objects: Record<string, RawObjectData> = rawData.objects;
+  for (const [key, obj] of Object.entries(objects)) {
     vocabulary[key.toUpperCase()] = key;
-    if (o.words) {
-      o.words.forEach((w: string) => {
+    if (Array.isArray(obj.words)) {
+      obj.words.forEach((w: string) => {
         vocabulary[w.toUpperCase()] = key;
       });
     } else {
-      o.words = [key];
+      obj.words = [key];
     }
 
     // Normalize locations to array
-    if (o.locations) {
-      if (typeof o.locations === 'string') {
-        o.locations = [o.locations];
+    if (obj.locations) {
+      if (typeof obj.locations === 'string') {
+        obj.locations = [obj.locations];
       }
     } else {
-      o.locations = [];
+      obj.locations = [];
     }
   }
 
   // Normalize travel rule verbs
-  for (const loc of Object.values(data.locations)) {
-    const l = loc as any;
-    if (l.travel) {
-      l.travel.forEach((rule: any) => {
-        if (rule.verbs) {
+  const locations: Record<string, RawLocation> = rawData.locations;
+  for (const loc of Object.values(locations)) {
+    const travel: RawTravelRule[] | undefined = loc.travel;
+    if (Array.isArray(travel)) {
+      travel.forEach((rule: RawTravelRule) => {
+        if (Array.isArray(rule.verbs)) {
           rule.verbs = rule.verbs.map((v: string) => {
-            const key = vocabulary[v.toUpperCase()];
-            if (!key) {
+            const vocabularyKey: string | undefined = vocabulary[v.toUpperCase()];
+            if (!vocabularyKey) {
               console.warn(`Warning: Verb ${v} not found in vocabulary`);
               return v;
             }
-            return key;
+            return vocabularyKey;
           });
         }
       });
     }
   }
 
-  data.vocabulary = vocabulary;
+  // Normalize classes (flattens if it was an omap, though classes usually isn't)
+  const playerClasses: PlayerClass[] = [];
+  if (Array.isArray(rawData.classes)) {
+    rawData.classes.forEach((c: PlayerClass | Record<string, string>) => {
+      if (typeof c === 'object' && c !== null && !('threshold' in c)) {
+        const thresholdStr: string = Object.keys(c)[0];
+        const threshold: number = parseInt(thresholdStr);
+        const message: string = Object.values(c)[0];
+        playerClasses.push({ threshold, message });
+      } else {
+        playerClasses.push(c as PlayerClass);
+      }
+    });
+  }
+
+  const data: GameData = {
+    motions: rawData.motions,
+    actions: rawData.actions,
+    hints: rawData.hints,
+    locations: rawData.locations as Record<string, GameLocation>,
+    objects: rawData.objects as Record<string, ObjectData>,
+    arbitrary_messages: rawData.arbitrary_messages,
+    dwarflocs: rawData.dwarflocs,
+    classes: playerClasses,
+    turn_thresholds: rawData.turn_thresholds,
+    obituaries: rawData.obituaries,
+    vocabulary: vocabulary
+  };
+
   return data;
 }
 

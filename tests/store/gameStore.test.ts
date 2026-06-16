@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-// @ts-ignore
+// @ts-expect-error: module resolution issue in tests
 import { useGameStore } from '../../store/gameStore';
 
 describe('gameStore', () => {

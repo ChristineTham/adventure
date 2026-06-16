@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useGameStore } from '@/store/gameStore';
 import { initializeGame, processCommand } from '@/engine/core';
 import gameDataRaw from '@/data/game-data.json';
-import { GameData } from '@/types/game';
+import { GameData, GameLocation, TravelRule } from '@/types/game';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -17,13 +17,20 @@ const gameData = gameDataRaw as unknown as GameData;
 
 export function GameClient() {
   const { history, currentLocation, objectLocations, inventory } = useGameStore();
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState<string>('');
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     initializeGame();
   }, []);
 
-  const handleSubmit = (e?: React.FormEvent) => {
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [history]);
+
+  const handleSubmit = (e?: React.FormEvent): void => {
     e?.preventDefault();
     if (input.trim()) {
       processCommand(input);
@@ -31,25 +38,25 @@ export function GameClient() {
     }
   };
 
-  const handleAction = (cmd: string) => {
+  const handleAction = (cmd: string): void => {
     processCommand(cmd);
   };
 
-  const visibleObjects = Object.entries(objectLocations)
-    .filter(([_, locId]) => locId === currentLocation);
+  const visibleObjects: [string, string][] = Object.entries(objectLocations)
+    .filter(([, locId]) => locId === currentLocation);
 
   // Helper to check if a direction is valid for the current location
-  const isDirectionValid = (dir: string) => {
-    const loc = gameData.locations[currentLocation];
+  const isDirectionValid = (dir: string): boolean => {
+    const loc: GameLocation | undefined = gameData.locations[currentLocation];
     if (!loc) return false;
-    const resolvedKey = gameData.vocabulary[dir];
+    const resolvedKey: string | undefined = gameData.vocabulary[dir];
     if (!resolvedKey) return false;
-    return loc.travel.some(rule => rule.verbs.includes(resolvedKey));
+    return loc.travel.some((rule: TravelRule) => rule.verbs.includes(resolvedKey));
   };
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 h-screen max-h-screen p-4 bg-zinc-950 text-zinc-100 font-mono gap-4">
-      {/* ... (Sidebar remains the same) */}
+      {/* Sidebar - Location & Inventory */}
       <div className="hidden lg:flex flex-col gap-4">
         <Card className="border-zinc-800 bg-zinc-900 shadow-xl">
           <CardHeader className="pb-3">
@@ -92,7 +99,7 @@ export function GameClient() {
         </Card>
       </div>
 
-      {/* ... (Main Terminal remains the same) */}
+      {/* Main Terminal */}
       <Card className="lg:col-span-2 flex flex-col border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
           <CardTitle className="text-xl font-bold tracking-tight text-zinc-100 flex items-center gap-2">
@@ -111,6 +118,7 @@ export function GameClient() {
                   {msg}
                 </div>
               ))}
+              <div ref={scrollRef} />
             </div>
           </ScrollArea>
         </CardContent>
@@ -162,7 +170,7 @@ export function GameClient() {
               <div className="text-xs text-zinc-500 text-center italic">Nothing interesting here</div>
             ) : (
               <div className="space-y-2">
-                {visibleObjects.map(([objId, _]) => (
+                {visibleObjects.map(([objId]) => (
                   <Button 
                     key={objId} 
                     variant="outline" 
