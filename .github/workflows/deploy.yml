@@ -52,8 +52,6 @@ jobs:
           static_site_generator: next
       - name: Install dependencies
         run: pnpm install
-      - name: Generate game data
-        run: pnpm prebuild
       - name: Build with Next.js
         run: pnpm build
       - name: Upload artifact

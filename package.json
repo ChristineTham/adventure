@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest",
+    "test": "vitest --run",
     "clean": "rm -rf .next out node_modules"
   },
   "dependencies": {

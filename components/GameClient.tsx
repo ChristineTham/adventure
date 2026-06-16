@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { formatLocationId } from '@/lib/utils';
 
 import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, ArrowUpLeft, ArrowUpRight, ArrowDownLeft, ArrowDownRight, Compass, Package, MapPin } from 'lucide-react';
 
@@ -65,7 +66,7 @@ export function GameClient() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-sm font-medium truncate">{currentLocation}</div>
+            <div className="text-sm font-medium truncate">{formatLocationId(currentLocation)}</div>
           </CardContent>
         </Card>
 
@@ -106,7 +107,7 @@ export function GameClient() {
              ADVENTURE
           </CardTitle>
           <div className="lg:hidden text-xs text-zinc-400">
-            {currentLocation}
+            {formatLocationId(currentLocation)}
           </div>
         </CardHeader>
         <Separator className="bg-zinc-800" />
