@@ -11,14 +11,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { formatLocationId } from '@/lib/utils';
+import { GameMap } from './GameMap';
 
-import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, ArrowUpLeft, ArrowUpRight, ArrowDownLeft, ArrowDownRight, Compass, Package, MapPin } from 'lucide-react';
+import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, ArrowUpLeft, ArrowUpRight, ArrowDownLeft, ArrowDownRight, Compass, Package, MapPin, Map } from 'lucide-react';
 
 const gameData = gameDataRaw as unknown as GameData;
 
 export function GameClient() {
   const { history, currentLocation, objectLocations, inventory } = useGameStore();
   const [input, setInput] = useState<string>('');
+  const [showMap, setShowMap] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -59,6 +61,13 @@ export function GameClient() {
     <div className="grid grid-cols-1 lg:grid-cols-4 h-screen max-h-screen p-4 bg-zinc-950 text-zinc-100 font-mono gap-4">
       {/* Sidebar - Location & Inventory */}
       <div className="hidden lg:flex flex-col gap-4">
+        <Button 
+          onClick={() => setShowMap(true)}
+          className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold h-12 gap-2 shadow-lg"
+        >
+          <Map size={18} /> SHOW MAP
+        </Button>
+
         <Card className="border-zinc-800 bg-zinc-900 shadow-xl">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm font-bold flex items-center gap-2 text-blue-400">
@@ -186,6 +195,14 @@ export function GameClient() {
           </CardContent>
         </Card>
       </div>
+
+      {showMap && (
+        <GameMap 
+          gameData={gameData} 
+          currentLocation={currentLocation} 
+          onClose={() => setShowMap(false)} 
+        />
+      )}
     </div>
   );
 }
