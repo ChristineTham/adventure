@@ -9,6 +9,7 @@ A modern web-based port of the classic Crowther/Woods Colossal Cave Adventure 2.
 
 ## Key Features
 - **Modern Hybrid UI:** Blends the classic text output with a modern interface utilizing Tailwind CSS and shadcn/ui components for ease of play.
+- **Immersive Visuals:** Enhances the classic text descriptions with Studio Ghibli-style, AI-generated location images displayed in a dedicated panel.
 - **Client-Side Engine:** The entire game engine runs in the browser, powered by a modern refactoring of the original C logic into functional/object-oriented TypeScript.
 - **Build-Time Content Generation:** Game data is sourced from the original `adventure.yaml` and compiled into static TypeScript assets during the build step.
 - **State Management:** Uses Zustand for lightweight, robust game state handling within the React component tree.

@@ -12,3 +12,4 @@
 ## Branding and Visuals
 - **Clean & Modern Retro:** Use a clean, modern design system (Tailwind v4 + shadcn/ui) that evokes nostalgia without resorting to forced "retro" fonts or scanlines unless requested as a theme.
 - **Visual Consistency:** Maintain consistency with the original SVG and PNG assets where applicable, integrating them smoothly into the React UI.
+- **Immersive Postcards:** Use AI-generated Studio Ghibli-style "postcards" to provide a whimsical visual interpretation of location descriptions, enhancing immersion while keeping the text as the primary source of truth.

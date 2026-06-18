@@ -12,7 +12,7 @@
 
 ## Data and Configuration
 - **Source of Truth:** `data/adventure.yaml`
-- **Processing:** Build-time scripts (Node.js/TypeScript) to parse the YAML and generate static JSON or TypeScript modules for the game engine to consume.
+- **Processing:** Build-time scripts (Node.js/TypeScript) to parse the YAML and generate static JSON. Includes an AI asset generation pipeline utilizing the Google GenAI SDK (Imagen 4.0 / Gemini 3.1 Flash Image) for generating location-based visuals.
 
 ## Testing and Tooling
 - **Linting/Formatting:** ESLint and Prettier
