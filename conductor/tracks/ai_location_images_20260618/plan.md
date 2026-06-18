@@ -1,10 +1,10 @@
 # Implementation Plan
 
-## Phase 1: Setup & Evaluation
-- [ ] Task: Evaluate and define Nano Banana 2 prompt templates to generate 3:2 Studio Ghibli style images. Generate a small sample set (e.g., `LOC_BUILDING`, `LOC_VALLEY`).
-- [ ] Task: Create the `data/images/` directory and add the sample images.
-- [ ] Task: Update the build script (`scripts/parse-yaml.ts`) to automatically copy images from `data/images/` to a serving directory like `public/locations/` during the `prebuild` step.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Setup & Evaluation' (Protocol in workflow.md)
+## Phase 1: Setup & Evaluation [checkpoint: da79c5d]
+- [x] Task: Evaluate and define Nano Banana 2 prompt templates to generate 3:2 Studio Ghibli style images. Generate a small sample set (e.g., `LOC_BUILDING`, `LOC_VALLEY`).
+- [x] Task: Create the `data/images/` directory and add the sample images.
+- [x] Task: Update the build script (`scripts/parse-yaml.ts`) to automatically copy images from `data/images/` to a serving directory like `public/locations/` during the `prebuild` step.
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Setup & Evaluation' (Protocol in workflow.md)
 
 ## Phase 2: UI Implementation
 - [ ] Task: Write failing unit tests for a new `LocationImage` component.
