@@ -13,7 +13,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 2: UI Implementation' (Protocol in workflow.md)
 
 ## Phase 3: Full Asset Generation (Batch Process)
-- [ ] Task: Generate the remaining images for all locations defined in `adventure.yaml` using the established prompts.
-- [ ] Task: Optimize and save all generated images to `data/images/`.
-- [ ] Task: Playtest to ensure images load correctly upon entering each room and fallback gracefully if an image is missing.
-- [ ] Task: Conductor - User Manual Verification 'Phase 3: Full Asset Generation' (Protocol in workflow.md)
+- [x] Task: Generate the remaining images for all locations defined in `adventure.yaml` using the established prompts.
+- [x] Task: Optimize and save all generated images to `data/images/`.
+- [x] Task: Playtest to ensure images load correctly upon entering each room and fallback gracefully if an image is missing.
+- [x] Task: Conductor - User Manual Verification 'Phase 3: Full Asset Generation' (Protocol in workflow.md)
