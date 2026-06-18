@@ -28,6 +28,12 @@ async function generateLocationImages() {
   console.log(`Generating images for: ${locationsToProcess.join(', ')}`);
 
   for (const locId of locationsToProcess) {
+    const filePath = path.join(imagesDir, `${locId}.jpg`);
+    if (fs.existsSync(filePath)) {
+      console.log(`Skipping ${locId}.jpg (already exists)`);
+      continue;
+    }
+
     const loc = gameData.locations[locId];
     if (!loc) {
       console.warn(`Location ${locId} not found in game data.`);
@@ -50,7 +56,10 @@ async function generateLocationImages() {
       exitDescription = `Paths or exits lead to the ${uniqueExits.join(', ').toLowerCase()}.`;
     }
 
-    const prompt = `A Studio Ghibli style hand-painted postcard of ${description} ${exitDescription} Lush colours, whimsical atmosphere, highly detailed, soft natural lighting.`;
+    const prompt = `A Studio Ghibli style hand-painted postcard of ${description} ${exitDescription} Lush colours, whimsical atmosphere, highly detailed, soft natural lighting. 
+First-person view, no characters or players visible in the scene. 
+IMPORTANT: The image must not contain any text, words, or letters. Purely visual scene. Arrow signs are permitted if necessary for direction, but no text on them. 
+Aspect ratio: 3:2.`;
     
     console.log(`Prompt for ${locId}:\n${prompt}\n`);
 
@@ -58,6 +67,9 @@ async function generateLocationImages() {
       const response = await ai.models.generateContent({
         model: 'gemini-3.1-flash-image',
         contents: prompt,
+        config: {
+          aspectRatio: '3:2',
+        } as any,
       });
 
       const base64Image = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
