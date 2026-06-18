@@ -166,6 +166,24 @@ export function generateGameData() {
   }
 
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+
+  // Copy images
+  const srcDir = path.resolve(process.cwd(), 'data/images');
+  const destDir = path.resolve(process.cwd(), 'public/locations');
+
+  if (fs.existsSync(srcDir)) {
+    if (!fs.existsSync(destDir)) {
+      fs.mkdirSync(destDir, { recursive: true });
+    }
+
+    const files = fs.readdirSync(srcDir);
+    files.forEach(file => {
+      if (file.match(/\.(webp|jpg|jpeg|png)$/i)) {
+        fs.copyFileSync(path.join(srcDir, file), path.join(destDir, file));
+      }
+    });
+    console.log(`Copied ${files.length} images to public/locations/`);
+  }
 }
 
 // If run directly
