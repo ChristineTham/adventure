@@ -1,4 +1,8 @@
-# Open Adventure (Next.js Port)
+# Colossal Cave Adventure
+
+[![Github Pages](https://github.com/ChristineTham/adventure/actions/workflows/deploy.yml/badge.svg)](https://github.com/ChristineTham/adventure/actions/workflows/deploy.yml)
+
+![Open Adventure Screenshot](screenshot.png)
 
 A modern, strictly typed TypeScript port of the classic Crowther/Woods Colossal Cave Adventure 2.5, built with Next.js 16 and React 19.
 

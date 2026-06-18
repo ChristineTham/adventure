@@ -150,7 +150,7 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .attr('markerHeight', 6)
       .append('path')
       .attr('d', 'M 0,-5 L 10,0 L 0,5')
-      .attr('fill', '#60a5fa');
+      .attr('fill', 'var(--map-link)');
 
     // Draw links
     const link = g.append('g')
@@ -158,7 +158,7 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .selectAll('path')
       .data(graphData.links)
       .enter().append('path')
-      .attr('stroke', '#3f3f46')
+      .attr('stroke', 'var(--map-link)')
       .attr('stroke-opacity', showFullMap ? 0.3 : 0.8)
       .attr('stroke-width', showFullMap ? 1 : 2)
       .attr('marker-end', 'url(#arrowhead)');
@@ -180,8 +180,8 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .attr('width', 80)
       .attr('height', 30)
       .attr('rx', 4)
-      .attr('fill', d => d.isCurrent ? '#1e3a8a' : '#18181b')
-      .attr('stroke', d => d.isCurrent ? '#60a5fa' : '#3f3f46')
+      .attr('fill', d => d.isCurrent ? 'var(--map-node-current)' : 'var(--map-node)')
+      .attr('stroke', d => d.isCurrent ? 'var(--map-node-current-border)' : 'var(--map-node-border)')
       .attr('stroke-width', 2);
 
     // Node labels
@@ -189,7 +189,7 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .text(d => d.label)
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'middle')
-      .attr('fill', '#e4e4e7')
+      .attr('fill', d => d.isCurrent ? 'var(--map-text-current)' : 'var(--map-text)')
       .attr('font-size', showFullMap ? '8px' : '10px')
       .attr('font-family', 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace')
       .style('pointer-events', 'none');
@@ -287,15 +287,15 @@ simulation.on('tick', () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 lg:p-8">
-      <div className="relative w-full h-full bg-zinc-950 border border-zinc-800 rounded-xl shadow-2xl flex flex-col overflow-hidden">
+      <div className="relative w-full h-full bg-background border border-border rounded-xl shadow-2xl flex flex-col overflow-hidden">
         {/* Header */}
-        <div className="p-4 border-b border-zinc-800 flex items-center justify-between bg-zinc-900/50">
+        <div className="p-4 border-b border-border flex items-center justify-between bg-muted/50">
           <div className="flex items-center gap-4">
-            <h2 className="text-lg font-bold text-zinc-100 flex items-center gap-2">
-              <Maximize2 size={20} className="text-blue-400" />
+            <h2 className="text-lg font-bold text-foreground flex items-center gap-2">
+              <Maximize2 size={20} className="text-primary" />
               MAP: {showFullMap ? 'FULL DUNGEON' : 'LOCAL SURROUNDINGS'}
             </h2>
-            <div className="text-xs text-zinc-500 bg-zinc-800 px-2 py-1 rounded">
+            <div className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
               Zoom: {Math.round(zoomLevel * 100)}% | Nodes: {graphData.nodes.length}
             </div>
           </div>
@@ -305,36 +305,36 @@ simulation.on('tick', () => {
               variant="outline" 
               size="sm" 
               onClick={() => setShowFullMap(!showFullMap)}
-              className="gap-2 border-zinc-700 bg-zinc-800 hover:bg-zinc-700 h-9"
+              className="gap-2 h-9"
             >
               <Layers size={16} />
               {showFullMap ? 'Show Local' : 'Show Full Map'}
             </Button>
 
-            <div className="flex items-center border border-zinc-700 rounded-md bg-zinc-800 overflow-hidden">
+            <div className="flex items-center border border-input rounded-md bg-muted/50 overflow-hidden">
               <Button 
                 variant="ghost" 
                 size="icon" 
                 onClick={() => handleZoom('out')}
-                className="h-9 w-9 rounded-none hover:bg-zinc-700 text-zinc-300"
+                className="h-9 w-9 rounded-none text-muted-foreground hover:text-foreground"
               >
                 <ZoomOut size={16} />
               </Button>
-              <div className="w-px h-4 bg-zinc-700" />
+              <div className="w-px h-4 bg-border" />
               <Button 
                 variant="ghost" 
                 size="sm" 
                 onClick={() => handleZoom('reset')}
-                className="h-9 px-2 rounded-none hover:bg-zinc-700 text-[10px] font-bold text-zinc-400"
+                className="h-9 px-2 rounded-none text-[10px] font-bold text-muted-foreground hover:text-foreground"
               >
                 Reset
               </Button>
-              <div className="w-px h-4 bg-zinc-700" />
+              <div className="w-px h-4 bg-border" />
               <Button 
                 variant="ghost" 
                 size="icon" 
                 onClick={() => handleZoom('in')}
-                className="h-9 w-9 rounded-none hover:bg-zinc-700 text-zinc-300"
+                className="h-9 w-9 rounded-none text-muted-foreground hover:text-foreground"
               >
                 <ZoomIn size={16} />
               </Button>
@@ -344,7 +344,7 @@ simulation.on('tick', () => {
               variant="ghost" 
               size="icon" 
               onClick={onClose}
-              className="text-zinc-400 hover:text-white hover:bg-zinc-800 h-9 w-9"
+              className="text-muted-foreground hover:text-foreground h-9 w-9"
             >
               <X size={20} />
             </Button>
@@ -360,21 +360,21 @@ simulation.on('tick', () => {
           
           {/* Legend/Controls Overlay */}
           <div className="absolute bottom-6 right-6 flex flex-col gap-2">
-            <div className="bg-zinc-900/90 border border-zinc-800 p-3 rounded-lg shadow-xl text-[10px] space-y-2">
+            <div className="bg-card/90 border border-border p-3 rounded-lg shadow-xl text-[10px] space-y-2">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-blue-400" />
-                <span className="text-zinc-300">CURRENT LOCATION</span>
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--map-node-current)' }} />
+                <span className="text-card-foreground">CURRENT LOCATION</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-zinc-600" />
-                <span className="text-zinc-300">DISCOVERED ROOM</span>
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--map-node)' }} />
+                <span className="text-card-foreground">DISCOVERED ROOM</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="p-3 border-t border-zinc-800 bg-zinc-900/50 text-[10px] text-zinc-500 text-center">
+        <div className="p-3 border-t border-border bg-muted/50 text-[10px] text-muted-foreground text-center">
           DRAG TO PAN • SCROLL TO ZOOM • DRAG NODES TO REORGANIZE
         </div>
       </div>
