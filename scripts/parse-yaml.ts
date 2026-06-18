@@ -31,7 +31,7 @@ interface RawGameData {
 }
 
 export function parseAdventureYaml(): GameData {
-  const yamlPath: string = path.resolve(process.cwd(), 'open-adventure/adventure.yaml');
+  const yamlPath: string = path.resolve(process.cwd(), 'data/adventure.yaml');
   const fileContents: string = fs.readFileSync(yamlPath, 'utf8');
   const rawData: RawGameData = yaml.load(fileContents) as RawGameData;
 

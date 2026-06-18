@@ -30,6 +30,29 @@ export function initializeGame(): void {
   }
 }
 
+function updateScore(): void {
+  const store = useGameStore.getState();
+  let currentScore = 0;
+
+  // Current implementation is O(N) where N is number of objects. 
+  // For a faithful port, this is acceptable, but consider event-driven score updates 
+  // if the object list grows significantly.
+  // Points for treasures
+  for (const [objId, locId] of Object.entries(store.objectLocations)) {
+    const obj = gameData.objects[objId];
+    if (obj?.treasure) {
+      if (locId === 'IN_INVENTORY') {
+        currentScore += 10;
+      } else if (locId === 'LOC_START') {
+        // Full credit for bringing it back to the building
+        currentScore += 25;
+      }
+    }
+  }
+
+  store.setScore(currentScore);
+}
+
 export function processCommand(input: string): void {
   const store = useGameStore.getState();
   const rawInput: string = input.trim().toUpperCase();
@@ -82,6 +105,7 @@ export function processCommand(input: string): void {
       store.addToInventory(resolvedObjId);
       store.setObjectLocation(resolvedObjId, 'IN_INVENTORY'); // Use special ID or just logic
       store.addMessage("OK");
+      updateScore();
     } else if (store.inventory.includes(resolvedObjId)) {
       store.addMessage("You are already carrying it!");
     } else {
@@ -106,6 +130,7 @@ export function processCommand(input: string): void {
     store.removeFromInventory(resolvedObjId);
     store.setObjectLocation(resolvedObjId, store.currentLocation);
     store.addMessage("OK");
+    updateScore();
     return;
   }
 

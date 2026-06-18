@@ -11,7 +11,7 @@
 - **Architecture:** A modern refactoring of the original C logic into TypeScript, decoupling the core engine logic from the React UI layer.
 
 ## Data and Configuration
-- **Source of Truth:** `open-adventure/adventure.yaml`
+- **Source of Truth:** `data/adventure.yaml`
 - **Processing:** Build-time scripts (Node.js/TypeScript) to parse the YAML and generate static JSON or TypeScript modules for the game engine to consume.
 
 ## Testing and Tooling

@@ -7,6 +7,7 @@ interface GameState {
   objectStates: Record<string, number>; // Maps objectId -> state (0-indexed)
   history: string[];
   flags: Record<string, boolean | number>;
+  score: number;
   
   // Actions
   setLocation: (location: string) => void;
@@ -16,16 +17,18 @@ interface GameState {
   removeFromInventory: (item: string) => void;
   addMessage: (message: string) => void;
   setFlag: (flag: string, value: boolean | number) => void;
+  setScore: (score: number) => void;
   reset: () => void;
 }
 
-const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLocations' | 'objectStates' | 'history' | 'flags'> = {
+const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLocations' | 'objectStates' | 'history' | 'flags' | 'score'> = {
   currentLocation: '',
   inventory: [],
   objectLocations: {},
   objectStates: {},
   history: [],
   flags: {},
+  score: 0,
 };
 
 export const useGameStore = create<GameState>((set) => ({
@@ -50,6 +53,8 @@ export const useGameStore = create<GameState>((set) => ({
     
   setFlag: (flag: string, value: boolean | number): void =>
     set((state: GameState) => ({ flags: { ...state.flags, [flag]: value } })),
+
+  setScore: (score: number): void => set({ score }),
     
   reset: (): void => set(initialState),
 }));

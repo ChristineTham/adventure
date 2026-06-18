@@ -28,10 +28,20 @@ The project uses a data-driven design where the game world is sourced from the o
   - Context-aware movement controls (Compass).
   - Dynamic inventory and object interaction panels.
 
+## 📜 History of Colossal Cave Adventure
+
+Colossal Cave Adventure (often simply called *Adventure*) is the foundational work of the interactive fiction genre, created in the mid-1970s.
+
+- **The Origins (1975–1976):** Will Crowther, a programmer and caver, developed the initial version in FORTRAN on a PDP-10. He created it for his daughters, blending his intricate knowledge of Kentucky's Mammoth Cave system with elements of *Dungeons & Dragons*.
+- **The Expansion (1977):** Don Woods discovered the game on ARPANET and, with Crowther's blessing, expanded it significantly. He introduced fantasy creatures (dwarves, giants, and a dragon), magic words like `XYZZY`, and the famous 350-point scoring system.
+- **Legacy:** The game's influence is immeasurable. It directly inspired the creation of *Zork*, the founding of Sierra On-Line, and defined the conventions of text adventures that persist to this day.
+
+**Credits**: This project owes its existence to the original creators, **Will Crowther** and **Don Woods**, whose pioneering work defined the interactive fiction genre. We also deeply acknowledge **Eric S. Raymond** and the [open-adventure](https://gitlab.com/esr/open-adventure) repository, which served as the starting point for this modernised TypeScript port. Their efforts to preserve and forward-port the original Colossal Cave Adventure 2.5, along with the countless individuals who have directly or indirectly contributed to the game's evolution over the decades, made this web implementation possible.
+
 ## ✅ Implemented to Date
 
 - [x] **Strict Type System**: 100% strict type coverage across all project files. No `any` or `unknown` types in the core logic.
-- [x] **YAML Data Pipeline**: Automated conversion of `open-adventure/adventure.yaml` to `data/game-data.json`.
+- [x] **YAML Data Pipeline**: Automated conversion of `data/adventure.yaml` to `data/game-data.json`.
 - [x] **Location & Movement**: Support for cardinal directions, synonyms, and context-aware descriptions.
 - [x] **Object Interaction**: Implementation of `TAKE`, `DROP`, `FILL`, and `INVENTORY` commands.
 - [x] **Autoscroll Terminal**: A modern UI that keeps the player focused on the latest game output.
