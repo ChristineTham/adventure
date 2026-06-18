@@ -6,11 +6,11 @@
 - [x] Task: Update the build script (`scripts/parse-yaml.ts`) to automatically copy images from `data/images/` to a serving directory like `public/locations/` during the `prebuild` step.
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Setup & Evaluation' (Protocol in workflow.md)
 
-## Phase 2: UI Implementation
-- [ ] Task: Write failing unit tests for a new `LocationImage` component.
-- [ ] Task: Implement the `LocationImage` component (Green Phase). It should include responsive 3:2 scaling, postcard border styling, and a fade-in animation using Tailwind CSS / Framer Motion (if available) or standard CSS transitions.
-- [ ] Task: Update `GameClient.tsx` (or an appropriate layout component) to conditionally render the `LocationImage` in a dedicated panel, subscribing to `currentLocation` from the Zustand store.
-- [ ] Task: Conductor - User Manual Verification 'Phase 2: UI Implementation' (Protocol in workflow.md)
+## Phase 2: UI Implementation [checkpoint: 13105d2]
+- [x] Task: Write failing unit tests for a new `LocationImage` component.
+- [x] Task: Implement the `LocationImage` component (Green Phase). It should include responsive 3:2 scaling, postcard border styling, and a fade-in animation using Tailwind CSS / Framer Motion (if available) or standard CSS transitions.
+- [x] Task: Update `GameClient.tsx` (or an appropriate layout component) to conditionally render the `LocationImage` in a dedicated panel, subscribing to `currentLocation` from the Zustand store.
+- [x] Task: Conductor - User Manual Verification 'Phase 2: UI Implementation' (Protocol in workflow.md)
 
 ## Phase 3: Full Asset Generation (Batch Process)
 - [ ] Task: Generate the remaining images for all locations defined in `adventure.yaml` using the established prompts.

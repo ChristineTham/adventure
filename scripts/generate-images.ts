@@ -23,7 +23,7 @@ async function generateLocationImages() {
   const targetLocs = process.argv.slice(2);
   const locationsToProcess = targetLocs.length > 0 
     ? targetLocs 
-    : ['LOC_START', 'LOC_VALLEY'];
+    : Object.keys(gameData.locations).filter(locId => locId !== 'LOC_NOWHERE');
 
   console.log(`Generating images for: ${locationsToProcess.join(', ')}`);
 
@@ -55,17 +55,12 @@ async function generateLocationImages() {
     console.log(`Prompt for ${locId}:\n${prompt}\n`);
 
     try {
-      const response = await ai.models.generateImages({
-        model: 'imagen-4.0-generate-001',
-        prompt: prompt,
-        config: {
-          numberOfImages: 1,
-          outputMimeType: 'image/jpeg',
-          aspectRatio: '4:3',
-        },
+      const response = await ai.models.generateContent({
+        model: 'gemini-3.1-flash-image',
+        contents: prompt,
       });
 
-      const base64Image = response.generatedImages?.[0]?.image?.imageBytes;
+      const base64Image = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
       
       if (base64Image) {
         const buffer = Buffer.from(base64Image, 'base64');
