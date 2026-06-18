@@ -195,8 +195,8 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .style('pointer-events', 'none');
 simulation.on('tick', () => {
   link.attr('d', d => {
-    const source = d.source as D3Node;
-    const target = d.target as D3Node;
+    const source = d.source as unknown as D3Node;
+    const target = d.target as unknown as D3Node;
 
     // 1. Handle Self-Loops (Circular Path)
     if (source.id === target.id) {
