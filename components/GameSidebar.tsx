@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Map, Info, Trophy, Package } from 'lucide-react';
 import { ModeToggle } from './ModeToggle';
 import { useGameStore } from '@/store/gameStore';
+import { LocationImage } from './LocationImage';
 
 import { processCommand } from '@/engine/core';
 
@@ -14,7 +15,7 @@ interface GameSidebarProps {
 }
 
 export function GameSidebar({ onShowMap }: GameSidebarProps) {
-  const { inventory, score } = useGameStore();
+  const { inventory, score, currentLocation } = useGameStore();
 
   const handleAction = (cmd: string): void => {
     processCommand(cmd);
@@ -22,6 +23,8 @@ export function GameSidebar({ onShowMap }: GameSidebarProps) {
 
   return (
     <div className="hidden md:flex md:col-span-2 lg:col-span-1 flex-col gap-4 overflow-hidden">
+      <LocationImage locationId={currentLocation} />
+
       <div className="grid grid-cols-3 gap-2">
         <Button 
           onClick={onShowMap}
