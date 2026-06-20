@@ -11850,5 +11850,4154 @@
     "OBJ_69": "OBJ_69",
     "EBONY": "OBJ_69",
     "STATU": "OBJ_69"
+  },
+  "mapData": {
+    "nodes": [
+      {
+        "id": "LOC_START",
+        "label": "Start"
+      },
+      {
+        "id": "LOC_HILL",
+        "label": "Hill"
+      },
+      {
+        "id": "LOC_BUILDING",
+        "label": "Building"
+      },
+      {
+        "id": "LOC_VALLEY",
+        "label": "Valley"
+      },
+      {
+        "id": "LOC_FOREST1",
+        "label": "Forest1"
+      },
+      {
+        "id": "LOC_GRATE",
+        "label": "Grate"
+      },
+      {
+        "id": "LOC_ROADEND",
+        "label": "Roadend"
+      },
+      {
+        "id": "LOC_FOREST20",
+        "label": "Forest20"
+      },
+      {
+        "id": "LOC_FOREST13",
+        "label": "Forest13"
+      },
+      {
+        "id": "LOC_DEBRIS",
+        "label": "Debris"
+      },
+      {
+        "id": "LOC_Y2",
+        "label": "Y2"
+      },
+      {
+        "id": "LOC_FOREST6",
+        "label": "Forest6"
+      },
+      {
+        "id": "LOC_FOREST12",
+        "label": "Forest12"
+      },
+      {
+        "id": "LOC_SLIT",
+        "label": "Slit"
+      },
+      {
+        "id": "LOC_FOREST2",
+        "label": "Forest2"
+      },
+      {
+        "id": "LOC_FOREST3",
+        "label": "Forest3"
+      },
+      {
+        "id": "LOC_FOREST7",
+        "label": "Forest7"
+      },
+      {
+        "id": "LOC_FOREST10",
+        "label": "Forest10"
+      },
+      {
+        "id": "LOC_FOREST9",
+        "label": "Forest9"
+      },
+      {
+        "id": "LOC_BELOWGRATE",
+        "label": "Belowgrate"
+      },
+      {
+        "id": "LOC_FOREST14",
+        "label": "Forest14"
+      },
+      {
+        "id": "LOC_FOREST15",
+        "label": "Forest15"
+      },
+      {
+        "id": "LOC_FOREST21",
+        "label": "Forest21"
+      },
+      {
+        "id": "LOC_FOREST19",
+        "label": "Forest19"
+      },
+      {
+        "id": "LOC_COBBLE",
+        "label": "Cobble"
+      },
+      {
+        "id": "LOC_AWKWARD",
+        "label": "Awkward"
+      },
+      {
+        "id": "LOC_PITTOP",
+        "label": "Pittop"
+      },
+      {
+        "id": "LOC_FLOORHOLE",
+        "label": "Floorhole"
+      },
+      {
+        "id": "LOC_JUMBLE",
+        "label": "Jumble"
+      },
+      {
+        "id": "LOC_WINDOW1",
+        "label": "Window1"
+      },
+      {
+        "id": "LOC_PLOVER",
+        "label": "Plover"
+      },
+      {
+        "id": "LOC_FOREST5",
+        "label": "Forest5"
+      },
+      {
+        "id": "LOC_FOREST22",
+        "label": "Forest22"
+      },
+      {
+        "id": "LOC_FOREST18",
+        "label": "Forest18"
+      },
+      {
+        "id": "LOC_FOREST4",
+        "label": "Forest4"
+      },
+      {
+        "id": "LOC_FOREST8",
+        "label": "Forest8"
+      },
+      {
+        "id": "LOC_FOREST11",
+        "label": "Forest11"
+      },
+      {
+        "id": "LOC_FOREST16",
+        "label": "Forest16"
+      },
+      {
+        "id": "LOC_CLIFF",
+        "label": "Cliff"
+      },
+      {
+        "id": "LOC_BIRDCHAMBER",
+        "label": "Birdchamber"
+      },
+      {
+        "id": "LOC_MISTHALL",
+        "label": "Misthall"
+      },
+      {
+        "id": "LOC_KINGHALL",
+        "label": "Kinghall"
+      },
+      {
+        "id": "LOC_BROKEN",
+        "label": "Broken"
+      },
+      {
+        "id": "LOC_ALCOVE",
+        "label": "Alcove"
+      },
+      {
+        "id": "LOC_DARKROOM",
+        "label": "Darkroom"
+      },
+      {
+        "id": "LOC_FOREST17",
+        "label": "Forest17"
+      },
+      {
+        "id": "LOC_NUGGET",
+        "label": "Nugget"
+      },
+      {
+        "id": "LOC_EASTBANK",
+        "label": "Eastbank"
+      },
+      {
+        "id": "LOC_SOUTHSIDE",
+        "label": "Southside"
+      },
+      {
+        "id": "LOC_WESTSIDE",
+        "label": "Westside"
+      },
+      {
+        "id": "LOC_SECRET3",
+        "label": "Secret3"
+      },
+      {
+        "id": "LOC_SMALLPITBRINK",
+        "label": "Smallpitbrink"
+      },
+      {
+        "id": "LOC_DUSTY",
+        "label": "Dusty"
+      },
+      {
+        "id": "LOC_BEDQUILT",
+        "label": "Bedquilt"
+      },
+      {
+        "id": "LOC_MISTY",
+        "label": "Misty"
+      },
+      {
+        "id": "LOC_WESTBANK",
+        "label": "Westbank"
+      },
+      {
+        "id": "LOC_CROSSOVER",
+        "label": "Crossover"
+      },
+      {
+        "id": "LOC_SECRET5",
+        "label": "Secret5"
+      },
+      {
+        "id": "LOC_SECRET6",
+        "label": "Secret6"
+      },
+      {
+        "id": "LOC_WIDEPLACE",
+        "label": "Wideplace"
+      },
+      {
+        "id": "LOC_SMALLPIT",
+        "label": "Smallpit"
+      },
+      {
+        "id": "LOC_COMPLEX",
+        "label": "Complex"
+      },
+      {
+        "id": "LOC_SWISSCHEESE",
+        "label": "Swisscheese"
+      },
+      {
+        "id": "LOC_SLAB",
+        "label": "Slab"
+      },
+      {
+        "id": "LOC_SECRET2",
+        "label": "Secret2"
+      },
+      {
+        "id": "LOC_LOWROOM",
+        "label": "Lowroom"
+      },
+      {
+        "id": "LOC_THREEJUNCTION",
+        "label": "Threejunction"
+      },
+      {
+        "id": "LOC_ANTEROOM",
+        "label": "Anteroom"
+      },
+      {
+        "id": "LOC_ORIENTAL",
+        "label": "Oriental"
+      },
+      {
+        "id": "LOC_MISTWEST",
+        "label": "Mistwest"
+      },
+      {
+        "id": "LOC_LONGEAST",
+        "label": "Longeast"
+      },
+      {
+        "id": "LOC_DEADEND7",
+        "label": "Deadend7"
+      },
+      {
+        "id": "LOC_LONGWEST",
+        "label": "Longwest"
+      },
+      {
+        "id": "LOC_SECRET1",
+        "label": "Secret1"
+      },
+      {
+        "id": "LOC_TIGHTPLACE",
+        "label": "Tightplace"
+      },
+      {
+        "id": "LOC_TALL",
+        "label": "Tall"
+      },
+      {
+        "id": "LOC_SHELLROOM",
+        "label": "Shellroom"
+      },
+      {
+        "id": "LOC_EASTEND",
+        "label": "Eastend"
+      },
+      {
+        "id": "LOC_SOFTROOM",
+        "label": "Softroom"
+      },
+      {
+        "id": "LOC_WESTEND",
+        "label": "Westend"
+      },
+      {
+        "id": "LOC_TOPSTALACTITE",
+        "label": "Topstalactite"
+      },
+      {
+        "id": "LOC_WINDING",
+        "label": "Winding"
+      },
+      {
+        "id": "LOC_DEADCRAWL",
+        "label": "Deadcrawl"
+      },
+      {
+        "id": "LOC_WINDOW2",
+        "label": "Window2"
+      },
+      {
+        "id": "LOC_WITTSEND",
+        "label": "Wittsend"
+      },
+      {
+        "id": "LOC_ALIKE1",
+        "label": "Alike1"
+      },
+      {
+        "id": "LOC_DIFFERENT1",
+        "label": "Different1"
+      },
+      {
+        "id": "LOC_SECRET4",
+        "label": "Secret4"
+      },
+      {
+        "id": "LOC_MIRRORCANYON",
+        "label": "Mirrorcanyon"
+      },
+      {
+        "id": "LOC_RESERVOIR",
+        "label": "Reservoir"
+      },
+      {
+        "id": "LOC_BOULDERS1",
+        "label": "Boulders1"
+      },
+      {
+        "id": "LOC_ARCHED",
+        "label": "Arched"
+      },
+      {
+        "id": "LOC_SLOPING1",
+        "label": "Sloping1"
+      },
+      {
+        "id": "LOC_EASTPIT",
+        "label": "Eastpit"
+      },
+      {
+        "id": "LOC_WESTPIT",
+        "label": "Westpit"
+      },
+      {
+        "id": "LOC_ALIKE6",
+        "label": "Alike6"
+      },
+      {
+        "id": "LOC_ALIKE9",
+        "label": "Alike9"
+      },
+      {
+        "id": "LOC_ALIKE4",
+        "label": "Alike4"
+      },
+      {
+        "id": "LOC_SWCHASM",
+        "label": "Swchasm"
+      },
+      {
+        "id": "LOC_ALIKE2",
+        "label": "Alike2"
+      },
+      {
+        "id": "LOC_ALIKE11",
+        "label": "Alike11"
+      },
+      {
+        "id": "LOC_DIFFERENT3",
+        "label": "Different3"
+      },
+      {
+        "id": "LOC_DIFFERENT4",
+        "label": "Different4"
+      },
+      {
+        "id": "LOC_DIFFERENT5",
+        "label": "Different5"
+      },
+      {
+        "id": "LOC_DIFFERENT6",
+        "label": "Different6"
+      },
+      {
+        "id": "LOC_DIFFERENT7",
+        "label": "Different7"
+      },
+      {
+        "id": "LOC_DIFFERENT8",
+        "label": "Different8"
+      },
+      {
+        "id": "LOC_DIFFERENT9",
+        "label": "Different9"
+      },
+      {
+        "id": "LOC_DIFFERENT10",
+        "label": "Different10"
+      },
+      {
+        "id": "LOC_DIFFERENT11",
+        "label": "Different11"
+      },
+      {
+        "id": "LOC_RESBOTTOM",
+        "label": "Resbottom"
+      },
+      {
+        "id": "LOC_CULDESAC",
+        "label": "Culdesac"
+      },
+      {
+        "id": "LOC_BUILDING1",
+        "label": "Building1"
+      },
+      {
+        "id": "LOC_NARROW",
+        "label": "Narrow"
+      },
+      {
+        "id": "LOC_ALIKE3",
+        "label": "Alike3"
+      },
+      {
+        "id": "LOC_ALIKE5",
+        "label": "Alike5"
+      },
+      {
+        "id": "LOC_ALIKE7",
+        "label": "Alike7"
+      },
+      {
+        "id": "LOC_ALIKE8",
+        "label": "Alike8"
+      },
+      {
+        "id": "LOC_MAZEEND4",
+        "label": "Mazeend4"
+      },
+      {
+        "id": "LOC_MAZEEND1",
+        "label": "Mazeend1"
+      },
+      {
+        "id": "LOC_MAZEEND2",
+        "label": "Mazeend2"
+      },
+      {
+        "id": "LOC_ALIKE14",
+        "label": "Alike14"
+      },
+      {
+        "id": "LOC_MAZEEND8",
+        "label": "Mazeend8"
+      },
+      {
+        "id": "LOC_DIFFERENT2",
+        "label": "Different2"
+      },
+      {
+        "id": "LOC_RESNORTH",
+        "label": "Resnorth"
+      },
+      {
+        "id": "LOC_GIANTROOM",
+        "label": "Giantroom"
+      },
+      {
+        "id": "LOC_MAZEEND3",
+        "label": "Mazeend3"
+      },
+      {
+        "id": "LOC_MAZEEND9",
+        "label": "Mazeend9"
+      },
+      {
+        "id": "LOC_ALIKE10",
+        "label": "Alike10"
+      },
+      {
+        "id": "LOC_MAZEEND11",
+        "label": "Mazeend11"
+      },
+      {
+        "id": "LOC_DEADEND13",
+        "label": "Deadend13"
+      },
+      {
+        "id": "LOC_TREACHEROUS",
+        "label": "Treacherous"
+      },
+      {
+        "id": "LOC_CAVEIN",
+        "label": "Cavein"
+      },
+      {
+        "id": "LOC_IMMENSE",
+        "label": "Immense"
+      },
+      {
+        "id": "LOC_MAZEEND5",
+        "label": "Mazeend5"
+      },
+      {
+        "id": "LOC_PITBRINK",
+        "label": "Pitbrink"
+      },
+      {
+        "id": "LOC_ROUGHHEWN",
+        "label": "Roughhewn"
+      },
+      {
+        "id": "LOC_STEEP",
+        "label": "Steep"
+      },
+      {
+        "id": "LOC_WATERFALL",
+        "label": "Waterfall"
+      },
+      {
+        "id": "LOC_MAZEEND6",
+        "label": "Mazeend6"
+      },
+      {
+        "id": "LOC_ALIKE12",
+        "label": "Alike12"
+      },
+      {
+        "id": "LOC_ALIKE13",
+        "label": "Alike13"
+      },
+      {
+        "id": "LOC_LARGE",
+        "label": "Large"
+      },
+      {
+        "id": "LOC_CLIFFBASE",
+        "label": "Cliffbase"
+      },
+      {
+        "id": "LOC_INCLINE",
+        "label": "Incline"
+      },
+      {
+        "id": "LOC_MAZEEND10",
+        "label": "Mazeend10"
+      },
+      {
+        "id": "LOC_MAZEEND12",
+        "label": "Mazeend12"
+      },
+      {
+        "id": "LOC_STOREROOM",
+        "label": "Storeroom"
+      },
+      {
+        "id": "LOC_CLIFFACE",
+        "label": "Clifface"
+      },
+      {
+        "id": "LOC_CLIFFLEDGE",
+        "label": "Cliffledge"
+      },
+      {
+        "id": "LOC_REACHDEAD",
+        "label": "Reachdead"
+      }
+    ],
+    "links": [
+      {
+        "source": "LOC_START",
+        "target": "LOC_HILL",
+        "label": "MOT_2, WEST, UP",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_START",
+        "target": "LOC_BUILDING",
+        "label": "ENTER, MOT_12, INSIDE, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_START",
+        "target": "LOC_VALLEY",
+        "label": "MOT_5, MOT_13, STREAM, SOUTH, DOWN",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_START",
+        "target": "LOC_FOREST1",
+        "label": "MOT_6, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_START",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_HILL",
+        "target": "LOC_START",
+        "label": "MOT_12, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_HILL",
+        "target": "LOC_ROADEND",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_HILL",
+        "target": "LOC_FOREST20",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_HILL",
+        "target": "LOC_FOREST13",
+        "label": "SOUTH, MOT_6",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_BUILDING",
+        "target": "LOC_START",
+        "label": "OUTSIDE, MOT_32, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_BUILDING",
+        "target": "LOC_DEBRIS",
+        "label": "XYZZY"
+      },
+      {
+        "source": "LOC_BUILDING",
+        "target": "LOC_Y2",
+        "label": "PLUGH"
+      },
+      {
+        "source": "LOC_BUILDING",
+        "target": "LOC_BUILDING",
+        "label": "MOT_5, STREAM"
+      },
+      {
+        "source": "LOC_VALLEY",
+        "target": "LOC_START",
+        "label": "MOT_4, MOT_12, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_VALLEY",
+        "target": "LOC_FOREST6",
+        "label": "EAST, MOT_6",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_VALLEY",
+        "target": "LOC_FOREST12",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_VALLEY",
+        "target": "LOC_SLIT",
+        "label": "MOT_5, SOUTH, DOWN",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_VALLEY",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_FOREST1",
+        "target": "LOC_START",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST1",
+        "target": "LOC_FOREST13",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST1",
+        "target": "LOC_FOREST2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST1",
+        "target": "LOC_FOREST3",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_FOREST7",
+        "label": "EAST, MOT_6",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_FOREST10",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_FOREST9",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_START",
+        "label": "MOT_12"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_SLIT",
+        "label": "MOT_4, MOT_13, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_GRATE",
+        "target": "LOC_BELOWGRATE",
+        "label": "ENTER, INSIDE, DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ROADEND",
+        "target": "LOC_HILL",
+        "label": "MOT_2, EAST, UP",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ROADEND",
+        "target": "LOC_START",
+        "label": "MOT_12"
+      },
+      {
+        "source": "LOC_ROADEND",
+        "target": "LOC_FOREST14",
+        "label": "SOUTH, MOT_6",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ROADEND",
+        "target": "LOC_FOREST15",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ROADEND",
+        "target": "LOC_FOREST21",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST20",
+        "target": "LOC_HILL",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST20",
+        "target": "LOC_FOREST21",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST20",
+        "target": "LOC_FOREST19",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST20",
+        "target": "LOC_FOREST13",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST13",
+        "target": "LOC_FOREST1",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST13",
+        "target": "LOC_FOREST12",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST13",
+        "target": "LOC_FOREST20",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST13",
+        "target": "LOC_HILL",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_BELOWGRATE",
+        "label": "ENTRANCE"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_COBBLE",
+        "label": "CRAWL, MOT_18, MOT_23, MOT_24, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_AWKWARD",
+        "label": "MOT_25, INSIDE, UP, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_BUILDING",
+        "label": "XYZZY"
+      },
+      {
+        "source": "LOC_DEBRIS",
+        "target": "LOC_PITTOP",
+        "label": "MOT_31"
+      },
+      {
+        "source": "LOC_Y2",
+        "target": "LOC_BUILDING",
+        "label": "PLUGH"
+      },
+      {
+        "source": "LOC_Y2",
+        "target": "LOC_FLOORHOLE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_Y2",
+        "target": "LOC_JUMBLE",
+        "label": "EAST, MOT_53, MOT_54",
+        "direction": "EAST",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_Y2",
+        "target": "LOC_WINDOW1",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_Y2",
+        "target": "LOC_PLOVER",
+        "label": "PLOVER"
+      },
+      {
+        "source": "LOC_FOREST6",
+        "target": "LOC_FOREST5",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST6",
+        "target": "LOC_FOREST7",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST6",
+        "target": "LOC_VALLEY",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST6",
+        "target": "LOC_SLIT",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST12",
+        "target": "LOC_FOREST13",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST12",
+        "target": "LOC_FOREST14",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST12",
+        "target": "LOC_FOREST22",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST12",
+        "target": "LOC_VALLEY",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_SLIT",
+        "target": "LOC_START",
+        "label": "MOT_12"
+      },
+      {
+        "source": "LOC_SLIT",
+        "target": "LOC_VALLEY",
+        "label": "MOT_4, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SLIT",
+        "target": "LOC_FOREST6",
+        "label": "EAST, MOT_6",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SLIT",
+        "target": "LOC_FOREST10",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SLIT",
+        "target": "LOC_GRATE",
+        "label": "MOT_5, MOT_16, SOUTH, DEPRESSION",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST2",
+        "target": "LOC_FOREST1",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST2",
+        "target": "LOC_FOREST19",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST2",
+        "target": "LOC_FOREST3",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST2",
+        "target": "LOC_FOREST18",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST3",
+        "target": "LOC_FOREST4",
+        "label": "EAST, WEST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST3",
+        "target": "LOC_FOREST2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST3",
+        "target": "LOC_FOREST1",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST7",
+        "target": "LOC_FOREST5",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST7",
+        "target": "LOC_FOREST6",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST7",
+        "target": "LOC_GRATE",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST7",
+        "target": "LOC_FOREST8",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST10",
+        "target": "LOC_SLIT",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST10",
+        "target": "LOC_FOREST11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST10",
+        "target": "LOC_FOREST9",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST10",
+        "target": "LOC_GRATE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST9",
+        "target": "LOC_FOREST11",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST9",
+        "target": "LOC_FOREST8",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST9",
+        "target": "LOC_FOREST10",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST9",
+        "target": "LOC_GRATE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_BELOWGRATE",
+        "target": "LOC_GRATE",
+        "label": "OUTSIDE, UP",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_BELOWGRATE",
+        "target": "LOC_COBBLE",
+        "label": "CRAWL, MOT_18, INSIDE, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_BELOWGRATE",
+        "target": "LOC_PITTOP",
+        "label": "MOT_31"
+      },
+      {
+        "source": "LOC_BELOWGRATE",
+        "target": "LOC_DEBRIS",
+        "label": "MOT_51"
+      },
+      {
+        "source": "LOC_FOREST14",
+        "target": "LOC_ROADEND",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST14",
+        "target": "LOC_FOREST16",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST14",
+        "target": "LOC_FOREST15",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST14",
+        "target": "LOC_FOREST12",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST15",
+        "target": "LOC_FOREST16",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST15",
+        "target": "LOC_FOREST22",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST15",
+        "target": "LOC_ROADEND",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST15",
+        "target": "LOC_FOREST14",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST21",
+        "target": "LOC_FOREST20",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST21",
+        "target": "LOC_ROADEND",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST21",
+        "target": "LOC_FOREST18",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST21",
+        "target": "LOC_FOREST21",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST19",
+        "target": "LOC_FOREST2",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST19",
+        "target": "LOC_FOREST18",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST19",
+        "target": "LOC_CLIFF",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST19",
+        "target": "LOC_FOREST20",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_COBBLE",
+        "target": "LOC_BELOWGRATE",
+        "label": "OUTSIDE, MOT_20, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_COBBLE",
+        "target": "LOC_DEBRIS",
+        "label": "INSIDE, MOT_22, WEST, MOT_51",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_COBBLE",
+        "target": "LOC_PITTOP",
+        "label": "MOT_31"
+      },
+      {
+        "source": "LOC_AWKWARD",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_AWKWARD",
+        "target": "LOC_BELOWGRATE",
+        "label": "ENTRANCE"
+      },
+      {
+        "source": "LOC_AWKWARD",
+        "target": "LOC_DEBRIS",
+        "label": "DOWN, EAST, MOT_51",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_AWKWARD",
+        "target": "LOC_BIRDCHAMBER",
+        "label": "INSIDE, UP, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_AWKWARD",
+        "target": "LOC_PITTOP",
+        "label": "MOT_31"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_BELOWGRATE",
+        "label": "ENTRANCE"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_DEBRIS",
+        "label": "MOT_51"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_BIRDCHAMBER",
+        "label": "MOT_23, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_MISTHALL",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_PITTOP",
+        "target": "LOC_PITTOP",
+        "label": "MOT_33, WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FLOORHOLE",
+        "target": "LOC_KINGHALL",
+        "label": "MOT_38, OUTSIDE, SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FLOORHOLE",
+        "target": "LOC_Y2",
+        "label": "NORTH, MOT_55",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FLOORHOLE",
+        "target": "LOC_BROKEN",
+        "label": "DOWN, MOT_52",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_JUMBLE",
+        "target": "LOC_Y2",
+        "label": "DOWN, MOT_55",
+        "direction": "DOWN",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_JUMBLE",
+        "target": "LOC_MISTHALL",
+        "label": "UP",
+        "direction": "UP"
+      },
+      {
+        "source": "LOC_WINDOW1",
+        "target": "LOC_Y2",
+        "label": "EAST, MOT_55",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_PLOVER",
+        "target": "LOC_ALCOVE",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_PLOVER",
+        "target": "LOC_Y2",
+        "label": "PLOVER"
+      },
+      {
+        "source": "LOC_PLOVER",
+        "target": "LOC_DARKROOM",
+        "label": "NE, MOT_22",
+        "direction": "NE",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST5",
+        "target": "LOC_FOREST4",
+        "label": "EAST, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST5",
+        "target": "LOC_FOREST7",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST5",
+        "target": "LOC_FOREST6",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST22",
+        "target": "LOC_FOREST8",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST22",
+        "target": "LOC_FOREST11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST22",
+        "target": "LOC_FOREST15",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST22",
+        "target": "LOC_FOREST12",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST18",
+        "target": "LOC_FOREST19",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST18",
+        "target": "LOC_FOREST17",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST18",
+        "target": "LOC_FOREST2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST18",
+        "target": "LOC_FOREST21",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST4",
+        "target": "LOC_FOREST3",
+        "label": "EAST, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST4",
+        "target": "LOC_FOREST5",
+        "label": "WEST, SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST8",
+        "target": "LOC_FOREST9",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST8",
+        "target": "LOC_FOREST11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST8",
+        "target": "LOC_FOREST22",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST8",
+        "target": "LOC_FOREST7",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST11",
+        "target": "LOC_FOREST10",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST11",
+        "target": "LOC_FOREST8",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST11",
+        "target": "LOC_FOREST22",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST11",
+        "target": "LOC_FOREST9",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_FOREST16",
+        "target": "LOC_FOREST17",
+        "label": "EAST, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_FOREST16",
+        "target": "LOC_FOREST14",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST16",
+        "target": "LOC_FOREST15",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_CLIFF",
+        "target": "LOC_FOREST17",
+        "label": "SOUTH, MOT_6",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_CLIFF",
+        "target": "LOC_FOREST19",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_BIRDCHAMBER",
+        "target": "LOC_GRATE",
+        "label": "DEPRESSION"
+      },
+      {
+        "source": "LOC_BIRDCHAMBER",
+        "target": "LOC_BELOWGRATE",
+        "label": "ENTRANCE"
+      },
+      {
+        "source": "LOC_BIRDCHAMBER",
+        "target": "LOC_DEBRIS",
+        "label": "MOT_51"
+      },
+      {
+        "source": "LOC_BIRDCHAMBER",
+        "target": "LOC_AWKWARD",
+        "label": "MOT_25, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_BIRDCHAMBER",
+        "target": "LOC_PITTOP",
+        "label": "MOT_23, MOT_31, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_NUGGET",
+        "label": "LEFT, SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_EASTBANK",
+        "label": "FORWARD, MOT_38, WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_KINGHALL",
+        "label": "MOT_10, DOWN, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_MISTHALL",
+        "label": "UP, MOT_31, STEPS, MOT_35, MOT_23, EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_PITTOP",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_MISTHALL",
+        "target": "LOC_JUMBLE",
+        "label": "MOT_55",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_MISTHALL",
+        "label": "MOT_10, UP, EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_FLOORHOLE",
+        "label": "NORTH, RIGHT",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_SOUTHSIDE",
+        "label": "SOUTH, LEFT",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_WESTSIDE",
+        "label": "WEST, FORWARD",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_KINGHALL",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_SECRET3",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_KINGHALL",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_KINGHALL",
+        "target": "LOC_SECRET3",
+        "label": "MOT_66",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_BROKEN",
+        "target": "LOC_SMALLPITBRINK",
+        "label": "EAST, CRAWL",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_BROKEN",
+        "target": "LOC_FLOORHOLE",
+        "label": "UP, MOT_52",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_BROKEN",
+        "target": "LOC_DUSTY",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_BROKEN",
+        "target": "LOC_BEDQUILT",
+        "label": "BEDQUILT"
+      },
+      {
+        "source": "LOC_ALCOVE",
+        "target": "LOC_MISTY",
+        "label": "NW, CAVERN",
+        "direction": "NW",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALCOVE",
+        "target": "LOC_PLOVER",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DARKROOM",
+        "target": "LOC_PLOVER",
+        "label": "SOUTH, PLOVER, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_FOREST17",
+        "target": "LOC_FOREST18",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_FOREST17",
+        "target": "LOC_FOREST16",
+        "label": "WEST, SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_FOREST17",
+        "target": "LOC_CLIFF",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_NUGGET",
+        "target": "LOC_MISTHALL",
+        "label": "MOT_38, OUTSIDE, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_EASTBANK",
+        "target": "LOC_MISTHALL",
+        "label": "MOT_38, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_EASTBANK",
+        "target": "LOC_WESTBANK",
+        "label": "MOT_41"
+      },
+      {
+        "source": "LOC_SOUTHSIDE",
+        "target": "LOC_KINGHALL",
+        "label": "MOT_38, OUTSIDE, NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_WESTSIDE",
+        "target": "LOC_KINGHALL",
+        "label": "MOT_38, OUTSIDE, EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_WESTSIDE",
+        "target": "LOC_CROSSOVER",
+        "label": "WEST, UP",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SECRET3",
+        "target": "LOC_KINGHALL",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_SECRET3",
+        "target": "LOC_SECRET5",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SECRET3",
+        "target": "LOC_SECRET6",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SECRET3",
+        "target": "LOC_WIDEPLACE",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SMALLPITBRINK",
+        "target": "LOC_BROKEN",
+        "label": "WEST, CRAWL",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SMALLPITBRINK",
+        "target": "LOC_SMALLPIT",
+        "label": "DOWN, MOT_31, MOT_56",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DUSTY",
+        "target": "LOC_BROKEN",
+        "label": "EAST, MOT_23",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DUSTY",
+        "target": "LOC_COMPLEX",
+        "label": "DOWN, MOT_52, MOT_58",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DUSTY",
+        "target": "LOC_BEDQUILT",
+        "label": "BEDQUILT",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_COMPLEX",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_SWISSCHEESE",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_SLAB",
+        "label": "MOT_61",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_SECRET2",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_DUSTY",
+        "label": "UP",
+        "direction": "UP"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_LOWROOM",
+        "label": "NORTH",
+        "direction": "NORTH"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_THREEJUNCTION",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_BEDQUILT",
+        "target": "LOC_ANTEROOM",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_MISTY",
+        "target": "LOC_ORIENTAL",
+        "label": "SOUTH, ORIENTAL",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MISTY",
+        "target": "LOC_ALCOVE",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_WESTBANK",
+        "target": "LOC_EASTBANK",
+        "label": "MOT_41"
+      },
+      {
+        "source": "LOC_WESTBANK",
+        "target": "LOC_MISTWEST",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_WESTBANK",
+        "target": "LOC_MISTWEST",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_CROSSOVER",
+        "target": "LOC_LONGEAST",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_CROSSOVER",
+        "target": "LOC_DEADEND7",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_CROSSOVER",
+        "target": "LOC_WESTSIDE",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_CROSSOVER",
+        "target": "LOC_LONGWEST",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_SECRET5",
+        "target": "LOC_SECRET1",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SECRET5",
+        "target": "LOC_SECRET3",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_SECRET6",
+        "target": "LOC_SECRET3",
+        "label": "EAST, OUTSIDE",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_WIDEPLACE",
+        "target": "LOC_TIGHTPLACE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_WIDEPLACE",
+        "target": "LOC_TALL",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SMALLPIT",
+        "target": "LOC_SMALLPITBRINK",
+        "label": "MOT_56, UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_COMPLEX",
+        "target": "LOC_DUSTY",
+        "label": "UP, MOT_56, MOT_59",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_COMPLEX",
+        "target": "LOC_BEDQUILT",
+        "label": "WEST, BEDQUILT",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_COMPLEX",
+        "target": "LOC_SHELLROOM",
+        "label": "NORTH, SHELLROOM",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_COMPLEX",
+        "target": "LOC_ANTEROOM",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SWISSCHEESE",
+        "target": "LOC_BEDQUILT",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_SWISSCHEESE",
+        "target": "LOC_EASTEND",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_SWISSCHEESE",
+        "target": "LOC_TALL",
+        "label": "MOT_25",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_SWISSCHEESE",
+        "target": "LOC_SOFTROOM",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_SWISSCHEESE",
+        "target": "LOC_ORIENTAL",
+        "label": "ORIENTAL",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_SLAB",
+        "target": "LOC_WESTEND",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_SLAB",
+        "target": "LOC_SECRET1",
+        "label": "UP, MOT_56",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_SLAB",
+        "target": "LOC_BEDQUILT",
+        "label": "NORTH",
+        "direction": "NORTH"
+      },
+      {
+        "source": "LOC_SECRET2",
+        "target": "LOC_THREEJUNCTION",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SECRET2",
+        "target": "LOC_BEDQUILT",
+        "label": "DOWN, MOT_23",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SECRET2",
+        "target": "LOC_TOPSTALACTITE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_LOWROOM",
+        "target": "LOC_BEDQUILT",
+        "label": "BEDQUILT",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_LOWROOM",
+        "target": "LOC_WINDING",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_LOWROOM",
+        "target": "LOC_DEADCRAWL",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_LOWROOM",
+        "target": "LOC_ORIENTAL",
+        "label": "SE, ORIENTAL",
+        "direction": "SE",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_THREEJUNCTION",
+        "target": "LOC_BEDQUILT",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_THREEJUNCTION",
+        "target": "LOC_SECRET2",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_THREEJUNCTION",
+        "target": "LOC_WINDOW2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ANTEROOM",
+        "target": "LOC_COMPLEX",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ANTEROOM",
+        "target": "LOC_BEDQUILT",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_ANTEROOM",
+        "target": "LOC_WITTSEND",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ORIENTAL",
+        "target": "LOC_SWISSCHEESE",
+        "label": "SE",
+        "direction": "SE"
+      },
+      {
+        "source": "LOC_ORIENTAL",
+        "target": "LOC_LOWROOM",
+        "label": "WEST, CRAWL",
+        "direction": "WEST",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_ORIENTAL",
+        "target": "LOC_MISTY",
+        "label": "UP, NORTH, CAVERN",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_MISTWEST",
+        "target": "LOC_ALIKE1",
+        "label": "SOUTH, UP, MOT_23, MOT_56",
+        "direction": "SOUTH",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_MISTWEST",
+        "target": "LOC_WESTBANK",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MISTWEST",
+        "target": "LOC_WESTBANK",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MISTWEST",
+        "target": "LOC_LONGEAST",
+        "label": "WEST, CRAWL",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_LONGEAST",
+        "target": "LOC_MISTWEST",
+        "label": "EAST, UP, CRAWL",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_LONGEAST",
+        "target": "LOC_LONGWEST",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_LONGEAST",
+        "target": "LOC_CROSSOVER",
+        "label": "NORTH, DOWN, MOT_52",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DEADEND7",
+        "target": "LOC_CROSSOVER",
+        "label": "SOUTH, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_LONGWEST",
+        "target": "LOC_LONGEAST",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_LONGWEST",
+        "target": "LOC_CROSSOVER",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_LONGWEST",
+        "target": "LOC_DIFFERENT1",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_SECRET1",
+        "target": "LOC_SLAB",
+        "label": "DOWN, MOT_61",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SECRET1",
+        "target": "LOC_SECRET5",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_SECRET1",
+        "target": "LOC_SECRET4",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_SECRET1",
+        "target": "LOC_MIRRORCANYON",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SECRET1",
+        "target": "LOC_RESERVOIR",
+        "label": "RESER"
+      },
+      {
+        "source": "LOC_TIGHTPLACE",
+        "target": "LOC_WIDEPLACE",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_TALL",
+        "target": "LOC_WIDEPLACE",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_TALL",
+        "target": "LOC_BOULDERS1",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_TALL",
+        "target": "LOC_SWISSCHEESE",
+        "label": "NORTH, CRAWL",
+        "direction": "NORTH"
+      },
+      {
+        "source": "LOC_SHELLROOM",
+        "target": "LOC_ARCHED",
+        "label": "UP, MOT_38",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_SHELLROOM",
+        "target": "LOC_SLOPING1",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SHELLROOM",
+        "target": "LOC_COMPLEX",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_EASTEND",
+        "target": "LOC_SWISSCHEESE",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_EASTEND",
+        "target": "LOC_WESTEND",
+        "label": "WEST, MOT_42",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_EASTEND",
+        "target": "LOC_EASTPIT",
+        "label": "DOWN, MOT_31",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SOFTROOM",
+        "target": "LOC_SWISSCHEESE",
+        "label": "WEST, OUTSIDE",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_WESTEND",
+        "target": "LOC_EASTEND",
+        "label": "EAST, MOT_42",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_WESTEND",
+        "target": "LOC_SLAB",
+        "label": "WEST, MOT_61",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_WESTEND",
+        "target": "LOC_WESTPIT",
+        "label": "DOWN, MOT_31",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_TOPSTALACTITE",
+        "target": "LOC_SECRET2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_TOPSTALACTITE",
+        "target": "LOC_ALIKE6",
+        "label": "DOWN, MOT_39, MOT_56",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_TOPSTALACTITE",
+        "target": "LOC_ALIKE9",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_TOPSTALACTITE",
+        "target": "LOC_ALIKE4",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_WINDING",
+        "target": "LOC_LOWROOM",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_WINDING",
+        "target": "LOC_SWCHASM",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DEADCRAWL",
+        "target": "LOC_LOWROOM",
+        "label": "SOUTH, CRAWL, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_WINDOW2",
+        "target": "LOC_THREEJUNCTION",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_WITTSEND",
+        "target": "LOC_ANTEROOM",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE1",
+        "target": "LOC_MISTWEST",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE1",
+        "target": "LOC_ALIKE1",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE1",
+        "target": "LOC_ALIKE2",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE1",
+        "target": "LOC_ALIKE4",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE1",
+        "target": "LOC_ALIKE11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT3",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT4",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT5",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT6",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT7",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT8",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT9",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT10",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_DIFFERENT11",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT1",
+        "target": "LOC_LONGWEST",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_SECRET4",
+        "target": "LOC_SECRET1",
+        "label": "NORTH, OUTSIDE",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_MIRRORCANYON",
+        "target": "LOC_SECRET1",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MIRRORCANYON",
+        "target": "LOC_RESERVOIR",
+        "label": "NORTH, RESER",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_RESERVOIR",
+        "target": "LOC_MIRRORCANYON",
+        "label": "SOUTH, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_RESERVOIR",
+        "target": "LOC_RESBOTTOM",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_BOULDERS1",
+        "target": "LOC_TALL",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ARCHED",
+        "target": "LOC_SHELLROOM",
+        "label": "DOWN, SHELLROOM, OUTSIDE",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SLOPING1",
+        "target": "LOC_SHELLROOM",
+        "label": "UP, SHELLROOM",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_SLOPING1",
+        "target": "LOC_CULDESAC",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_EASTPIT",
+        "target": "LOC_EASTEND",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_WESTPIT",
+        "target": "LOC_WESTEND",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_WESTPIT",
+        "target": "LOC_BUILDING1",
+        "label": "MOT_56"
+      },
+      {
+        "source": "LOC_WESTPIT",
+        "target": "LOC_NARROW",
+        "label": "MOT_56",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE6",
+        "target": "LOC_ALIKE3",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE6",
+        "target": "LOC_ALIKE5",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE6",
+        "target": "LOC_ALIKE7",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ALIKE6",
+        "target": "LOC_ALIKE8",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE9",
+        "target": "LOC_ALIKE7",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE9",
+        "target": "LOC_ALIKE8",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ALIKE9",
+        "target": "LOC_MAZEEND4",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE4",
+        "target": "LOC_ALIKE1",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE4",
+        "target": "LOC_ALIKE2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE4",
+        "target": "LOC_MAZEEND1",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE4",
+        "target": "LOC_MAZEEND2",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE4",
+        "target": "LOC_ALIKE14",
+        "label": "UP, DOWN",
+        "direction": "UP",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_SWCHASM",
+        "target": "LOC_WINDING",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ALIKE2",
+        "target": "LOC_ALIKE1",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE2",
+        "target": "LOC_ALIKE3",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE2",
+        "target": "LOC_ALIKE4",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE11",
+        "target": "LOC_ALIKE1",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE11",
+        "target": "LOC_ALIKE11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE11",
+        "target": "LOC_ALIKE11",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE11",
+        "target": "LOC_MAZEEND8",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT1",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT4",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT5",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT6",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT7",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT8",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT9",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT10",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT11",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT3",
+        "target": "LOC_DIFFERENT2",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT1",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT3",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT5",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT6",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT7",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT8",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT9",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT10",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT11",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT4",
+        "target": "LOC_DIFFERENT2",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT1",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT3",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT4",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT6",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT7",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT8",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT9",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT10",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT11",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT5",
+        "target": "LOC_DIFFERENT2",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT1",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT3",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT4",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT5",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT7",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT8",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT9",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT10",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT11",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT6",
+        "target": "LOC_DIFFERENT2",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT1",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT3",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT4",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT5",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT6",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT8",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT9",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT10",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT11",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT7",
+        "target": "LOC_DIFFERENT2",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT1",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT3",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT4",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT5",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT6",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT7",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT9",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT10",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT11",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT8",
+        "target": "LOC_DIFFERENT2",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT1",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT3",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT4",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT5",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT6",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT7",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT8",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT10",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT11",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT9",
+        "target": "LOC_DIFFERENT2",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT1",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT3",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT4",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT5",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT6",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT7",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT8",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT9",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT11",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT10",
+        "target": "LOC_DIFFERENT2",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT1",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT3",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT4",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT5",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT6",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT7",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT8",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT9",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT10",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT11",
+        "target": "LOC_DIFFERENT2",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_RESBOTTOM",
+        "target": "LOC_RESNORTH",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_RESBOTTOM",
+        "target": "LOC_RESERVOIR",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_CULDESAC",
+        "target": "LOC_SLOPING1",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_CULDESAC",
+        "target": "LOC_SHELLROOM",
+        "label": "SHELLROOM"
+      },
+      {
+        "source": "LOC_BUILDING1",
+        "target": "LOC_WESTPIT",
+        "label": ""
+      },
+      {
+        "source": "LOC_BUILDING1",
+        "target": "LOC_WESTEND",
+        "label": ""
+      },
+      {
+        "source": "LOC_NARROW",
+        "target": "LOC_WESTPIT",
+        "label": "DOWN, MOT_56, EAST",
+        "direction": "EAST"
+      },
+      {
+        "source": "LOC_NARROW",
+        "target": "LOC_GIANTROOM",
+        "label": "WEST, MOT_27",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE3",
+        "target": "LOC_ALIKE2",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE3",
+        "target": "LOC_MAZEEND3",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ALIKE3",
+        "target": "LOC_ALIKE6",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE3",
+        "target": "LOC_MAZEEND9",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE5",
+        "target": "LOC_ALIKE6",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE5",
+        "target": "LOC_ALIKE7",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE7",
+        "target": "LOC_ALIKE5",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE7",
+        "target": "LOC_ALIKE6",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_ALIKE7",
+        "target": "LOC_ALIKE8",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE7",
+        "target": "LOC_ALIKE9",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_ALIKE6",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_ALIKE7",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_ALIKE8",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_ALIKE9",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_ALIKE10",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE8",
+        "target": "LOC_MAZEEND11",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_MAZEEND4",
+        "target": "LOC_ALIKE9",
+        "label": "WEST, OUTSIDE",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_MAZEEND1",
+        "target": "LOC_ALIKE4",
+        "label": "WEST, OUTSIDE",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_MAZEEND2",
+        "target": "LOC_ALIKE4",
+        "label": "EAST, OUTSIDE",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE14",
+        "target": "LOC_ALIKE4",
+        "label": "UP, DOWN",
+        "direction": "UP",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_MAZEEND8",
+        "target": "LOC_ALIKE11",
+        "label": "WEST, OUTSIDE",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT3",
+        "label": "SW",
+        "direction": "SW",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT4",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT5",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT6",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT7",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT8",
+        "label": "NE",
+        "direction": "NE",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT9",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT10",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DIFFERENT11",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "NE"
+      },
+      {
+        "source": "LOC_DIFFERENT2",
+        "target": "LOC_DEADEND13",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_RESNORTH",
+        "target": "LOC_RESBOTTOM",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_RESNORTH",
+        "target": "LOC_TREACHEROUS",
+        "label": "NW, UP, OUTSIDE",
+        "direction": "NW",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_GIANTROOM",
+        "target": "LOC_NARROW",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_GIANTROOM",
+        "target": "LOC_CAVEIN",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_GIANTROOM",
+        "target": "LOC_IMMENSE",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_MAZEEND3",
+        "target": "LOC_ALIKE3",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_MAZEEND9",
+        "target": "LOC_ALIKE3",
+        "label": "SOUTH, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE10",
+        "target": "LOC_ALIKE8",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE10",
+        "target": "LOC_ALIKE10",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE10",
+        "target": "LOC_MAZEEND5",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_ALIKE10",
+        "target": "LOC_PITBRINK",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_MAZEEND11",
+        "target": "LOC_ALIKE8",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_DEADEND13",
+        "target": "LOC_DIFFERENT2",
+        "label": "NORTH, OUTSIDE",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_DEADEND13",
+        "target": "LOC_ROUGHHEWN",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_DEADEND13",
+        "target": "LOC_DEADEND13",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_TREACHEROUS",
+        "target": "LOC_STEEP",
+        "label": "UP, NW",
+        "direction": "NW",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_TREACHEROUS",
+        "target": "LOC_RESNORTH",
+        "label": "DOWN, SE",
+        "direction": "SE",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_CAVEIN",
+        "target": "LOC_GIANTROOM",
+        "label": "SOUTH, MOT_27, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_IMMENSE",
+        "target": "LOC_GIANTROOM",
+        "label": "SOUTH, MOT_27, MOT_23",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_IMMENSE",
+        "target": "LOC_WATERFALL",
+        "label": "NORTH, ENTER, CAVERN",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_MAZEEND5",
+        "target": "LOC_ALIKE10",
+        "label": "UP, OUTSIDE",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_PITBRINK",
+        "target": "LOC_BIRDCHAMBER",
+        "label": "DOWN, MOT_56",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_PITBRINK",
+        "target": "LOC_ALIKE10",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_PITBRINK",
+        "target": "LOC_MAZEEND6",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_PITBRINK",
+        "target": "LOC_ALIKE12",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_PITBRINK",
+        "target": "LOC_ALIKE13",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ROUGHHEWN",
+        "target": "LOC_DEADEND13",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ROUGHHEWN",
+        "target": "LOC_LARGE",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_STEEP",
+        "target": "LOC_TREACHEROUS",
+        "label": "DOWN, SE",
+        "direction": "SE",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_STEEP",
+        "target": "LOC_CLIFFBASE",
+        "label": "UP, NW",
+        "direction": "NW",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_WATERFALL",
+        "target": "LOC_IMMENSE",
+        "label": "SOUTH, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_WATERFALL",
+        "target": "LOC_GIANTROOM",
+        "label": "MOT_27"
+      },
+      {
+        "source": "LOC_WATERFALL",
+        "target": "LOC_INCLINE",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_MAZEEND6",
+        "target": "LOC_PITBRINK",
+        "label": "EAST, OUTSIDE",
+        "direction": "EAST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_ALIKE12",
+        "target": "LOC_PITBRINK",
+        "label": "SOUTH",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_ALIKE12",
+        "target": "LOC_ALIKE13",
+        "label": "EAST",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_ALIKE12",
+        "target": "LOC_MAZEEND10",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE13",
+        "target": "LOC_PITBRINK",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE13",
+        "target": "LOC_ALIKE12",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "EAST"
+      },
+      {
+        "source": "LOC_ALIKE13",
+        "target": "LOC_MAZEEND12",
+        "label": "NW",
+        "direction": "NW",
+        "targetDirection": "SE"
+      },
+      {
+        "source": "LOC_LARGE",
+        "target": "LOC_ROUGHHEWN",
+        "label": "WEST",
+        "direction": "WEST",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_LARGE",
+        "target": "LOC_STOREROOM",
+        "label": "NORTH",
+        "direction": "NORTH",
+        "targetDirection": "SOUTH"
+      },
+      {
+        "source": "LOC_CLIFFBASE",
+        "target": "LOC_STEEP",
+        "label": "DOWN, SE",
+        "direction": "SE",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_CLIFFBASE",
+        "target": "LOC_CLIFFACE",
+        "label": "UP, MOT_56",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_INCLINE",
+        "target": "LOC_WATERFALL",
+        "label": "NORTH, CAVERN, MOT_23",
+        "direction": "NORTH",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_INCLINE",
+        "target": "LOC_LOWROOM",
+        "label": "DOWN, MOT_56",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_MAZEEND10",
+        "target": "LOC_ALIKE12",
+        "label": "EAST, OUTSIDE",
+        "direction": "EAST",
+        "targetDirection": "WEST"
+      },
+      {
+        "source": "LOC_MAZEEND12",
+        "target": "LOC_ALIKE13",
+        "label": "SE",
+        "direction": "SE",
+        "targetDirection": "NW"
+      },
+      {
+        "source": "LOC_STOREROOM",
+        "target": "LOC_LARGE",
+        "label": "SOUTH, OUTSIDE",
+        "direction": "SOUTH",
+        "targetDirection": "NORTH"
+      },
+      {
+        "source": "LOC_CLIFFACE",
+        "target": "LOC_CLIFFBASE",
+        "label": "DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_CLIFFACE",
+        "target": "LOC_CLIFFLEDGE",
+        "label": "UP",
+        "direction": "UP",
+        "targetDirection": "DOWN"
+      },
+      {
+        "source": "LOC_CLIFFLEDGE",
+        "target": "LOC_CLIFFACE",
+        "label": "MOT_56, DOWN",
+        "direction": "DOWN",
+        "targetDirection": "UP"
+      },
+      {
+        "source": "LOC_CLIFFLEDGE",
+        "target": "LOC_REACHDEAD",
+        "label": "NE, CRAWL",
+        "direction": "NE",
+        "targetDirection": "SW"
+      },
+      {
+        "source": "LOC_REACHDEAD",
+        "target": "LOC_CLIFFLEDGE",
+        "label": "SW, OUTSIDE, CRAWL",
+        "direction": "SW",
+        "targetDirection": "NE"
+      }
+    ]
   }
 }

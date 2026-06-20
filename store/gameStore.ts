@@ -8,6 +8,7 @@ interface GameState {
   history: string[];
   flags: Record<string, boolean | number>;
   score: number;
+  visitedRooms: string[];
   
   // Actions
   setLocation: (location: string) => void;
@@ -21,7 +22,7 @@ interface GameState {
   reset: () => void;
 }
 
-const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLocations' | 'objectStates' | 'history' | 'flags' | 'score'> = {
+const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLocations' | 'objectStates' | 'history' | 'flags' | 'score' | 'visitedRooms'> = {
   currentLocation: '',
   inventory: [],
   objectLocations: {},
@@ -29,12 +30,19 @@ const initialState: Pick<GameState, 'currentLocation' | 'inventory' | 'objectLoc
   history: [],
   flags: {},
   score: 0,
+  visitedRooms: [],
 };
 
 export const useGameStore = create<GameState>((set) => ({
   ...initialState,
 
-  setLocation: (location: string): void => set({ currentLocation: location }),
+  setLocation: (location: string): void => 
+    set((state: GameState) => ({ 
+      currentLocation: location, 
+      visitedRooms: state.visitedRooms.includes(location) 
+        ? state.visitedRooms 
+        : [...state.visitedRooms, location] 
+    })),
   
   setObjectLocation: (objectId: string, locationId: string): void =>
     set((state: GameState) => ({ objectLocations: { ...state.objectLocations, [objectId]: locationId } })),

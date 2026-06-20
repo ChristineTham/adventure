@@ -6,6 +6,7 @@ import { GameData } from '@/types/game';
 import { getGraphData, GraphNode } from '@/lib/graph';
 import { Button } from './ui/button';
 import { X, Maximize2, Layers, ZoomIn, ZoomOut } from 'lucide-react';
+import { useGameStore } from '@/store/gameStore';
 
 interface GameMapProps {
   gameData: GameData;
@@ -18,6 +19,7 @@ interface D3Link extends d3.SimulationLinkDatum<D3Node> {
   label: string;
   direction?: string;
   targetDirection?: string;
+  isVisited?: boolean;
 }
 
 export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
@@ -26,9 +28,12 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
   const [zoomLevel, setZoomLevel] = useState(1);
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
 
+  const store = useGameStore();
+  const visitedRooms = store?.visitedRooms;
+
   const graphData = useMemo(() => {
-    return getGraphData(gameData, currentLocation, showFullMap ? null : 2);
-  }, [gameData, currentLocation, showFullMap]);
+    return getGraphData(gameData, currentLocation, showFullMap ? null : 2, visitedRooms || []);
+  }, [gameData, currentLocation, showFullMap, visitedRooms]);
 
   const handleZoom = (direction: 'in' | 'out' | 'reset') => {
     if (!zoomRef.current || !svgRef.current) return;
@@ -140,8 +145,10 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
     });
 
     // Add arrowheads
-    svg.append('defs').append('marker')
-      .attr('id', 'arrowhead')
+    const defs = svg.append('defs');
+    
+    defs.append('marker')
+      .attr('id', 'arrowhead-visited')
       .attr('viewBox', '0 -5 10 10')
       .attr('refX', 10) 
       .attr('refY', 0)
@@ -150,7 +157,20 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .attr('markerHeight', 6)
       .append('path')
       .attr('d', 'M 0,-5 L 10,0 L 0,5')
-      .attr('fill', 'var(--map-link)');
+      .attr('fill', 'var(--map-link-visited)');
+
+    defs.append('marker')
+      .attr('id', 'arrowhead-unvisited')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 10) 
+      .attr('refY', 0)
+      .attr('orient', 'auto')
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .append('path')
+      .attr('d', 'M 0,-5 L 10,0 L 0,5')
+      .attr('fill', 'var(--map-link)')
+      .attr('fill-opacity', 0.4);
 
     // Draw links
     const link = g.append('g')
@@ -158,10 +178,10 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .selectAll('path')
       .data(graphData.links)
       .enter().append('path')
-      .attr('stroke', 'var(--map-link)')
-      .attr('stroke-opacity', showFullMap ? 0.3 : 0.8)
+      .attr('stroke', d => d.isVisited ? 'var(--map-link-visited)' : 'var(--map-link)')
+      .attr('stroke-opacity', d => d.isVisited ? 0.9 : 0.4)
       .attr('stroke-width', showFullMap ? 1 : 2)
-      .attr('marker-end', 'url(#arrowhead)');
+      .attr('marker-end', d => d.isVisited ? 'url(#arrowhead-visited)' : 'url(#arrowhead-unvisited)');
 
     // Draw nodes
     const node = g.append('g')
@@ -180,8 +200,8 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .attr('width', 80)
       .attr('height', 30)
       .attr('rx', 4)
-      .attr('fill', d => d.isCurrent ? 'var(--map-node-current)' : 'var(--map-node)')
-      .attr('stroke', d => d.isCurrent ? 'var(--map-node-current-border)' : 'var(--map-node-border)')
+      .attr('fill', d => d.isCurrent ? 'var(--map-node-current)' : (d.isVisited ? 'var(--map-node)' : 'var(--map-node-unvisited)'))
+      .attr('stroke', d => d.isCurrent ? 'var(--map-node-current-border)' : (d.isVisited ? 'var(--map-node-border)' : 'var(--map-node-unvisited-border)'))
       .attr('stroke-width', 2);
 
     // Node labels
@@ -189,7 +209,7 @@ export function GameMap({ gameData, currentLocation, onClose }: GameMapProps) {
       .text(d => d.label)
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'middle')
-      .attr('fill', d => d.isCurrent ? 'var(--map-text-current)' : 'var(--map-text)')
+      .attr('fill', d => d.isCurrent ? 'var(--map-text-current)' : (d.isVisited ? 'var(--map-text)' : 'var(--map-text-unvisited)'))
       .attr('font-size', showFullMap ? '8px' : '10px')
       .attr('font-family', 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace')
       .style('pointer-events', 'none');
@@ -366,8 +386,22 @@ simulation.on('tick', () => {
                 <span className="text-card-foreground">CURRENT LOCATION</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--map-node)' }} />
-                <span className="text-card-foreground">DISCOVERED ROOM</span>
+                <div className="w-3 h-3 rounded-full border border-border" style={{ backgroundColor: 'var(--map-node)' }} />
+                <span className="text-card-foreground">VISITED ROOM</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full border" style={{ backgroundColor: 'var(--map-node-unvisited)', borderColor: 'var(--map-node-unvisited-border)' }} />
+                <span className="text-card-foreground">UNVISITED ROOM</span>
+              </div>
+              <div className="pt-1 border-t border-border mt-1 space-y-1">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-0.5" style={{ backgroundColor: 'var(--map-link-visited)' }} />
+                  <span className="text-card-foreground">VISITED PATH</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-0.5" style={{ backgroundColor: 'var(--map-link)' }} />
+                  <span className="text-card-foreground">UNVISITED PATH</span>
+                </div>
               </div>
             </div>
           </div>

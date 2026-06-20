@@ -60,6 +60,19 @@ export interface ObjectData {
   locations?: string[];
 }
 
+export interface StaticMapNode {
+  id: string;
+  label: string;
+}
+
+export interface StaticMapLink {
+  source: string;
+  target: string;
+  label: string;
+  direction?: string;
+  targetDirection?: string;
+}
+
 export interface GameData {
   motions: Record<string, Motion>;
   actions: Record<string, Action>;
@@ -72,4 +85,8 @@ export interface GameData {
   turn_thresholds: Record<string, string>;
   obituaries: string[];
   vocabulary: Record<string, string>;
+  mapData?: {
+    nodes: StaticMapNode[];
+    links: StaticMapLink[];
+  };
 }

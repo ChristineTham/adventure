@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 interface LocationImageProps {
@@ -9,16 +9,6 @@ interface LocationImageProps {
 export function LocationImage({ locationId, className }: LocationImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [error, setError] = useState(false);
-  const [currentId, setCurrentId] = useState(locationId);
-
-  // Reset states when location changes
-  useEffect(() => {
-    if (locationId !== currentId) {
-      setIsLoaded(false);
-      setError(false);
-      setCurrentId(locationId);
-    }
-  }, [locationId, currentId]);
 
   if (!locationId || error) {
     return null;
@@ -33,7 +23,7 @@ export function LocationImage({ locationId, className }: LocationImageProps) {
     <div 
       className={cn(
         "relative w-full aspect-[3/2] overflow-hidden rounded-md bg-muted",
-        "border-8 border-white dark:border-zinc-900 shadow-md", // Postcard styling
+        "border-4 border-white dark:border-zinc-900 shadow-md", // Postcard styling
         className
       )}
     >

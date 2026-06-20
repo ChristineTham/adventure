@@ -2,24 +2,31 @@
 
 import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Terminal, Info, Map, MapPin } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+import { Info, Map, MapPin, Package, Trophy } from 'lucide-react';
 import { ModeToggle } from './ModeToggle';
-import { formatLocationId } from '@/lib/utils';
+import { formatLocationId, cn } from '@/lib/utils';
 
 interface GameTerminalProps {
   history: string[];
   currentLocation: string;
-  onAction: (cmd: string) => void;
   onShowMap: () => void;
+  score: number;
+  inventoryCount: number;
+  onShowInventory: () => void;
+  className?: string;
 }
 
-export function GameTerminal({ history, currentLocation, onAction, onShowMap }: GameTerminalProps) {
-  const [input, setInput] = React.useState('');
+export function GameTerminal({ 
+  history, 
+  currentLocation, 
+  onShowMap,
+  score,
+  inventoryCount,
+  onShowInventory,
+  className
+}: GameTerminalProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,80 +35,158 @@ export function GameTerminal({ history, currentLocation, onAction, onShowMap }: 
     }
   }, [history]);
 
-  const handleSubmit = (e?: React.FormEvent): void => {
-    e?.preventDefault();
-    if (input.trim()) {
-      onAction(input);
-      setInput('');
-    }
-  };
-
   return (
-    <Card className="md:col-span-4 lg:col-span-2 flex flex-col border-border bg-card overflow-hidden shadow-xl rounded-xl border-t-2 border-t-zinc-500/30">
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 p-4 bg-muted/30">
-        <CardTitle className="text-base font-bold tracking-tight text-foreground flex items-center gap-2">
-           <Terminal className="size-4 text-zinc-500 lg:size-5" />
-           ADVENTURE
-        </CardTitle>
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-            <div className="md:hidden flex items-center gap-1.5">
-              <ModeToggle className="size-9 rounded-lg" />
-              <Link href="/about">
-                <Button variant="outline" size="icon" className="size-9 border-border bg-card text-muted-foreground rounded-lg" aria-label="About">
-                  <Info className="size-4" />
-                </Button>
-              </Link>
-              <Button 
-                variant="outline" 
-                size="icon" 
-                onClick={onShowMap} 
-                className="size-9 border-border bg-card text-muted-foreground rounded-lg"
-                aria-label="Map"
-              >
-                <Map className="size-4" />
-              </Button>
-            </div>
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 shadow-sm">
-              <MapPin className="size-3 text-blue-500" />
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-500 whitespace-nowrap">
-                {formatLocationId(currentLocation)}
+    <div className={cn('flex-1 flex flex-col min-h-0', className)}>
+      {/* Mobile utility header — outside the scroll */}
+      <div className="md:hidden flex flex-row items-center justify-between p-3 gap-2 flex-wrap bg-muted/30 rounded-t-xl border border-border/50 border-b-0">
+        <div className="flex items-center gap-1.5">
+          <ModeToggle className="size-9 rounded-lg" />
+          <Link href="/about">
+            <Button variant="outline" size="icon" className="size-9 border-border bg-card text-muted-foreground rounded-lg" aria-label="About">
+              <Info className="size-4" />
+            </Button>
+          </Link>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={onShowMap}
+            className="size-9 border-border bg-card text-muted-foreground rounded-lg"
+            aria-label="Map"
+          >
+            <Map className="size-4" />
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={onShowInventory}
+            className="relative size-9 border-border bg-card text-muted-foreground rounded-lg"
+            aria-label="Inventory"
+          >
+            <Package className="size-4 text-green-500" />
+            {inventoryCount > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-green-500 px-1 text-[8px] font-bold text-white leading-none">
+                {inventoryCount}
               </span>
-            </div>
+            )}
+          </Button>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">
+            <MapPin className="size-3 text-blue-600" />
+            <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 whitespace-nowrap">
+              {formatLocationId(currentLocation)}
+            </span>
+          </div>
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
+            <Trophy className="size-3 text-orange-600" />
+            <span className="text-sm font-bold uppercase tracking-wider text-orange-700 dark:text-orange-400 whitespace-nowrap">
+              {score} pts
+            </span>
           </div>
         </div>
-      </CardHeader>
-      <Separator className="bg-border/50" />
-      <CardContent className="flex-1 overflow-hidden p-0 relative bg-zinc-950/5 dark:bg-black/20">
-        <ScrollArea className="h-full p-6 font-mono selection:bg-blue-500/30">
-          <div className="space-y-4 max-w-2xl mx-auto">
+      </div>
+      <Separator className="bg-border/50 md:hidden" />
+
+      {/* Scroll container */}
+      <div className="flex-1 flex flex-col min-h-0 relative">
+
+        {/* Top wooden roller */}
+        <div className="relative flex items-center shrink-0 z-10" style={{ height: '18px' }}>
+          {/* Left knob */}
+          <div
+            className="absolute left-0 z-20 rounded-full border border-amber-950/60 shadow-md"
+            style={{
+              width: '22px',
+              height: '22px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              background: 'radial-gradient(circle at 35% 35%, #a16207, #78350f 60%, #451a03)',
+              boxShadow: '2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 3px rgba(0,0,0,0.4)',
+            }}
+          />
+          {/* Rod */}
+          <div
+            className="absolute inset-y-0 left-[11px] right-[11px] rounded-sm"
+            style={{
+              background: 'linear-gradient(to bottom, #92400e, #d97706 30%, #fbbf24 48%, #d97706 65%, #78350f)',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,220,100,0.3)',
+            }}
+          />
+          {/* Right knob */}
+          <div
+            className="absolute right-0 z-20 rounded-full border border-amber-950/60 shadow-md"
+            style={{
+              width: '22px',
+              height: '22px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              background: 'radial-gradient(circle at 35% 35%, #a16207, #78350f 60%, #451a03)',
+              boxShadow: '2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 3px rgba(0,0,0,0.4)',
+            }}
+          />
+        </div>
+
+        {/* Scroll paper body */}
+        <div className="scroll-paper flex-1 min-h-0 overflow-y-auto mx-2 font-serif selection:bg-amber-500/30">
+          <div className="p-4 space-y-3" style={{ minHeight: '100%' }}>
+            {history.length === 0 && (
+              <p className="text-center italic text-amber-800/50 dark:text-amber-400/30 text-base pt-4">
+                Your adventure begins here…
+              </p>
+            )}
             {history.map((msg, i) => (
-              <div key={i} className={msg.startsWith('>') ? 'text-blue-500 font-bold border-l-2 border-blue-400/30 pl-4 py-1 my-2 bg-blue-500/5 rounded-r-md' : 'text-zinc-700 dark:text-zinc-300 leading-relaxed whitespace-pre-wrap text-sm md:text-base'}>
+              <div
+                key={i}
+                className={
+                  msg.startsWith('>')
+                    ? 'text-amber-900 dark:text-amber-400 font-bold border-l-2 border-amber-600/40 pl-3 py-0.5 my-1 bg-amber-500/5 rounded-r text-xs font-mono'
+                    : 'text-stone-800 dark:text-stone-300 leading-relaxed whitespace-pre-wrap text-base'
+                }
+              >
                 {msg}
               </div>
             ))}
             <div ref={scrollRef} />
           </div>
-        </ScrollArea>
-      </CardContent>
-      <Separator className="bg-border/50" />
-      <CardFooter className="p-4 bg-muted/30">
-        <form onSubmit={handleSubmit} className="flex w-full gap-3 max-w-2xl mx-auto">
-          <div className="relative flex-1 flex items-center">
-            <span className="absolute left-4 text-blue-500 font-bold text-lg select-none pointer-events-none">{'>'}</span>
-            <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="What should we do?"
-              className="flex-1 bg-background border-border text-foreground focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 h-12 text-lg pl-10 rounded-xl transition-all shadow-inner"
-              autoFocus
-            />
-          </div>
-          <Button type="submit" className="bg-blue-600 hover:bg-blue-500 text-white font-bold h-12 px-6 rounded-xl shadow-lg transition-transform active:scale-95">
-            Enter
-          </Button>
-        </form>
-      </CardFooter>
-    </Card>
+        </div>
+
+        {/* Bottom wooden roller */}
+        <div className="relative flex items-center shrink-0 z-10" style={{ height: '18px' }}>
+          {/* Left knob */}
+          <div
+            className="absolute left-0 z-20 rounded-full border border-amber-950/60 shadow-md"
+            style={{
+              width: '22px',
+              height: '22px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              background: 'radial-gradient(circle at 35% 35%, #a16207, #78350f 60%, #451a03)',
+              boxShadow: '2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 3px rgba(0,0,0,0.4)',
+            }}
+          />
+          {/* Rod */}
+          <div
+            className="absolute inset-y-0 left-[11px] right-[11px] rounded-sm"
+            style={{
+              background: 'linear-gradient(to bottom, #92400e, #d97706 30%, #fbbf24 48%, #d97706 65%, #78350f)',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,220,100,0.3)',
+            }}
+          />
+          {/* Right knob */}
+          <div
+            className="absolute right-0 z-20 rounded-full border border-amber-950/60 shadow-md"
+            style={{
+              width: '22px',
+              height: '22px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              background: 'radial-gradient(circle at 35% 35%, #a16207, #78350f 60%, #451a03)',
+              boxShadow: '2px 2px 4px rgba(0,0,0,0.5), inset -1px -1px 3px rgba(0,0,0,0.4)',
+            }}
+          />
+        </div>
+
+      </div>
+    </div>
   );
 }

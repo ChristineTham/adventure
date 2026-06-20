@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import { GameData, ObjectData, GameLocation, PlayerClass, Motion, Action, TravelCondition, Hint } from '../types/game';
+import { GameData, ObjectData, GameLocation, PlayerClass, Motion, Action, TravelCondition, Hint, StaticMapNode, StaticMapLink } from '../types/game';
 
 interface RawObjectData extends Partial<ObjectData> {
   words?: string[];
@@ -28,6 +28,133 @@ interface RawGameData {
   dwarflocs: string[];
   classes: (PlayerClass | Record<string, string>)[];
   obituaries: string[];
+}
+
+// Opposites & directions for map pregeneration
+const DIRECTION_KEYS = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NE', 'SE', 'SW', 'NW', 'UP', 'DOWN'];
+
+function getOppositeDirection(dir?: string): string | undefined {
+  if (!dir) return undefined;
+  const opposites: Record<string, string> = {
+    'NORTH': 'SOUTH', 'SOUTH': 'NORTH',
+    'EAST': 'WEST', 'WEST': 'EAST',
+    'NE': 'SW', 'SW': 'NE',
+    'NW': 'SE', 'SE': 'NW',
+    'UP': 'DOWN', 'DOWN': 'UP'
+  };
+  return opposites[dir];
+}
+
+function getPrimaryDirection(verbs: string[]): string | undefined {
+  return DIRECTION_KEYS.find(dir => verbs.includes(dir));
+}
+
+function isForwarder(locId: string, locations: Record<string, GameLocation>): boolean {
+  const loc = locations[locId];
+  if (!loc) return false;
+  return loc.travel.length === 1 && loc.travel[0].verbs.length === 0;
+}
+
+function resolveForwarder(locId: string, locations: Record<string, GameLocation>): string {
+  let current = locId;
+  const visited = new Set<string>();
+  
+  while (isForwarder(current, locations) && !visited.has(current)) {
+    visited.add(current);
+    const rule = locations[current].travel[0];
+    if (rule.action[0] === 'goto') {
+      current = rule.action[1] as string;
+    } else {
+      break;
+    }
+  }
+  return current;
+}
+
+function formatLocationId(id: string): string {
+  if (!id) return '';
+  return id
+    .replace(/^LOC_/, '')
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
+
+function buildStaticMapData(locations: Record<string, GameLocation>): { nodes: StaticMapNode[], links: StaticMapLink[] } {
+  const nodesMap = new Map<string, StaticMapNode>();
+  const linksMap = new Map<string, StaticMapLink>();
+  const discovered = new Set<string>();
+
+  const startLoc = 'LOC_START';
+  if (locations[startLoc]) {
+    const queue: [string, number][] = [[startLoc, 0]];
+    discovered.add(startLoc);
+    
+    let head = 0;
+    while (head < queue.length) {
+      const [currentId, dist] = queue[head++];
+      const loc = locations[currentId];
+      if (!loc || !loc.travel) continue;
+      
+      for (const rule of loc.travel) {
+        if (rule.action && rule.action[0] === 'goto') {
+          const destId = resolveForwarder(rule.action[1] as string, locations);
+          if (destId && destId !== 'LOC_NOWHERE' && !discovered.has(destId)) {
+            discovered.add(destId);
+            queue.push([destId, dist + 1]);
+          }
+        }
+      }
+    }
+  }
+
+  discovered.forEach(locId => {
+    const loc = locations[locId];
+    if (!loc) return;
+
+    nodesMap.set(locId, {
+      id: locId,
+      label: formatLocationId(locId)
+    });
+
+    if (loc.travel) {
+      for (const rule of loc.travel) {
+        if (rule.action && rule.action[0] === 'goto') {
+          const destId = resolveForwarder(rule.action[1] as string, locations);
+          
+          if (destId && destId !== 'LOC_NOWHERE' && discovered.has(destId)) {
+            const dir = getPrimaryDirection(rule.verbs);
+            const linkKey = `${locId}->${destId}:${dir || 'NONE'}`;
+            if (linksMap.has(linkKey)) continue;
+
+            let targetDir = getOppositeDirection(dir);
+            const targetLoc = locations[destId];
+            if (targetLoc && targetLoc.travel) {
+              const backLink = targetLoc.travel.find(r => 
+                r.action && r.action[0] === 'goto' && resolveForwarder(r.action[1] as string, locations) === locId
+              );
+              if (backLink) {
+                targetDir = getPrimaryDirection(backLink.verbs);
+              }
+            }
+
+            linksMap.set(linkKey, {
+              source: locId,
+              target: destId,
+              label: rule.verbs.join(', '),
+              direction: dir,
+              targetDirection: targetDir
+            });
+          }
+        }
+      }
+    }
+  });
+
+  return {
+    nodes: Array.from(nodesMap.values()),
+    links: Array.from(linksMap.values())
+  };
 }
 
 export function parseAdventureYaml(): GameData {
@@ -138,18 +265,22 @@ export function parseAdventureYaml(): GameData {
     });
   }
 
+  const locationsMap = rawData.locations as Record<string, GameLocation>;
+  const mapData = buildStaticMapData(locationsMap);
+
   const data: GameData = {
     motions: rawData.motions,
     actions: rawData.actions,
     hints: rawData.hints,
-    locations: rawData.locations as Record<string, GameLocation>,
+    locations: locationsMap,
     objects: rawData.objects as Record<string, ObjectData>,
     arbitrary_messages: rawData.arbitrary_messages,
     dwarflocs: rawData.dwarflocs,
     classes: playerClasses,
     turn_thresholds: rawData.turn_thresholds,
     obituaries: rawData.obituaries,
-    vocabulary: vocabulary
+    vocabulary: vocabulary,
+    mapData: mapData
   };
 
   return data;

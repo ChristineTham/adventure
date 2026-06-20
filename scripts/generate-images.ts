@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { GoogleGenAI } from '@google/genai';
 import gameDataRaw from '../data/game-data.json';
-import { GameData, GameLocation } from '../types/game';
+import { GameData } from '../types/game';
 
 const gameData = gameDataRaw as unknown as GameData;
 
@@ -69,7 +69,7 @@ Aspect ratio: 3:2.`;
         contents: prompt,
         config: {
           aspectRatio: '3:2',
-        } as any,
+        } as unknown as Record<string, unknown>,
       });
 
       const base64Image = response.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data;
