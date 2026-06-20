@@ -71,7 +71,10 @@ export default function AboutPage() {
             <CardContent className="p-8 space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
                 This project is a <span className="text-foreground font-bold underline decoration-blue-500/30 underline-offset-4">faithful forward-port</span> of the original source code 
-                (specifically the <span className="italic">Open Adventure</span> 2.5 version) into a modern web environment.
+                (specifically the <span className="italic">Open Adventure</span> 2.5 version) into a modern web environment. It was developed by <a href="https://christham.net" target="_blank" rel="noopener noreferrer" className="text-foreground font-bold underline hover:text-blue-500 transition-colors">Chris Tham</a>.
+              </p>
+              <p>
+                The project is fully <span className="text-foreground font-bold underline decoration-blue-500/30 underline-offset-4">open source</span>. You can view, modify, and contribute to the code on the <a href="https://github.com/ChristineTham/adventure" target="_blank" rel="noopener noreferrer" className="text-foreground font-bold underline hover:text-blue-500 transition-colors">GitHub repository</a>.
               </p>
               <ul className="grid gap-6">
                 {[

@@ -1,30 +1,15 @@
 'use client';
 
 import React, { useRef, useEffect } from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { Info, Map, MapPin, Package, Trophy } from 'lucide-react';
-import { ModeToggle } from './ModeToggle';
-import { formatLocationId, cn } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 
 interface GameTerminalProps {
   history: string[];
-  currentLocation: string;
-  onShowMap: () => void;
-  score: number;
-  inventoryCount: number;
-  onShowInventory: () => void;
   className?: string;
 }
 
 export function GameTerminal({ 
   history, 
-  currentLocation, 
-  onShowMap,
-  score,
-  inventoryCount,
-  onShowInventory,
   className
 }: GameTerminalProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -37,56 +22,6 @@ export function GameTerminal({
 
   return (
     <div className={cn('flex-1 flex flex-col min-h-0', className)}>
-      {/* Mobile utility header — outside the scroll */}
-      <div className="md:hidden flex flex-row items-center justify-between p-3 gap-2 flex-wrap bg-muted/30 rounded-t-xl border border-border/50 border-b-0">
-        <div className="flex items-center gap-1.5">
-          <ModeToggle className="size-9 rounded-lg" />
-          <Link href="/about">
-            <Button variant="outline" size="icon" className="size-9 border-border bg-card text-muted-foreground rounded-lg" aria-label="About">
-              <Info className="size-4" />
-            </Button>
-          </Link>
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={onShowMap}
-            className="size-9 border-border bg-card text-muted-foreground rounded-lg"
-            aria-label="Map"
-          >
-            <Map className="size-4" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={onShowInventory}
-            className="relative size-9 border-border bg-card text-muted-foreground rounded-lg"
-            aria-label="Inventory"
-          >
-            <Package className="size-4 text-green-500" />
-            {inventoryCount > 0 && (
-              <span className="absolute -top-1.5 -right-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-green-500 px-1 text-[8px] font-bold text-white leading-none">
-                {inventoryCount}
-              </span>
-            )}
-          </Button>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">
-            <MapPin className="size-3 text-blue-600" />
-            <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 whitespace-nowrap">
-              {formatLocationId(currentLocation)}
-            </span>
-          </div>
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-500/10 border border-orange-500/20">
-            <Trophy className="size-3 text-orange-600" />
-            <span className="text-sm font-bold uppercase tracking-wider text-orange-700 dark:text-orange-400 whitespace-nowrap">
-              {score} pts
-            </span>
-          </div>
-        </div>
-      </div>
-      <Separator className="bg-border/50 md:hidden" />
-
       {/* Scroll container */}
       <div className="flex-1 flex flex-col min-h-0 relative">
 

@@ -28,9 +28,10 @@ The project uses a data-driven design where the game world is sourced from the o
 - **Game Engine Core (`engine/core.ts`)**: Implements the state machine for movement, action processing, and object manipulation.
 - **Game Store (`store/gameStore.ts`)**: A Zustand-based central store managing the game's reactive state (current location, inventory, world state, and message history).
 - **UI Component (`components/GameClient.tsx`)**: A polished, responsive terminal-style interface featuring:
+  - Wood & Parchment themed game terminal designed as an unfolding scroll.
+  - Stitched leather rucksack card for inventory management.
+  - Custom SVG compass rose with cardinal and intercardinal direction arrows that glow for valid exits.
   - Auto-scrolling message history.
-  - Context-aware movement controls (Compass).
-  - Dynamic inventory and object interaction panels.
 
 ## 📜 History of Colossal Cave Adventure
 
@@ -40,7 +41,7 @@ Colossal Cave Adventure (often simply called *Adventure*) is the foundational wo
 - **The Expansion (1977):** Don Woods discovered the game on ARPANET and, with Crowther's blessing, expanded it significantly. He introduced fantasy creatures (dwarves, giants, and a dragon), magic words like `XYZZY`, and the famous 350-point scoring system.
 - **Legacy:** The game's influence is immeasurable. It directly inspired the creation of *Zork*, the founding of Sierra On-Line, and defined the conventions of text adventures that persist to this day.
 
-**Credits**: This project owes its existence to the original creators, **Will Crowther** and **Don Woods**, whose pioneering work defined the interactive fiction genre. We also deeply acknowledge **Eric S. Raymond** and the [open-adventure](https://gitlab.com/esr/open-adventure) repository, which served as the starting point for this modernised TypeScript port. Their efforts to preserve and forward-port the original Colossal Cave Adventure 2.5, along with the countless individuals who have directly or indirectly contributed to the game's evolution over the decades, made this web implementation possible.
+**Credits**: The game owes its existence to the original creators, **Will Crowther** and **Don Woods**, whose pioneering work defined the interactive fiction genre. We also deeply acknowledge **Eric S. Raymond** and the [open-adventure](https://gitlab.com/esr/open-adventure) repository, which served as the starting point for this modernised TypeScript port. Their efforts to preserve and forward-port the original Colossal Cave Adventure 2.5, along with the countless individuals who have directly or indirectly contributed to the game's evolution over the decades, made this web implementation possible.
 
 ## ✅ Implemented to Date
 
@@ -48,7 +49,9 @@ Colossal Cave Adventure (often simply called *Adventure*) is the foundational wo
 - [x] **YAML Data Pipeline**: Automated conversion of `data/adventure.yaml` to `data/game-data.json`.
 - [x] **Location & Movement**: Support for cardinal directions, synonyms, and context-aware descriptions.
 - [x] **Object Interaction**: Implementation of `TAKE`, `DROP`, `FILL`, and `INVENTORY` commands.
-- [x] **Autoscroll Terminal**: A modern UI that keeps the player focused on the latest game output.
+- [x] **Autoscroll Scroll-Themed Terminal**: A custom wood-and-parchment themed scroll that autoscrolls to show the latest game output, with Safari-compatible custom scrollbars.
+- [x] **Polished Desktop Sidebar**: Custom SVG compass rose and stitched leather rucksack cards.
+- [x] **Responsive Mobile Layout**: Single-screen mobile layout grouping actions in the header and overlaying HUD compass and objects panels on the location image for single-tap navigation.
 - [x] **澳洲 English Lexicon**: Adherence to Australian spelling (e.g., 'normalise', 'optimise') throughout the codebase and documentation.
 - [x] **Rigorous Testing**: Comprehensive unit tests for the parser, engine, and store with 100% pass rate.
 - [x] **Clean Linting**: ESLint configuration tuned for high signal, ignoring non-project directories like `.agents/`.

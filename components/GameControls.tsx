@@ -2,17 +2,14 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
-  Eye,
-} from 'lucide-react';
+
 import gameDataRaw from '@/data/game-data.json';
 import { GameData } from '@/types/game';
 
 const gameData = gameDataRaw as unknown as GameData;
 
 /** Return the `inventory` display name for an object id, fallback to the id itself. */
-function getItemName(objId: string): string {
+export function getItemName(objId: string): string {
   const obj = (gameData.objects as Record<string, { inventory?: string | null }>)[objId];
   if (obj?.inventory && !obj.inventory.startsWith('*')) return obj.inventory;
   // Strip leading * for fixed objects shown in inventory anyway
@@ -50,7 +47,7 @@ interface CompassRoseProps {
   onAction: (cmd: string) => void;
 }
 
-function CompassRose({ isDirectionValid, onAction }: CompassRoseProps) {
+export function CompassRose({ isDirectionValid, onAction }: CompassRoseProps) {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
       <svg
@@ -229,23 +226,6 @@ export function GameControls({ inventory, isDirectionValid, onAction }: GameCont
             )}
           </CardContent>
         </Card>
-      </div>
-
-      {/* ── Mobile controls bar ── */}
-      <div className="md:hidden grid grid-cols-2 gap-2 mt-auto">
-        <Card className="border-border bg-card shadow-sm rounded-xl flex items-center justify-center p-2">
-          <div className="grid grid-cols-3 gap-1">
-            <Button variant="ghost" size="icon" className="size-8" onClick={() => onAction('W')} aria-label="West"><ArrowLeft className="size-4" /></Button>
-            <div className="flex flex-col gap-1">
-              <Button variant="ghost" size="icon" className="size-8" onClick={() => onAction('N')} aria-label="North"><ArrowUp className="size-4" /></Button>
-              <Button variant="ghost" size="icon" className="size-8" onClick={() => onAction('S')} aria-label="South"><ArrowDown className="size-4" /></Button>
-            </div>
-            <Button variant="ghost" size="icon" className="size-8" onClick={() => onAction('E')} aria-label="East"><ArrowRight className="size-4" /></Button>
-          </div>
-        </Card>
-        <Button variant="secondary" className="h-full rounded-xl font-bold gap-2" onClick={() => onAction('LOOK')}>
-          <Eye className="size-4" /> LOOK
-        </Button>
       </div>
     </>
   );
