@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import { GameData, ObjectData, GameLocation, PlayerClass, Motion, Action, TravelCondition, Hint, StaticMapNode, StaticMapLink } from '../types/game';
+import { GameData, ObjectData, GameLocation, PlayerClass, Motion, Action, TravelCondition, Hint, StaticMapNode, StaticMapLink, Obituary, TurnThreshold } from '../types/game';
 
 interface RawObjectData extends Partial<ObjectData> {
   words?: string[];
@@ -23,11 +23,11 @@ interface RawGameData {
   actions: Record<string, Action>;
   objects: Record<string, RawObjectData>;
   arbitrary_messages: Record<string, string | string[]>;
-  turn_thresholds: Record<string, string>;
+  turn_thresholds: TurnThreshold[];
   hints: Hint[];
   dwarflocs: string[];
   classes: (PlayerClass | Record<string, string>)[];
-  obituaries: string[];
+  obituaries: Obituary[];
 }
 
 // Opposites & directions for map pregeneration
@@ -163,7 +163,9 @@ export function parseAdventureYaml(): GameData {
   const rawData: RawGameData = yaml.load(fileContents) as RawGameData;
 
   // Flatten !!omap arrays into objects
-  const omapKeys = ['motions', 'locations', 'actions', 'objects', 'arbitrary_messages', 'turn_thresholds'] as const;
+  // NOTE: turn_thresholds is a plain list (not an !!omap): each item is a
+  // {threshold, point_loss, message} record, so it must not be flattened.
+  const omapKeys = ['motions', 'locations', 'actions', 'objects', 'arbitrary_messages'] as const;
   for (const key of omapKeys) {
     const value: unknown = rawData[key];
     if (Array.isArray(value)) {
@@ -182,39 +184,34 @@ export function parseAdventureYaml(): GameData {
   // Build vocabulary map (word -> key)
   const vocabulary: Record<string, string> = {};
   
-  // From motions
+  // 1. From motions (highest priority)
   const motions: Record<string, Motion> = rawData.motions;
   for (const [key, motion] of Object.entries(motions)) {
-    vocabulary[key.toUpperCase()] = key;
+    if (!(key.toUpperCase() in vocabulary)) {
+      vocabulary[key.toUpperCase()] = key;
+    }
     if (Array.isArray(motion.words)) {
       motion.words.forEach((w: string) => {
-        vocabulary[w.toUpperCase()] = key;
+        if (!(w.toUpperCase() in vocabulary)) {
+          vocabulary[w.toUpperCase()] = key;
+        }
       });
     } else {
       motion.words = [key];
     }
   }
 
-  // From actions
-  const actions: Record<string, Action> = rawData.actions;
-  for (const [key, action] of Object.entries(actions)) {
-    vocabulary[key.toUpperCase()] = key;
-    if (Array.isArray(action.words)) {
-      action.words.forEach((w: string) => {
-        vocabulary[w.toUpperCase()] = key;
-      });
-    } else {
-      action.words = [key];
-    }
-  }
-
-  // From objects
+  // 2. From objects (medium priority)
   const objects: Record<string, RawObjectData> = rawData.objects;
   for (const [key, obj] of Object.entries(objects)) {
-    vocabulary[key.toUpperCase()] = key;
+    if (!(key.toUpperCase() in vocabulary)) {
+      vocabulary[key.toUpperCase()] = key;
+    }
     if (Array.isArray(obj.words)) {
       obj.words.forEach((w: string) => {
-        vocabulary[w.toUpperCase()] = key;
+        if (!(w.toUpperCase() in vocabulary)) {
+          vocabulary[w.toUpperCase()] = key;
+        }
       });
     } else {
       obj.words = [key];
@@ -230,12 +227,33 @@ export function parseAdventureYaml(): GameData {
     }
   }
 
-  // Normalize travel rule verbs
+  // 3. From actions (lowest priority)
+  const actions: Record<string, Action> = rawData.actions;
+  for (const [key, action] of Object.entries(actions)) {
+    if (!(key.toUpperCase() in vocabulary)) {
+      vocabulary[key.toUpperCase()] = key;
+    }
+    if (Array.isArray(action.words)) {
+      action.words.forEach((w: string) => {
+        if (!(w.toUpperCase() in vocabulary)) {
+          vocabulary[w.toUpperCase()] = key;
+        }
+      });
+    } else {
+      action.words = [key];
+    }
+  }
+
+  // Normalize travel rule verbs and condition property
   const locations: Record<string, RawLocation> = rawData.locations;
   for (const loc of Object.values(locations)) {
-    const travel: RawTravelRule[] | undefined = loc.travel;
+    const travel: any[] | undefined = loc.travel;
     if (Array.isArray(travel)) {
-      travel.forEach((rule: RawTravelRule) => {
+      travel.forEach((rule: any) => {
+        if (rule.cond) {
+          rule.condition = rule.cond;
+          delete rule.cond;
+        }
         if (Array.isArray(rule.verbs)) {
           rule.verbs = rule.verbs.map((v: string) => {
             const vocabularyKey: string | undefined = vocabulary[v.toUpperCase()];
@@ -271,7 +289,7 @@ export function parseAdventureYaml(): GameData {
   const data: GameData = {
     motions: rawData.motions,
     actions: rawData.actions,
-    hints: rawData.hints,
+    hints: (rawData.hints as any[]).map(h => h.hint || h),
     locations: locationsMap,
     objects: rawData.objects as Record<string, ObjectData>,
     arbitrary_messages: rawData.arbitrary_messages,

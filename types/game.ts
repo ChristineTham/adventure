@@ -7,6 +7,7 @@ export type Motion = Words;
 
 export interface Action extends Words {
   message?: string;
+  noaction?: boolean;
 }
 
 export interface Hint {
@@ -58,6 +59,8 @@ export interface ObjectData {
   treasure?: boolean;
   immovable?: boolean;
   locations?: string[];
+  texts?: string[];
+  sounds?: string[];
 }
 
 export interface StaticMapNode {
@@ -73,6 +76,17 @@ export interface StaticMapLink {
   targetDirection?: string;
 }
 
+export interface Obituary {
+  query: string;
+  yes_response: string;
+}
+
+export interface TurnThreshold {
+  threshold: number;
+  point_loss: number;
+  message: string;
+}
+
 export interface GameData {
   motions: Record<string, Motion>;
   actions: Record<string, Action>;
@@ -82,8 +96,8 @@ export interface GameData {
   arbitrary_messages: Record<string, string | string[]>;
   dwarflocs: string[];
   classes: PlayerClass[];
-  turn_thresholds: Record<string, string>;
-  obituaries: string[];
+  turn_thresholds: TurnThreshold[];
+  obituaries: Obituary[];
   vocabulary: Record<string, string>;
   mapData?: {
     nodes: StaticMapNode[];

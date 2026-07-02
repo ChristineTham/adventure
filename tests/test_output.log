@@ -1,0 +1,828 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.8 [39m[90m/Users/christie/Repositories/games/adventure[39m
+
+[90mstdout[2m | tests/engine/parity.test.ts[2m > [22m[2mRegression Parity Tests[2m > [22m[2mshould match parity for axebear
+[22m[39m[PARITY] Starting: axebear
+  [CMD] n
+  [CMD] seed 1838473132
+  [CMD] in
+    [doMove] Start - loc: 1, newloc: 3
+      [dwarfMove] Start - dflag: 0, loc: 3
+    [doMove] End success - loc is now: 3
+    [isForced check] loc: 3, forced: false
+  [CMD] take lamp
+  [CMD] xyzzy
+    [doMove] Start - loc: 3, newloc: 179
+      [dwarfMove] Start - dflag: 0, loc: 179
+    [doMove] End success - loc is now: 179
+    [isForced check] loc: 179, forced: true
+    [isForced loop] Iterating on loc: 179
+    [doMove] Start - loc: 179, newloc: 11
+      [dwarfMove] Start - dflag: 0, loc: 11
+    [doMove] End success - loc is now: 11
+  [CMD] on
+  [CMD] take rod
+  [CMD] e
+    [doMove] Start - loc: 11, newloc: 10
+      [dwarfMove] Start - dflag: 0, loc: 10
+    [doMove] End success - loc is now: 10
+    [isForced check] loc: 10, forced: false
+  [CMD] take cage
+  [CMD] w
+    [doMove] Start - loc: 10, newloc: 11
+      [dwarfMove] Start - dflag: 0, loc: 11
+    [doMove] End success - loc is now: 11
+    [isForced check] loc: 11, forced: false
+  [CMD] w
+    [doMove] Start - loc: 11, newloc: 12
+      [dwarfMove] Start - dflag: 0, loc: 12
+    [doMove] End success - loc is now: 12
+    [isForced check] loc: 12, forced: false
+  [CMD] w
+    [doMove] Start - loc: 12, newloc: 13
+      [dwarfMove] Start - dflag: 0, loc: 13
+    [doMove] End success - loc is now: 13
+    [isForced check] loc: 13, forced: false
+  [CMD] drop rod
+  [CMD] take bird
+  [CMD] take rod
+  [CMD] w
+    [doMove] Start - loc: 13, newloc: 14
+      [dwarfMove] Start - dflag: 0, loc: 14
+    [doMove] End success - loc is now: 14
+    [isForced check] loc: 14, forced: false
+  [CMD] free bird
+  [CMD] wave rod
+  [CMD] take necklace
+  [CMD] drop rod
+  [CMD] take bird
+  [CMD] take rod
+  [CMD] d
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 14, newloc: 15
+      [dwarfMove] Start - dflag: 0, loc: 15
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] d
+    [doMove] Start - loc: 15, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] free bird
+  [CMD] drop rod
+  [CMD] drop cage
+  [CMD] take cage
+  [CMD] take bird
+  [CMD] w
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] take coins
+  [CMD] e
+    [doMove] Start - loc: 19, newloc: 15
+      [dwarfMove] Start - dflag: 1, loc: 15
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] s
+    [doMove] Start - loc: 15, newloc: 18
+      [dwarfMove] Start - dflag: 1, loc: 18
+    [doMove] End success - loc is now: 18
+    [isForced check] loc: 18, forced: false
+  [CMD] take jewelry
+  [CMD] n
+    [doMove] Start - loc: 18, newloc: 15
+      [dwarfMove] Start - dflag: 1, loc: 15
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] up
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 15, newloc: 14
+      [dwarfMove] Start - dflag: 1, loc: 14
+    [doMove] End success - loc is now: 14
+    [isForced check] loc: 14, forced: false
+  [CMD] s
+    [doMove] Start - loc: 14, newloc: 14
+      [dwarfMove] Start - dflag: 1, loc: 14
+    [doMove] End success - loc is now: 14
+    [isForced check] loc: 14, forced: false
+  [CMD] take gold
+  [CMD] n
+    [doMove] Start - loc: 14, newloc: 14
+      [dwarfMove] Start - dflag: 1, loc: 14
+    [doMove] End success - loc is now: 14
+    [isForced check] loc: 14, forced: false
+  [CMD] d
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 14, newloc: 15
+      [dwarfMove] Start - dflag: 1, loc: 15
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] n
+    [doMove] Start - loc: 15, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] n
+    [doMove] Start - loc: 19, newloc: 32
+      [dwarfMove] Start - dflag: 1, loc: 32
+    [doMove] End success - loc is now: 32
+    [isForced check] loc: 32, forced: true
+    [isForced loop] Iterating on loc: 32
+    [doMove] Start - loc: 32, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+  [CMD] plugh
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] extinguish lamp
+  [CMD] drop coins
+  [CMD] drop jewelry
+  [CMD] drop necklace
+  [CMD] drop gold
+  [CMD] plugh
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] on
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] take silver
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] sw
+    [doMove] Start - loc: 19, newloc: 74
+      [dwarfMove] Start - dflag: 1, loc: 74
+    [doMove] End success - loc is now: 74
+    [isForced check] loc: 74, forced: false
+  [CMD] take axe
+  [CMD] w
+    [doMove] Start - loc: 74, newloc: 121
+      [dwarfMove] Start - dflag: 1, loc: 121
+    [doMove] End success - loc is now: 121
+    [isForced check] loc: 121, forced: false
+  [CMD] kill dragon
+  [CMD] yes
+  [CMD] drink blood
+  [CMD] take rug
+  [CMD] e
+    [doMove] Start - loc: 120, newloc: 74
+      [dwarfMove] Start - dflag: 1, loc: 74
+    [doMove] End success - loc is now: 74
+    [isForced check] loc: 74, forced: false
+  [CMD] e
+    [doMove] Start - loc: 74, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] up
+    [doMove] Start - loc: 19, newloc: 15
+      [dwarfMove] Start - dflag: 1, loc: 15
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] d
+    [doMove] Start - loc: 15, newloc: 19
+      [dwarfMove] Start - dflag: 1, loc: 19
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] n
+    [doMove] Start - loc: 19, newloc: 32
+      [dwarfMove] Start - dflag: 2, loc: 32
+    [doMove] End success - loc is now: 32
+    [isForced check] loc: 32, forced: true
+    [isForced loop] Iterating on loc: 32
+    [doMove] Start - loc: 32, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 18, oldloc: 18
+      [dwarfMove] Dwarf 2 - loc: 27, oldloc: 27
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 64, oldloc: 64
+      [dwarfMove] Dwarf 6 - loc: 114, oldloc: 0
+    [doMove] End success - loc is now: 19
+  [CMD] n
+    [doMove] Start - loc: 19, newloc: 32
+      [dwarfMove] Start - dflag: 2, loc: 32
+    [doMove] End success - loc is now: 32
+    [isForced check] loc: 32, forced: true
+    [isForced loop] Iterating on loc: 32
+    [doMove] Start - loc: 32, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 18
+      [dwarfMove] Dwarf 2 - loc: 17, oldloc: 27
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 48, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 65, oldloc: 64
+      [dwarfMove] Dwarf 6 - loc: 84, oldloc: 114
+    [doMove] End success - loc is now: 19
+  [CMD] off
+  [CMD] plugh
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 34, oldloc: 15
+      [dwarfMove] Dwarf 2 - loc: 15, oldloc: 17
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 48
+      [dwarfMove] Dwarf 5 - loc: 39, oldloc: 65
+      [dwarfMove] Dwarf 6 - loc: 57, oldloc: 84
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] inven
+  [CMD] drop rug
+  [CMD] drop silver
+  [CMD] out
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 33, oldloc: 34
+      [dwarfMove] Dwarf 2 - loc: 18, oldloc: 15
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 82, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 64, oldloc: 39
+      [dwarfMove] Dwarf 6 - loc: 55, oldloc: 57
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 35, oldloc: 33
+      [dwarfMove] Dwarf 2 - loc: 15, oldloc: 18
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 82
+      [dwarfMove] Dwarf 5 - loc: 65, oldloc: 64
+      [dwarfMove] Dwarf 6 - loc: 52, oldloc: 55
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] w
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 33, oldloc: 35
+      [dwarfMove] Dwarf 2 - loc: 17, oldloc: 15
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 48, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 70, oldloc: 65
+      [dwarfMove] Dwarf 6 - loc: 50, oldloc: 52
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] n
+    [doMove] Start - loc: 19, newloc: 32
+      [dwarfMove] Start - dflag: 2, loc: 32
+    [doMove] End success - loc is now: 32
+    [isForced check] loc: 32, forced: true
+    [isForced loop] Iterating on loc: 32
+    [doMove] Start - loc: 32, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 28, oldloc: 33
+      [dwarfMove] Dwarf 2 - loc: 27, oldloc: 17
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 48
+      [dwarfMove] Dwarf 5 - loc: 71, oldloc: 70
+      [dwarfMove] Dwarf 6 - loc: 51, oldloc: 50
+    [doMove] End success - loc is now: 19
+  [CMD] take appendage
+  [CMD] free bird
+  [CMD] drop cage
+  [CMD] listen
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 2, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 28
+      [dwarfMove] Dwarf 2 - loc: 41, oldloc: 27
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 82, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 110, oldloc: 71
+      [dwarfMove] Dwarf 6 - loc: 52, oldloc: 51
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 42, oldloc: 41
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 82
+      [dwarfMove] Dwarf 5 - loc: 71, oldloc: 110
+      [dwarfMove] Dwarf 6 - loc: 55, oldloc: 52
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] n
+    [doMove] Start - loc: 19, newloc: 32
+      [dwarfMove] Start - dflag: 3, loc: 32
+    [doMove] End success - loc is now: 32
+    [isForced check] loc: 32, forced: true
+    [isForced loop] Iterating on loc: 32
+    [doMove] Start - loc: 32, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 43, oldloc: 42
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 48, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 65, oldloc: 71
+      [dwarfMove] Dwarf 6 - loc: 57, oldloc: 55
+    [doMove] End success - loc is now: 19
+  [CMD] in
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 44, oldloc: 43
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 44, oldloc: 48
+      [dwarfMove] Dwarf 5 - loc: 106, oldloc: 65
+      [dwarfMove] Dwarf 6 - loc: 83, oldloc: 57
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] take water
+  [CMD] plugh
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 50, oldloc: 44
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 50, oldloc: 44
+      [dwarfMove] Dwarf 5 - loc: 108, oldloc: 106
+      [dwarfMove] Dwarf 6 - loc: 84, oldloc: 83
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] on
+  [CMD] plover
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 50
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 52, oldloc: 50
+      [dwarfMove] Dwarf 5 - loc: 106, oldloc: 108
+      [dwarfMove] Dwarf 6 - loc: 114, oldloc: 84
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] ne
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 86, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 53, oldloc: 52
+      [dwarfMove] Dwarf 5 - loc: 64, oldloc: 106
+      [dwarfMove] Dwarf 6 - loc: 84, oldloc: 114
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] take pyramid
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 86
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 51, oldloc: 53
+      [dwarfMove] Dwarf 5 - loc: 39, oldloc: 64
+      [dwarfMove] Dwarf 6 - loc: 83, oldloc: 84
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] plover
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 55, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 49, oldloc: 51
+      [dwarfMove] Dwarf 5 - loc: 36, oldloc: 39
+      [dwarfMove] Dwarf 6 - loc: 57, oldloc: 83
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 57, oldloc: 55
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 50, oldloc: 49
+      [dwarfMove] Dwarf 5 - loc: 37, oldloc: 36
+      [dwarfMove] Dwarf 6 - loc: 84, oldloc: 57
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] s
+    [doMove] Start - loc: 19, newloc: 19
+      [dwarfMove] Start - dflag: 3, loc: 19
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 84, oldloc: 57
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 52, oldloc: 50
+      [dwarfMove] Dwarf 5 - loc: 38, oldloc: 37
+      [dwarfMove] Dwarf 6 - loc: 83, oldloc: 84
+    [doMove] End success - loc is now: 19
+    [isForced check] loc: 19, forced: false
+  [CMD] take rod
+  [CMD] up
+    [doMove] Start - loc: 19, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 19, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 114, oldloc: 84
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 86, oldloc: 52
+      [dwarfMove] Dwarf 5 - loc: 37, oldloc: 38
+      [dwarfMove] Dwarf 6 - loc: 57, oldloc: 83
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] w
+    [doMove] Start - loc: 15, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 19
+      [dwarfMove] Dwarf 2 - loc: 84, oldloc: 114
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 52, oldloc: 86
+      [dwarfMove] Dwarf 5 - loc: 36, oldloc: 37
+      [dwarfMove] Dwarf 6 - loc: 55, oldloc: 57
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] wave rod
+  [CMD] drop rod
+  [CMD] west
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 15
+      [dwarfMove] Dwarf 2 - loc: 83, oldloc: 84
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 55, oldloc: 52
+      [dwarfMove] Dwarf 5 - loc: 39, oldloc: 36
+      [dwarfMove] Dwarf 6 - loc: 52, oldloc: 55
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] take diamonds
+  [CMD] w
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 57, oldloc: 83
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 56, oldloc: 55
+      [dwarfMove] Dwarf 5 - loc: 65, oldloc: 39
+      [dwarfMove] Dwarf 6 - loc: 53, oldloc: 52
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] w
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 55, oldloc: 57
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 55, oldloc: 56
+      [dwarfMove] Dwarf 5 - loc: 106, oldloc: 65
+      [dwarfMove] Dwarf 6 - loc: 51, oldloc: 53
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] w
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 56, oldloc: 55
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 55
+      [dwarfMove] Dwarf 5 - loc: 108, oldloc: 106
+      [dwarfMove] Dwarf 6 - loc: 49, oldloc: 51
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] s
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 55, oldloc: 56
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 58, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 106, oldloc: 108
+      [dwarfMove] Dwarf 6 - loc: 50, oldloc: 49
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] sw
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 55
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 58
+      [dwarfMove] Dwarf 5 - loc: 64, oldloc: 106
+      [dwarfMove] Dwarf 6 - loc: 44, oldloc: 50
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] se
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 86, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 83, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 39, oldloc: 64
+      [dwarfMove] Dwarf 6 - loc: 43, oldloc: 44
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] s
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 86
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 85, oldloc: 83
+      [dwarfMove] Dwarf 5 - loc: 65, oldloc: 39
+      [dwarfMove] Dwarf 6 - loc: 45, oldloc: 43
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] kill machine
+  [CMD] s
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 50, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 83, oldloc: 85
+      [dwarfMove] Dwarf 5 - loc: 70, oldloc: 65
+      [dwarfMove] Dwarf 6 - loc: 42, oldloc: 45
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] s
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 49, oldloc: 50
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 83
+      [dwarfMove] Dwarf 5 - loc: 111, oldloc: 70
+      [dwarfMove] Dwarf 6 - loc: 41, oldloc: 42
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] kill ogre
+  [CMD] n
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 51, oldloc: 49
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 58, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 50, oldloc: 111
+      [dwarfMove] Dwarf 6 - loc: 60, oldloc: 41
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] take ruby
+  [CMD] s
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 50, oldloc: 51
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 58
+      [dwarfMove] Dwarf 5 - loc: 44, oldloc: 50
+      [dwarfMove] Dwarf 6 - loc: 61, oldloc: 60
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] w
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 50
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 83, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 48, oldloc: 44
+      [dwarfMove] Dwarf 6 - loc: 62, oldloc: 61
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] n
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 53, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 84, oldloc: 83
+      [dwarfMove] Dwarf 5 - loc: 44, oldloc: 48
+      [dwarfMove] Dwarf 6 - loc: 30, oldloc: 62
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] n
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 54, oldloc: 53
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 84
+      [dwarfMove] Dwarf 5 - loc: 43, oldloc: 44
+      [dwarfMove] Dwarf 6 - loc: 19, oldloc: 30
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] n
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 53, oldloc: 54
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 83, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 42, oldloc: 43
+      [dwarfMove] Dwarf 6 - loc: 29, oldloc: 19
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] nw
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 53
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 85, oldloc: 83
+      [dwarfMove] Dwarf 5 - loc: 45, oldloc: 42
+      [dwarfMove] Dwarf 6 - loc: 19, oldloc: 29
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] d
+    [doMove] Start - loc: 17, newloc: 17
+      [dwarfMove] Start - dflag: 3, loc: 17
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 86, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 83, oldloc: 85
+      [dwarfMove] Dwarf 5 - loc: 46, oldloc: 45
+      [dwarfMove] Dwarf 6 - loc: 74, oldloc: 19
+    [doMove] End success - loc is now: 17
+    [isForced check] loc: 17, forced: false
+  [CMD] e
+    [doMove] Start - loc: 17, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 17, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 52, oldloc: 86
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 57, oldloc: 83
+      [dwarfMove] Dwarf 5 - loc: 45, oldloc: 46
+      [dwarfMove] Dwarf 6 - loc: 121, oldloc: 74
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] e
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 15, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 17
+      [dwarfMove] Dwarf 2 - loc: 50, oldloc: 52
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 55, oldloc: 57
+      [dwarfMove] Dwarf 5 - loc: 43, oldloc: 45
+      [dwarfMove] Dwarf 6 - loc: 74, oldloc: 121
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] e
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 15, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 15
+      [dwarfMove] Dwarf 2 - loc: 44, oldloc: 50
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 52, oldloc: 55
+      [dwarfMove] Dwarf 5 - loc: 44, oldloc: 43
+      [dwarfMove] Dwarf 6 - loc: 120, oldloc: 74
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] e
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 15, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 15
+      [dwarfMove] Dwarf 2 - loc: 82, oldloc: 44
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 53, oldloc: 52
+      [dwarfMove] Dwarf 5 - loc: 50, oldloc: 44
+      [dwarfMove] Dwarf 6 - loc: 69, oldloc: 120
+    [doMove] End success - loc is now: 15
+    [isForced check] loc: 15, forced: false
+  [CMD] e
+      [checkCondition] carry objId: NUGGET, objIdx: 50, place: 18, result: false
+    [doMove] Start - loc: 15, newloc: 15
+      [dwarfMove] Start - dflag: 3, loc: 15
+      [dwarfMove] Dwarf 1 - loc: 15, oldloc: 15
+      [dwarfMove] Dwarf 2 - loc: 44, oldloc: 82
+      [dwarfMove] Dwarf 3 - loc: 0, oldloc: 0
+      [dwarfMove] Dwarf 4 - loc: 54, oldloc: 53
+      [dwarfMove] Dwarf 5 - loc: 49, oldloc: 50
+      [dwarfMove] Dwarf 6 - loc: 113, oldloc: 69
+  [CMD] throw axe
+  [CMD] take axe
+  [CMD] n
+[MISMATCH] axebear failed:
+  First diff at index 487:
+  Actual context:   "of water here. > take lamp OK You're inside building. There are some keys on the"
+  Expected context: "of water here. > take lamp OK > xyzzy >>Foof!<< It is now pitch dark. If you pro"
+
+ [31m❯[39m tests/engine/parity.test.ts [2m([22m[2m107 tests[22m[2m | [22m[31m1 failed[39m[2m | [22m[33m106 skipped[39m[2m)[22m[32m 54[2mms[22m[39m
+[31m     [31m×[31m should match parity for axebear[39m[32m 53[2mms[22m[39m
+     [2m[90m↓[39m[22m should match parity for axeorama
+     [2m[90m↓[39m[22m should match parity for badmagic
+     [2m[90m↓[39m[22m should match parity for barehands
+     [2m[90m↓[39m[22m should match parity for bigfail
+     [2m[90m↓[39m[22m should match parity for birdsnakewake
+     [2m[90m↓[39m[22m should match parity for birdweight
+     [2m[90m↓[39m[22m should match parity for boulder2
+     [2m[90m↓[39m[22m should match parity for breakmirror
+     [2m[90m↓[39m[22m should match parity for carrybird
+     [2m[90m↓[39m[22m should match parity for carryfreebird
+     [2m[90m↓[39m[22m should match parity for cheatresume
+     [2m[90m↓[39m[22m should match parity for cheatresume2
+     [2m[90m↓[39m[22m should match parity for death-jump
+     [2m[90m↓[39m[22m should match parity for defeat
+     [2m[90m↓[39m[22m should match parity for domefail
+     [2m[90m↓[39m[22m should match parity for dragon_secret5
+     [2m[90m↓[39m[22m should match parity for dropcagedbird
+     [2m[90m↓[39m[22m should match parity for drown
+     [2m[90m↓[39m[22m should match parity for dwarf
+     [2m[90m↓[39m[22m should match parity for dwarf_alternative
+     [2m[90m↓[39m[22m should match parity for eggs_done
+     [2m[90m↓[39m[22m should match parity for eggs_vanish
+     [2m[90m↓[39m[22m should match parity for endgame428
+     [2m[90m↓[39m[22m should match parity for endobjects
+     [2m[90m↓[39m[22m should match parity for fail_hint_maze
+     [2m[90m↓[39m[22m should match parity for fail_hint_ogre
+     [2m[90m↓[39m[22m should match parity for fail_hint_ogre2
+     [2m[90m↓[39m[22m should match parity for fail_hint_woods
+     [2m[90m↓[39m[22m should match parity for fillfail
+     [2m[90m↓[39m[22m should match parity for fillvase
+     [2m[90m↓[39m[22m should match parity for flyback
+     [2m[90m↓[39m[22m should match parity for footslip
+     [2m[90m↓[39m[22m should match parity for gemstates
+     [2m[90m↓[39m[22m should match parity for goback
+     [2m[90m↓[39m[22m should match parity for hint_dark
+     [2m[90m↓[39m[22m should match parity for hint_grate
+     [2m[90m↓[39m[22m should match parity for hint_jade
+     [2m[90m↓[39m[22m should match parity for hint_snake
+     [2m[90m↓[39m[22m should match parity for hint_urn
+     [2m[90m↓[39m[22m should match parity for hint_witt
+     [2m[90m↓[39m[22m should match parity for illformed
+     [2m[90m↓[39m[22m should match parity for illformed2
+     [2m[90m↓[39m[22m should match parity for intransitivecarry
+     [2m[90m↓[39m[22m should match parity for issue36
+     [2m[90m↓[39m[22m should match parity for issue37
+     [2m[90m↓[39m[22m should match parity for knife
+     [2m[90m↓[39m[22m should match parity for lampdim
+     [2m[90m↓[39m[22m should match parity for lampdim2
+     [2m[90m↓[39m[22m should match parity for lampdim3
+     [2m[90m↓[39m[22m should match parity for listen
+     [2m[90m↓[39m[22m should match parity for listenloud
+     [2m[90m↓[39m[22m should match parity for lockchain
+     [2m[90m↓[39m[22m should match parity for logopt
+     [2m[90m↓[39m[22m should match parity for magicwords
+     [2m[90m↓[39m[22m should match parity for mazealldiff
+     [2m[90m↓[39m[22m should match parity for mazehint
+     [2m[90m↓[39m[22m should match parity for notrident
+     [2m[90m↓[39m[22m should match parity for ogre_no_dwarves
+     [2m[90m↓[39m[22m should match parity for ogrehint
+     [2m[90m↓[39m[22m should match parity for oilplant
+     [2m[90m↓[39m[22m should match parity for oldstyle
+     [2m[90m↓[39m[22m should match parity for oysterbug
+     [2m[90m↓[39m[22m should match parity for panic
+     [2m[90m↓[39m[22m should match parity for panic2
+     [2m[90m↓[39m[22m should match parity for pirate_carry
+     [2m[90m↓[39m[22m should match parity for pirate_pyramid
+     [2m[90m↓[39m[22m should match parity for pirate_spotted
+     [2m[90m↓[39m[22m should match parity for pitfall
+     [2m[90m↓[39m[22m should match parity for placeholder
+     [2m[90m↓[39m[22m should match parity for plover
+     [2m[90m↓[39m[22m should match parity for reach_ledge_short
+     [2m[90m↓[39m[22m should match parity for reach_noclimb
+     [2m[90m↓[39m[22m should match parity for reach_planttop
+     [2m[90m↓[39m[22m should match parity for reincarnate
+     [2m[90m↓[39m[22m should match parity for resumefail
+     [2m[90m↓[39m[22m should match parity for resumefail2
+     [2m[90m↓[39m[22m should match parity for savefail
+     [2m[90m↓[39m[22m should match parity for saveresume.1
+     [2m[90m↓[39m[22m should match parity for saveresume.2
+     [2m[90m↓[39m[22m should match parity for saveresume.3
+     [2m[90m↓[39m[22m should match parity for saveresume.4
+     [2m[90m↓[39m[22m should match parity for saveresumeopt
+     [2m[90m↓[39m[22m should match parity for savetamper
+     [2m[90m↓[39m[22m should match parity for snake_food
+     [2m[90m↓[39m[22m should match parity for softroom
+     [2m[90m↓[39m[22m should match parity for specials
+     [2m[90m↓[39m[22m should match parity for splatter
+     [2m[90m↓[39m[22m should match parity for stashed
+     [2m[90m↓[39m[22m should match parity for takebird
+     [2m[90m↓[39m[22m should match parity for tall
+     [2m[90m↓[39m[22m should match parity for trident
+     [2m[90m↓[39m[22m should match parity for troll_returns
+     [2m[90m↓[39m[22m should match parity for turnpenalties
+     [2m[90m↓[39m[22m should match parity for urntest
+     [2m[90m↓[39m[22m should match parity for urntest2
+     [2m[90m↓[39m[22m should match parity for urntest3
+     [2m[90m↓[39m[22m should match parity for vending
+     [2m[90m↓[39m[22m should match parity for wakedwarves
+     [2m[90m↓[39m[22m should match parity for wakedwarves2
+     [2m[90m↓[39m[22m should match parity for wakedwarves3
+     [2m[90m↓[39m[22m should match parity for water_plant2
+     [2m[90m↓[39m[22m should match parity for weirdbird
+     [2m[90m↓[39m[22m should match parity for weirddwarf
+     [2m[90m↓[39m[22m should match parity for win430
+     [2m[90m↓[39m[22m should match parity for wittsend
+     [2m[90m↓[39m[22m should match parity for woodshint
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[33m106 skipped[39m[90m (107)[39m
+[2m   Start at [22m 07:48:16
+[2m   Duration [22m 197ms[2m (transform 62ms, setup 0ms, import 82ms, tests 54ms, environment 0ms)[22m
+
+[ELIFECYCLE] Test failed. See above for more details.

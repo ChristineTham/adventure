@@ -153,8 +153,28 @@ export function GameControls({ inventory, isDirectionValid, onAction }: GameCont
               Directions
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex-1 p-2 flex items-center justify-center min-h-0">
+          <CardContent className="flex-1 p-2 flex flex-col items-center justify-center min-h-0">
             <CompassRose isDirectionValid={isDirectionValid} onAction={onAction} />
+            {(() => {
+              const EXTRA_DIRS = ['UP', 'DOWN', 'IN', 'OUT', 'ENTER', 'CRAWL', 'CAVE', 'XYZZY', 'PLUGH', 'PLOVER'];
+              const validExtraDirs = EXTRA_DIRS.filter(dir => isDirectionValid(dir));
+              if (validExtraDirs.length === 0) return null;
+              return (
+                <div className="flex flex-wrap gap-1.5 justify-center mt-2.5 border-t border-border/25 pt-2 w-full shrink-0">
+                  {validExtraDirs.map(dir => (
+                    <Button
+                      key={dir}
+                      variant="outline"
+                      size="sm"
+                      className="h-6 px-2 text-[9px] font-bold tracking-wider border-orange-700/30 hover:border-orange-500/50 hover:bg-orange-500/10 text-orange-700 dark:text-orange-400 rounded-md"
+                      onClick={() => onAction(dir)}
+                    >
+                      {dir}
+                    </Button>
+                  ))}
+                </div>
+              );
+            })()}
           </CardContent>
         </Card>
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useGameStore } from '@/store/gameStore';
-import { initializeGame, processCommand } from '@/engine/core';
+import { initializeGame, processCommand, C } from '@/engine/core';
 import gameDataRaw from '@/data/game-data.json';
 import { GameData, GameLocation, TravelRule } from '@/types/game';
 import { GameMap } from './GameMap';
@@ -29,7 +29,15 @@ export function GameClient() {
   }, []);
 
   const handleAction = (cmd: string): void => {
-    processCommand(cmd);
+    try {
+      processCommand(cmd);
+    } catch (error) {
+      // The engine throws GAME_TERMINATED when the game ends; the final
+      // score has already been written to the history, so just stop here.
+      if (!(error instanceof Error && error.message === 'GAME_TERMINATED')) {
+        throw error;
+      }
+    }
   };
 
   const visibleObjects: [string, string][] = Object.entries(objectLocations)
@@ -41,6 +49,80 @@ export function GameClient() {
     const resolvedKey: string | undefined = gameData.vocabulary[dir];
     if (!resolvedKey) return false;
     return loc.travel.some((rule: TravelRule) => rule.verbs.includes(resolvedKey));
+  };
+
+  const EXTRA_DIRS = ['UP', 'DOWN', 'IN', 'OUT', 'ENTER', 'CRAWL', 'CAVE', 'XYZZY', 'PLUGH', 'PLOVER'];
+  const validExtraDirs = EXTRA_DIRS.filter(dir => isDirectionValid(dir));
+
+  const getContextualActions = (): string[] => {
+    const actions: string[] = ['LOOK', 'INVENTORY'];
+    
+    const hasLamp = inventory.includes('LAMP') || objectLocations['LAMP'] === currentLocation;
+    const hasBottle = inventory.includes('BOTTLE');
+    const hasFood = inventory.includes('FOOD');
+    const hasKeys = inventory.includes('KEYS');
+    const hasRod = inventory.includes('ROD') || inventory.includes('ROD2');
+    
+    const objects = useGameStore.getState().objects;
+    const lampState = objects[C.LAMP]?.prop;
+    if (hasLamp) {
+      if (lampState === 1) { // LAMP_BRIGHT
+        actions.push('EXTINGUISH');
+      } else {
+        actions.push('LIGHT');
+      }
+    }
+    
+    const isNearFluid = isDirectionValid('STREAM') || isDirectionValid('WATER') || isDirectionValid('OIL') || currentLocation === 'LOC_BUILDING' || currentLocation === 'LOC_VALLEY';
+    if (hasBottle) {
+      if (isNearFluid) {
+        actions.push('FILL BOTTLE');
+      }
+      const bottleState = objects[C.BOTTLE]?.prop;
+      if (bottleState === 0) { // WATER_BOTTLE
+        actions.push('DRINK WATER');
+      }
+    }
+    
+    if (hasFood) {
+      actions.push('EAT FOOD');
+    }
+    
+    if (hasRod) {
+      actions.push('WAVE');
+    }
+    
+    const isNearGrate = objectLocations['GRATE'] === currentLocation;
+    const isNearDoor = objectLocations['DOOR'] === currentLocation;
+    if (hasKeys && (isNearGrate || isNearDoor)) {
+      actions.push('UNLOCK');
+      actions.push('LOCK');
+    }
+    
+    const isNearBear = objectLocations['BEAR'] === currentLocation;
+    if (isNearBear) {
+      if (hasFood) {
+        actions.push('FEED BEAR');
+      }
+      actions.push('ATTACK BEAR');
+    }
+    
+    const isNearOgre = objectLocations['OGRE'] === currentLocation;
+    if (isNearOgre) {
+      actions.push('ATTACK OGRE');
+    }
+    
+    const isNearDragon = objectLocations['DRAGON'] === currentLocation;
+    if (isNearDragon) {
+      actions.push('ATTACK DRAGON');
+    }
+    
+    const isNearSnake = objectLocations['SNAKE'] === currentLocation;
+    if (isNearSnake) {
+      actions.push('ATTACK SNAKE');
+    }
+    
+    return actions;
   };
 
   return (
@@ -62,6 +144,21 @@ export function GameClient() {
               locationId={currentLocation} 
               className="w-full aspect-[3/2] md:aspect-auto md:h-full md:flex-1 md:max-h-[66vh] md:max-w-[99vh] mx-auto object-cover rounded-xl border border-border/40 md:border-none shadow-sm" 
             />
+            {/* Contextual Exits Overlay on Mobile */}
+            {validExtraDirs.length > 0 && (
+              <div className="absolute top-2 left-2 md:hidden flex flex-row flex-wrap items-center gap-1.5 p-1 bg-black/60 backdrop-blur-sm border border-white/15 rounded-lg shadow-lg max-w-[calc(100%-40px)] overflow-x-auto">
+                {validExtraDirs.map((dir) => (
+                  <Button
+                    key={dir}
+                    variant="secondary"
+                    className="text-[10px] bg-orange-950/40 hover:bg-orange-900/60 border border-orange-500/30 text-orange-200 h-7 rounded-md px-2 flex items-center gap-1 shrink-0 font-bold"
+                    onClick={() => handleAction(dir)}
+                  >
+                    {dir}
+                  </Button>
+                ))}
+              </div>
+            )}
             {/* Objects Overlay on Mobile */}
             {visibleObjects.length > 0 && (
               <div className="absolute bottom-2 left-2 md:hidden flex flex-row items-center gap-1.5 p-1 bg-black/60 backdrop-blur-sm border border-white/15 rounded-lg shadow-lg max-w-[calc(100%-110px)] overflow-x-auto">
@@ -112,6 +209,21 @@ export function GameClient() {
               Enter
             </Button>
           </form>
+
+          {/* Contextual Action Buttons Panel */}
+          <div className="order-5 flex flex-row flex-wrap items-center justify-center gap-1.5 w-full max-w-[99vh] mx-auto bg-card/60 border border-border/40 p-2 rounded-xl shadow-sm shrink-0 md:order-none">
+            {getContextualActions().map((act) => (
+              <Button
+                key={act}
+                variant="outline"
+                size="sm"
+                className="h-7 text-[10px] font-bold tracking-wider hover:bg-zinc-100 hover:dark:bg-zinc-900 border-border/60 rounded-lg px-2.5"
+                onClick={() => handleAction(act)}
+              >
+                {act}
+              </Button>
+            ))}
+          </div>
 
           {/* Horizontal Objects Panel (Desktop Only) */}
           {visibleObjects.length > 0 && (

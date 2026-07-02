@@ -1,0 +1,228 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.8 [39m[90m/Users/christie/Repositories/games/adventure[39m
+
+[90mstdout[2m | tests/engine/parity.test.ts[2m > [22m[2mRegression Parity Tests[2m > [22m[2mshould match parity for axebear
+[22m[39mTRACE_TURN 1: loc=3 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 3: loc=179 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 3: loc=11 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 6: loc=10 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 8: loc=11 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 9: loc=12 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 10: loc=13 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 14: loc=14 lcg_x=285331 dflag=0 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 21: loc=15 lcg_x=285331 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 22: loc=19 lcg_x=661298 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 28: loc=30 lcg_x=551437 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 30: loc=19 lcg_x=11028 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 31: loc=29 lcg_x=740855 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 33: loc=19 lcg_x=475430 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 34: loc=15 lcg_x=821457 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 35: loc=18 lcg_x=493032 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 37: loc=15 lcg_x=137499 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 38: loc=19 lcg_x=561626 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 39: loc=28 lcg_x=661845 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 40: loc=33 lcg_x=100732 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 41: loc=182 lcg_x=221183 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 41: loc=3 lcg_x=221183 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 47: loc=181 lcg_x=221183 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 47: loc=33 lcg_x=802126 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 49: loc=28 lcg_x=886435 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 51: loc=19 lcg_x=210818 dflag=1 dwarves=[19,27,33,44,64,114]
+TRACE_TURN 52: loc=74 lcg_x=921784 dflag=2 dwarves=[19,27,0,44,64,114]
+TRACE_TURN 54: loc=121 lcg_x=876815 dflag=2 dwarves=[74,17,0,48,65,84]
+TRACE_TURN 55: loc=120 lcg_x=230354 dflag=2 dwarves=[75,15,0,44,39,57]
+TRACE_TURN 58: loc=74 lcg_x=1002993 dflag=2 dwarves=[76,18,0,82,64,55]
+TRACE_TURN 59: loc=19 lcg_x=540956 dflag=2 dwarves=[75,15,0,44,65,52]
+TRACE_TURN 60: loc=15 lcg_x=1047586 dflag=3 dwarves=[77,15,0,43,66,50]
+TRACE_TURN 61: loc=19 lcg_x=940673 dflag=3 dwarves=[66,19,0,42,96,44]
+TRACE_TURN 62: loc=28 lcg_x=806636 dflag=3 dwarves=[97,28,0,45,66,43]
+TRACE_TURN 63: loc=33 lcg_x=29395 dflag=3 dwarves=[98,33,0,46,67,45]
+TRACE_TURN 65: loc=182 lcg_x=893042 dflag=3 dwarves=[98,33,0,46,67,45]
+TRACE_TURN 65: loc=3 lcg_x=164625 dflag=3 dwarves=[99,34,0,45,23,87]
+TRACE_TURN 69: loc=1 lcg_x=141500 dflag=3 dwarves=[100,15,0,43,68,45]
+TRACE_TURN 70: loc=4 lcg_x=823011 dflag=3 dwarves=[101,19,0,44,69,42]
+TRACE_TURN 71: loc=156 lcg_x=997814 dflag=3 dwarves=[100,28,0,50,113,80]
+TRACE_TURN 72: loc=166 lcg_x=918309 dflag=3 dwarves=[99,33,0,52,168,81]
+TRACE_TURN 77: loc=156 lcg_x=832992 dflag=3 dwarves=[98,34,0,51,169,80]
+TRACE_TURN 78: loc=4 lcg_x=123991 dflag=3 dwarves=[97,15,0,49,170,42]
+TRACE_TURN 79: loc=1 lcg_x=928698 dflag=3 dwarves=[66,17,0,50,171,43]
+TRACE_TURN 80: loc=3 lcg_x=316153 dflag=3 dwarves=[96,27,0,51,172,44]
+TRACE_TURN 82: loc=181 lcg_x=316153 dflag=3 dwarves=[96,27,0,51,172,44]
+TRACE_TURN 82: loc=33 lcg_x=1013188 dflag=3 dwarves=[66,41,0,49,173,50]
+TRACE_TURN 84: loc=183 lcg_x=443478 dflag=3 dwarves=[66,41,0,49,173,50]
+TRACE_TURN 84: loc=100 lcg_x=687685 dflag=3 dwarves=[67,42,0,50,172,52]
+TRACE_TURN 85: loc=101 lcg_x=105344 dflag=3 dwarves=[24,43,0,52,171,51]
+TRACE_TURN 87: loc=100 lcg_x=521847 dflag=3 dwarves=[67,44,0,51,170,53]
+TRACE_TURN 88: loc=184 lcg_x=521847 dflag=3 dwarves=[67,44,0,51,170,53]
+TRACE_TURN 88: loc=33 lcg_x=5210 dflag=3 dwarves=[66,48,0,50,169,52]
+TRACE_TURN 89: loc=28 lcg_x=663632 dflag=3 dwarves=[96,44,0,44,168,50]
+TRACE_TURN 90: loc=19 lcg_x=735623 dflag=3 dwarves=[66,82,0,43,113,51]
+TRACE_TURN 92: loc=15 lcg_x=363178 dflag=3 dwarves=[77,44,0,45,109,49]
+TRACE_TURN 93: loc=17 lcg_x=353961 dflag=3 dwarves=[75,50,0,42,69,50]
+TRACE_TURN 96: loc=27 lcg_x=189748 dflag=3 dwarves=[76,49,0,41,68,44]
+TRACE_TURN 98: loc=41 lcg_x=306426 dflag=3 dwarves=[75,51,0,41,23,43]
+TRACE_TURN 99: loc=60 lcg_x=927033 dflag=3 dwarves=[77,52,0,60,67,45]
+[DWARF 1] loc=LOC_TALL oldloc=LOC_WIDEPLACE choices=[LOC_NOWHERE,LOC_BOULDERS1,LOC_SWISSCHEESE,LOC_WIDEPLACE] choicesCount=2 idx=2 dest=LOC_SWISSCHEESE seedBefore=927033 seedAfter=544240
+[DWARF 2] loc=LOC_ALIKE8 oldloc=LOC_ALIKE7 choices=[LOC_NOWHERE,LOC_ALIKE6,LOC_ALIKE9,LOC_ALIKE10,LOC_MAZEEND11,LOC_ALIKE7] choicesCount=4 idx=3 dest=LOC_ALIKE10 seedBefore=544240 seedAfter=533315
+[DWARF 4] loc=LOC_LONGEAST oldloc=LOC_MISTWEST choices=[LOC_NOWHERE,LOC_LONGWEST,LOC_CROSSOVER,LOC_MISTWEST] choicesCount=2 idx=2 dest=LOC_CROSSOVER seedBefore=533315 seedAfter=126626
+[DWARF 5] loc=LOC_EASTEND oldloc=LOC_WESTEND choices=[LOC_NOWHERE,LOC_SWISSCHEESE,LOC_EASTPIT,LOC_WESTEND] choicesCount=2 idx=1 dest=LOC_SWISSCHEESE seedBefore=126626 seedAfter=211773
+[DWARF 6] loc=LOC_ALIKE4 oldloc=LOC_ALIKE2 choices=[LOC_NOWHERE,LOC_ALIKE1,LOC_ALIKE14,LOC_ALIKE2] choicesCount=2 idx=1 dest=LOC_ALIKE1 seedBefore=211773 seedAfter=1002756
+TRACE_TURN 100: loc=61 lcg_x=1002756 dflag=3 dwarves=[66,55,0,61,66,42]
+[DWARF 1] loc=LOC_SWISSCHEESE oldloc=LOC_TALL choices=[LOC_NOWHERE,LOC_BEDQUILT,LOC_EASTEND,LOC_SOFTROOM,LOC_ORIENTAL,LOC_TALL] choicesCount=4 idx=4 dest=LOC_ORIENTAL seedBefore=1002756 seedAfter=471975
+[DWARF 2] loc=LOC_ALIKE10 oldloc=LOC_ALIKE8 choices=[LOC_NOWHERE,LOC_MAZEEND5,LOC_PITBRINK,LOC_ALIKE8] choicesCount=2 idx=1 dest=LOC_MAZEEND5 seedBefore=471975 seedAfter=190870
+[DWARF 4] loc=LOC_LONGWEST oldloc=LOC_LONGEAST choices=[LOC_NOWHERE,LOC_CROSSOVER,LOC_LONGEAST] choicesCount=1 idx=1 dest=LOC_CROSSOVER seedBefore=190870 seedAfter=175873
+[DWARF 5] loc=LOC_SWISSCHEESE oldloc=LOC_EASTEND choices=[LOC_NOWHERE,LOC_BEDQUILT,LOC_TALL,LOC_SOFTROOM,LOC_ORIENTAL,LOC_EASTEND] choicesCount=4 idx=1 dest=LOC_BEDQUILT seedBefore=175873 seedAfter=561368
+[DWARF 6] loc=LOC_ALIKE1 oldloc=LOC_ALIKE4 choices=[LOC_NOWHERE,LOC_MISTWEST,LOC_ALIKE2,LOC_ALIKE11,LOC_ALIKE4] choicesCount=3 idx=2 dest=LOC_ALIKE2 seedBefore=561368 seedAfter=379851
+TRACE_TURN 101: loc=107 lcg_x=379851 dflag=3 dwarves=[97,56,0,107,65,43]
+[DWARF 1] loc=LOC_ORIENTAL oldloc=LOC_SWISSCHEESE choices=[LOC_NOWHERE,LOC_LOWROOM,LOC_MISTY,LOC_SWISSCHEESE] choicesCount=2 idx=1 dest=LOC_LOWROOM seedBefore=379851 seedAfter=162634
+[DWARF 2] loc=LOC_MAZEEND5 oldloc=LOC_ALIKE10 choices=[LOC_NOWHERE,LOC_ALIKE10] choicesCount=1 idx=1 dest=LOC_ALIKE10 seedBefore=162634 seedAfter=771205
+[DWARF 4] loc=LOC_DIFFERENT1 oldloc=LOC_LONGWEST choices=[LOC_NOWHERE,LOC_DIFFERENT3,LOC_DIFFERENT4,LOC_DIFFERENT5,LOC_DIFFERENT6,LOC_DIFFERENT7,LOC_DIFFERENT8,LOC_DIFFERENT9,LOC_DIFFERENT10,LOC_DIFFERENT11,LOC_LONGWEST] choicesCount=9 idx=7 dest=LOC_DIFFERENT9 seedBefore=771205 seedAfter=93548
+[DWARF 5] loc=LOC_BEDQUILT oldloc=LOC_SWISSCHEESE choices=[LOC_NOWHERE,LOC_COMPLEX,LOC_SLAB,LOC_SECRET2,LOC_DUSTY,LOC_LOWROOM,LOC_THREEJUNCTION,LOC_ANTEROOM,LOC_SWISSCHEESE] choicesCount=7 idx=1 dest=LOC_COMPLEX seedBefore=93548 seedAfter=757679
+[DWARF 6] loc=LOC_ALIKE2 oldloc=LOC_ALIKE1 choices=[LOC_NOWHERE,LOC_ALIKE3,LOC_ALIKE4,LOC_ALIKE1] choicesCount=2 idx=2 dest=LOC_ALIKE4 seedBefore=757679 seedAfter=1038270
+TRACE_TURN 102: loc=132 lcg_x=1038270 dflag=3 dwarves=[72,55,0,132,64,45]
+[DWARF 1] loc=LOC_LOWROOM oldloc=LOC_ORIENTAL choices=[LOC_NOWHERE,LOC_BEDQUILT,LOC_WINDING,LOC_DEADCRAWL,LOC_ORIENTAL] choicesCount=3 idx=3 dest=LOC_DEADCRAWL seedBefore=1038270 seedAfter=491465
+[DWARF 2] loc=LOC_ALIKE10 oldloc=LOC_MAZEEND5 choices=[LOC_NOWHERE,LOC_ALIKE8,LOC_PITBRINK,LOC_MAZEEND5] choicesCount=2 idx=1 dest=LOC_ALIKE8 seedBefore=491465 seedAfter=521920
+[DWARF 4] loc=LOC_DIFFERENT4 oldloc=LOC_DIFFERENT1 choices=[LOC_NOWHERE,LOC_DIFFERENT3,LOC_DIFFERENT5,LOC_DIFFERENT6,LOC_DIFFERENT7,LOC_DIFFERENT8,LOC_DIFFERENT9,LOC_DIFFERENT10,LOC_DIFFERENT11,LOC_DIFFERENT2,LOC_DIFFERENT1] choicesCount=9 idx=5 dest=LOC_DIFFERENT8 seedBefore=521920 seedAfter=254803
+[DWARF 5] loc=LOC_COMPLEX oldloc=LOC_BEDQUILT choices=[LOC_NOWHERE,LOC_DUSTY,LOC_SHELLROOM,LOC_ANTEROOM,LOC_BEDQUILT] choicesCount=3 idx=1 dest=LOC_DUSTY seedBefore=254803 seedAfter=848626
+[DWARF 6] loc=LOC_ALIKE4 oldloc=LOC_ALIKE2 choices=[LOC_NOWHERE,LOC_ALIKE1,LOC_ALIKE14,LOC_ALIKE2] choicesCount=2 idx=2 dest=LOC_ALIKE14 seedBefore=848626 seedAfter=828621
+TRACE_TURN 103: loc=112 lcg_x=828621 dflag=3 dwarves=[73,52,0,112,39,87]
+[DWARF 1] loc=LOC_DEADCRAWL oldloc=LOC_LOWROOM choices=[LOC_NOWHERE,LOC_LOWROOM] choicesCount=1 idx=1 dest=LOC_LOWROOM seedBefore=828621 seedAfter=983252
+[DWARF 2] loc=LOC_ALIKE8 oldloc=LOC_ALIKE10 choices=[LOC_NOWHERE,LOC_ALIKE6,LOC_ALIKE7,LOC_ALIKE9,LOC_MAZEEND11,LOC_ALIKE10] choicesCount=4 idx=4 dest=LOC_MAZEEND11 seedBefore=983252 seedAfter=125623
+[DWARF 4] loc=LOC_DIFFERENT2 oldloc=LOC_DIFFERENT4 choices=[LOC_NOWHERE,LOC_DIFFERENT3,LOC_DIFFERENT5,LOC_DIFFERENT6,LOC_DIFFERENT7,LOC_DIFFERENT8,LOC_DIFFERENT9,LOC_DIFFERENT10,LOC_DIFFERENT11,LOC_DEADEND13,LOC_DIFFERENT4] choicesCount=9 idx=2 dest=LOC_DIFFERENT5 seedBefore=125623 seedAfter=164070
+[DWARF 5] loc=LOC_DUSTY oldloc=LOC_COMPLEX choices=[LOC_NOWHERE,LOC_BROKEN,LOC_BEDQUILT,LOC_COMPLEX] choicesCount=2 idx=1 dest=LOC_BROKEN seedBefore=164070 seedAfter=243601
+[DWARF 6] loc=LOC_ALIKE14 oldloc=LOC_ALIKE4 choices=[LOC_NOWHERE,LOC_ALIKE4] choicesCount=1 idx=1 dest=LOC_ALIKE4 seedBefore=243601 seedAfter=139176
+TRACE_TURN 104: loc=140 lcg_x=139176 dflag=3 dwarves=[72,86,0,140,36,45]
+TRACE_TURN 106: loc=141 lcg_x=681151 dflag=3 dwarves=[65,52,0,141,65,43]
+TRACE_TURN 107: loc=143 lcg_x=402242 dflag=3 dwarves=[39,50,0,143,106,42]
+TRACE_TURN 109: loc=144 lcg_x=711713 dflag=3 dwarves=[36,49,0,62,64,45]
+TRACE_TURN 111: loc=143 lcg_x=568588 dflag=3 dwarves=[65,51,0,60,103,43]
+TRACE_TURN 112: loc=141 lcg_x=989043 dflag=3 dwarves=[39,53,0,61,102,44]
+TRACE_TURN 113: loc=140 lcg_x=455558 dflag=3 dwarves=[64,52,0,62,103,50]
+TRACE_TURN 114: loc=112 lcg_x=360245 dflag=3 dwarves=[103,50,0,60,64,51]
+TRACE_TURN 115: loc=132 lcg_x=342320 dflag=3 dwarves=[102,51,0,61,65,49]
+TRACE_TURN 116: loc=107 lcg_x=63463 dflag=3 dwarves=[103,49,0,62,39,50]
+TRACE_TURN 117: loc=61 lcg_x=27786 dflag=3 dwarves=[104,50,0,30,36,52]
+TRACE_TURN 118: loc=60 lcg_x=459273 dflag=3 dwarves=[105,44,0,19,28,51]
+TRACE_TURN 119: loc=41 lcg_x=182292 dflag=3 dwarves=[103,82,0,29,33,53]
+TRACE_TURN 120: loc=27 lcg_x=842267 dflag=3 dwarves=[102,44,0,19,35,52]
+TRACE_TURN 121: loc=17 lcg_x=225870 dflag=3 dwarves=[103,43,0,15,33,50]
+[MISMATCH] axebear failed:
+  First diff at index 11796:
+  Actual context:   "ty knife is thrown at you! It gets you! Oh dear, you seem to have gotten yoursel"
+  Expected context: "ty knife is thrown at you! It misses! You are at one end of a vast hall stretchi"
+
+ [31m❯[39m tests/engine/parity.test.ts [2m([22m[2m107 tests[22m[2m | [22m[31m1 failed[39m[2m | [22m[33m106 skipped[39m[2m)[22m[32m 45[2mms[22m[39m
+[31m     [31m×[31m should match parity for axebear[39m[32m 44[2mms[22m[39m
+     [2m[90m↓[39m[22m should match parity for axeorama
+     [2m[90m↓[39m[22m should match parity for badmagic
+     [2m[90m↓[39m[22m should match parity for barehands
+     [2m[90m↓[39m[22m should match parity for bigfail
+     [2m[90m↓[39m[22m should match parity for birdsnakewake
+     [2m[90m↓[39m[22m should match parity for birdweight
+     [2m[90m↓[39m[22m should match parity for boulder2
+     [2m[90m↓[39m[22m should match parity for breakmirror
+     [2m[90m↓[39m[22m should match parity for carrybird
+     [2m[90m↓[39m[22m should match parity for carryfreebird
+     [2m[90m↓[39m[22m should match parity for cheatresume
+     [2m[90m↓[39m[22m should match parity for cheatresume2
+     [2m[90m↓[39m[22m should match parity for death-jump
+     [2m[90m↓[39m[22m should match parity for defeat
+     [2m[90m↓[39m[22m should match parity for domefail
+     [2m[90m↓[39m[22m should match parity for dragon_secret5
+     [2m[90m↓[39m[22m should match parity for dropcagedbird
+     [2m[90m↓[39m[22m should match parity for drown
+     [2m[90m↓[39m[22m should match parity for dwarf
+     [2m[90m↓[39m[22m should match parity for dwarf_alternative
+     [2m[90m↓[39m[22m should match parity for eggs_done
+     [2m[90m↓[39m[22m should match parity for eggs_vanish
+     [2m[90m↓[39m[22m should match parity for endgame428
+     [2m[90m↓[39m[22m should match parity for endobjects
+     [2m[90m↓[39m[22m should match parity for fail_hint_maze
+     [2m[90m↓[39m[22m should match parity for fail_hint_ogre
+     [2m[90m↓[39m[22m should match parity for fail_hint_ogre2
+     [2m[90m↓[39m[22m should match parity for fail_hint_woods
+     [2m[90m↓[39m[22m should match parity for fillfail
+     [2m[90m↓[39m[22m should match parity for fillvase
+     [2m[90m↓[39m[22m should match parity for flyback
+     [2m[90m↓[39m[22m should match parity for footslip
+     [2m[90m↓[39m[22m should match parity for gemstates
+     [2m[90m↓[39m[22m should match parity for goback
+     [2m[90m↓[39m[22m should match parity for hint_dark
+     [2m[90m↓[39m[22m should match parity for hint_grate
+     [2m[90m↓[39m[22m should match parity for hint_jade
+     [2m[90m↓[39m[22m should match parity for hint_snake
+     [2m[90m↓[39m[22m should match parity for hint_urn
+     [2m[90m↓[39m[22m should match parity for hint_witt
+     [2m[90m↓[39m[22m should match parity for illformed
+     [2m[90m↓[39m[22m should match parity for illformed2
+     [2m[90m↓[39m[22m should match parity for intransitivecarry
+     [2m[90m↓[39m[22m should match parity for issue36
+     [2m[90m↓[39m[22m should match parity for issue37
+     [2m[90m↓[39m[22m should match parity for knife
+     [2m[90m↓[39m[22m should match parity for lampdim
+     [2m[90m↓[39m[22m should match parity for lampdim2
+     [2m[90m↓[39m[22m should match parity for lampdim3
+     [2m[90m↓[39m[22m should match parity for listen
+     [2m[90m↓[39m[22m should match parity for listenloud
+     [2m[90m↓[39m[22m should match parity for lockchain
+     [2m[90m↓[39m[22m should match parity for logopt
+     [2m[90m↓[39m[22m should match parity for magicwords
+     [2m[90m↓[39m[22m should match parity for mazealldiff
+     [2m[90m↓[39m[22m should match parity for mazehint
+     [2m[90m↓[39m[22m should match parity for notrident
+     [2m[90m↓[39m[22m should match parity for ogre_no_dwarves
+     [2m[90m↓[39m[22m should match parity for ogrehint
+     [2m[90m↓[39m[22m should match parity for oilplant
+     [2m[90m↓[39m[22m should match parity for oldstyle
+     [2m[90m↓[39m[22m should match parity for oysterbug
+     [2m[90m↓[39m[22m should match parity for panic
+     [2m[90m↓[39m[22m should match parity for panic2
+     [2m[90m↓[39m[22m should match parity for pirate_carry
+     [2m[90m↓[39m[22m should match parity for pirate_pyramid
+     [2m[90m↓[39m[22m should match parity for pirate_spotted
+     [2m[90m↓[39m[22m should match parity for pitfall
+     [2m[90m↓[39m[22m should match parity for placeholder
+     [2m[90m↓[39m[22m should match parity for plover
+     [2m[90m↓[39m[22m should match parity for reach_ledge_short
+     [2m[90m↓[39m[22m should match parity for reach_noclimb
+     [2m[90m↓[39m[22m should match parity for reach_planttop
+     [2m[90m↓[39m[22m should match parity for reincarnate
+     [2m[90m↓[39m[22m should match parity for resumefail
+     [2m[90m↓[39m[22m should match parity for resumefail2
+     [2m[90m↓[39m[22m should match parity for savefail
+     [2m[90m↓[39m[22m should match parity for saveresume.1
+     [2m[90m↓[39m[22m should match parity for saveresume.2
+     [2m[90m↓[39m[22m should match parity for saveresume.3
+     [2m[90m↓[39m[22m should match parity for saveresume.4
+     [2m[90m↓[39m[22m should match parity for saveresumeopt
+     [2m[90m↓[39m[22m should match parity for savetamper
+     [2m[90m↓[39m[22m should match parity for snake_food
+     [2m[90m↓[39m[22m should match parity for softroom
+     [2m[90m↓[39m[22m should match parity for specials
+     [2m[90m↓[39m[22m should match parity for splatter
+     [2m[90m↓[39m[22m should match parity for stashed
+     [2m[90m↓[39m[22m should match parity for takebird
+     [2m[90m↓[39m[22m should match parity for tall
+     [2m[90m↓[39m[22m should match parity for trident
+     [2m[90m↓[39m[22m should match parity for troll_returns
+     [2m[90m↓[39m[22m should match parity for turnpenalties
+     [2m[90m↓[39m[22m should match parity for urntest
+     [2m[90m↓[39m[22m should match parity for urntest2
+     [2m[90m↓[39m[22m should match parity for urntest3
+     [2m[90m↓[39m[22m should match parity for vending
+     [2m[90m↓[39m[22m should match parity for wakedwarves
+     [2m[90m↓[39m[22m should match parity for wakedwarves2
+     [2m[90m↓[39m[22m should match parity for wakedwarves3
+     [2m[90m↓[39m[22m should match parity for water_plant2
+     [2m[90m↓[39m[22m should match parity for weirdbird
+     [2m[90m↓[39m[22m should match parity for weirddwarf
+     [2m[90m↓[39m[22m should match parity for win430
+     [2m[90m↓[39m[22m should match parity for wittsend
+     [2m[90m↓[39m[22m should match parity for woodshint
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[33m106 skipped[39m[90m (107)[39m
+[2m   Start at [22m 15:35:49
+[2m   Duration [22m 232ms[2m (transform 72ms, setup 0ms, import 94ms, tests 45ms, environment 0ms)[22m
+
+[ELIFECYCLE] Test failed. See above for more details.

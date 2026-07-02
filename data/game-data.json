@@ -847,104 +847,84 @@
   },
   "hints": [
     {
-      "hint": {
-        "name": "CAVE",
-        "number": 1,
-        "turns": 4,
-        "penalty": 2,
-        "question": "Are you trying to get into the cave?",
-        "hint": "The grate is very solid and has a hardened steel lock.  You cannot\nenter without a key, and there are no keys nearby.  I would recommend\nlooking elsewhere for the keys."
-      }
+      "name": "CAVE",
+      "number": 1,
+      "turns": 4,
+      "penalty": 2,
+      "question": "Are you trying to get into the cave?",
+      "hint": "The grate is very solid and has a hardened steel lock.  You cannot\nenter without a key, and there are no keys nearby.  I would recommend\nlooking elsewhere for the keys."
     },
     {
-      "hint": {
-        "name": "BIRD",
-        "number": 2,
-        "turns": 5,
-        "penalty": 2,
-        "question": "Are you trying to catch the bird?",
-        "hint": "Something about you seems to be frightening the bird.  Perhaps you\nmight figure out what it is."
-      }
+      "name": "BIRD",
+      "number": 2,
+      "turns": 5,
+      "penalty": 2,
+      "question": "Are you trying to catch the bird?",
+      "hint": "Something about you seems to be frightening the bird.  Perhaps you\nmight figure out what it is."
     },
     {
-      "hint": {
-        "name": "SNAKE",
-        "number": 3,
-        "turns": 8,
-        "penalty": 2,
-        "question": "Are you trying to somehow deal with the snake?",
-        "hint": "You can't kill the snake, or drive it away, or avoid it, or anything\nlike that.  There is a way to get by, but you don't have the necessary\nresources right now."
-      }
+      "name": "SNAKE",
+      "number": 3,
+      "turns": 8,
+      "penalty": 2,
+      "question": "Are you trying to somehow deal with the snake?",
+      "hint": "You can't kill the snake, or drive it away, or avoid it, or anything\nlike that.  There is a way to get by, but you don't have the necessary\nresources right now."
     },
     {
-      "hint": {
-        "name": "MAZE",
-        "number": 4,
-        "turns": 75,
-        "penalty": 4,
-        "question": "Do you need help getting out of the maze?",
-        "hint": "You can make the passages look less alike by dropping things."
-      }
+      "name": "MAZE",
+      "number": 4,
+      "turns": 75,
+      "penalty": 4,
+      "question": "Do you need help getting out of the maze?",
+      "hint": "You can make the passages look less alike by dropping things."
     },
     {
-      "hint": {
-        "name": "DARK",
-        "number": 5,
-        "turns": 25,
-        "penalty": 5,
-        "question": "Are you trying to explore beyond the plover room?",
-        "hint": "There is a way to explore that region without having to worry about\nfalling into a pit.  None of the objects available is immediately\nuseful in discovering the secret."
-      }
+      "name": "DARK",
+      "number": 5,
+      "turns": 25,
+      "penalty": 5,
+      "question": "Are you trying to explore beyond the plover room?",
+      "hint": "There is a way to explore that region without having to worry about\nfalling into a pit.  None of the objects available is immediately\nuseful in discovering the secret."
     },
     {
-      "hint": {
-        "name": "WITT",
-        "number": 6,
-        "turns": 20,
-        "penalty": 3,
-        "question": "Do you need help getting out of here?",
-        "hint": "Don't go west.\\n"
-      }
+      "name": "WITT",
+      "number": 6,
+      "turns": 20,
+      "penalty": 3,
+      "question": "Do you need help getting out of here?",
+      "hint": "Don't go west.\\n"
     },
     {
-      "hint": {
-        "name": "CLIFF",
-        "number": 7,
-        "turns": 8,
-        "penalty": 2,
-        "question": "Are you wondering what to do here?",
-        "hint": "This section is quite advanced.  Find the cave first.\\n"
-      }
+      "name": "CLIFF",
+      "number": 7,
+      "turns": 8,
+      "penalty": 2,
+      "question": "Are you wondering what to do here?",
+      "hint": "This section is quite advanced.  Find the cave first.\\n"
     },
     {
-      "hint": {
-        "name": "WOODS",
-        "number": 8,
-        "turns": 25,
-        "penalty": 2,
-        "question": "Would you like to be shown out of the forest?",
-        "hint": "Go east ten times.  If that doesn't get you out, then go south, then\nwest twice, then south."
-      }
+      "name": "WOODS",
+      "number": 8,
+      "turns": 25,
+      "penalty": 2,
+      "question": "Would you like to be shown out of the forest?",
+      "hint": "Go east ten times.  If that doesn't get you out, then go south, then\nwest twice, then south."
     },
     {
-      "hint": {
-        "name": "OGRE",
-        "number": 9,
-        "turns": 10,
-        "penalty": 4,
-        "question": "Do you need help dealing with the ogre?",
-        "hint": "There is nothing the presence of which will prevent you from defeating\nhim; thus it can't hurt to fetch everything you possibly can."
-      }
+      "name": "OGRE",
+      "number": 9,
+      "turns": 10,
+      "penalty": 4,
+      "question": "Do you need help dealing with the ogre?",
+      "hint": "There is nothing the presence of which will prevent you from defeating\nhim; thus it can't hurt to fetch everything you possibly can."
     },
     {
-      "hint": {
-        "name": "JADE",
-        "number": 10,
-        "turns": 1,
-        "penalty": 4,
-        "question": "You're missing only one other treasure.  Do you need help finding it?",
-        "hint": "Once you've found all the other treasures, it is no longer possible to\nlocate the one you're now missing."
-      }
+      "name": "JADE",
+      "number": 10,
+      "turns": 1,
+      "penalty": 4,
+      "question": "You're missing only one other treasure.  Do you need help finding it?",
+      "hint": "Once you've found all the other treasures, it is no longer possible to\nlocate the one you're now missing."
     }
   ],
   "locations": {
@@ -1489,14 +1469,14 @@
             "INSIDE",
             "DOWN"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_BELOWGRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1525,14 +1505,14 @@
             "OUTSIDE",
             "UP"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_GRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1632,14 +1612,14 @@
           "verbs": [
             "DEPRESSION"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_GRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1708,14 +1688,14 @@
           "verbs": [
             "DEPRESSION"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_GRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1782,14 +1762,14 @@
           "verbs": [
             "DEPRESSION"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_GRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1845,14 +1825,14 @@
           "verbs": [
             "DEPRESSION"
           ],
-          "cond": [
-            "not",
-            "GRATE",
-            "GRATE_CLOSED"
-          ],
           "action": [
             "goto",
             "LOC_GRATE"
+          ],
+          "condition": [
+            "not",
+            "GRATE",
+            "GRATE_CLOSED"
           ]
         },
         {
@@ -1887,15 +1867,15 @@
           "verbs": [
             "DOWN",
             "MOT_31",
-            "STEPS"
-          ],
-          "cond": [
-            "carry",
-            "NUGGET"
+            "MOT_34"
           ],
           "action": [
             "goto",
             "LOC_NECKBROKE"
+          ],
+          "condition": [
+            "carry",
+            "NUGGET"
           ]
         },
         {
@@ -1976,18 +1956,18 @@
           "verbs": [
             "UP",
             "MOT_31",
-            "STEPS",
+            "MOT_34",
             "MOT_35",
             "MOT_23",
             "EAST"
           ],
-          "cond": [
-            "carry",
-            "NUGGET"
-          ],
           "action": [
             "goto",
             "LOC_DOME"
+          ],
+          "condition": [
+            "carry",
+            "NUGGET"
           ]
         },
         {
@@ -2053,28 +2033,28 @@
           "verbs": [
             "MOT_39"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "UNBRIDGED"
-          ],
           "action": [
             "speak",
             "CROSS_BRIDGE"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "UNBRIDGED"
           ]
         },
         {
           "verbs": [
             "FORWARD"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "BRIDGED"
-          ],
           "action": [
             "goto",
             "LOC_NOMAKE"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "BRIDGED"
           ]
         },
         {
@@ -2084,14 +2064,14 @@
             "WEST",
             "CROSS"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "BRIDGED"
-          ],
           "action": [
             "speak",
             "NO_CROSS"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "BRIDGED"
           ]
         },
         {
@@ -2164,14 +2144,14 @@
             "NORTH",
             "RIGHT"
           ],
-          "cond": [
-            "not",
-            "SNAKE",
-            "SNAKE_BLOCKS"
-          ],
           "action": [
             "goto",
             "LOC_FLOORHOLE"
+          ],
+          "condition": [
+            "not",
+            "SNAKE",
+            "SNAKE_BLOCKS"
           ]
         },
         {
@@ -2179,14 +2159,14 @@
             "SOUTH",
             "LEFT"
           ],
-          "cond": [
-            "not",
-            "SNAKE",
-            "SNAKE_BLOCKS"
-          ],
           "action": [
             "goto",
             "LOC_SOUTHSIDE"
+          ],
+          "condition": [
+            "not",
+            "SNAKE",
+            "SNAKE_BLOCKS"
           ]
         },
         {
@@ -2194,14 +2174,14 @@
             "WEST",
             "FORWARD"
           ],
-          "cond": [
-            "not",
-            "SNAKE",
-            "SNAKE_BLOCKS"
-          ],
           "action": [
             "goto",
             "LOC_WESTSIDE"
+          ],
+          "condition": [
+            "not",
+            "SNAKE",
+            "SNAKE_BLOCKS"
           ]
         },
         {
@@ -2217,26 +2197,26 @@
           "verbs": [
             "SW"
           ],
-          "cond": [
-            "pct",
-            35
-          ],
           "action": [
             "goto",
             "LOC_SECRET3"
+          ],
+          "condition": [
+            "pct",
+            35
           ]
         },
         {
           "verbs": [
             "SW"
           ],
-          "cond": [
-            "with",
-            "SNAKE"
-          ],
           "action": [
             "goto",
             "LOC_SNAKEBLOCK"
+          ],
+          "condition": [
+            "with",
+            "SNAKE"
           ]
         },
         {
@@ -2406,14 +2386,14 @@
           "verbs": [
             "MOT_56"
           ],
-          "cond": [
-            "not",
-            "PLANT",
-            "PLANT_GROWN"
-          ],
           "action": [
             "goto",
             "LOC_BUILDING1"
+          ],
+          "condition": [
+            "not",
+            "PLANT",
+            "PLANT_GROWN"
           ]
         },
         {
@@ -2460,28 +2440,28 @@
           "verbs": [
             "MOT_39"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "UNBRIDGED"
-          ],
           "action": [
             "speak",
             "CROSS_BRIDGE"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "UNBRIDGED"
           ]
         },
         {
           "verbs": [
             "FORWARD"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "BRIDGED"
-          ],
           "action": [
             "goto",
             "LOC_NOMAKE"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "BRIDGED"
           ]
         },
         {
@@ -2491,14 +2471,14 @@
             "EAST",
             "CROSS"
           ],
-          "cond": [
-            "not",
-            "FISSURE",
-            "BRIDGED"
-          ],
           "action": [
             "speak",
             "NO_CROSS"
+          ],
+          "condition": [
+            "not",
+            "FISSURE",
+            "BRIDGED"
           ]
         },
         {
@@ -2641,14 +2621,14 @@
       "travel": [
         {
           "verbs": [],
-          "cond": [
-            "not",
-            "PLANT",
-            "PLANT_BELLOWING"
-          ],
           "action": [
             "goto",
             "LOC_NOCLIMB"
+          ],
+          "condition": [
+            "not",
+            "PLANT",
+            "PLANT_BELLOWING"
           ]
         },
         {
@@ -2731,13 +2711,13 @@
           "verbs": [
             "PLOVER"
           ],
-          "cond": [
-            "carry",
-            "EMERALD"
-          ],
           "action": [
             "special",
             2
+          ],
+          "condition": [
+            "carry",
+            "EMERALD"
           ]
         },
         {
@@ -3998,12 +3978,12 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "nodwarves"
-          ],
           "action": [
             "goto",
             "LOC_DIFFERENT1"
+          ],
+          "condition": [
+            "nodwarves"
           ]
         }
       ]
@@ -4173,13 +4153,13 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "pct",
-            65
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            65
           ]
         },
         {
@@ -4195,26 +4175,26 @@
           "verbs": [
             "UP"
           ],
-          "cond": [
-            "pct",
-            60
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            60
           ]
         },
         {
           "verbs": [
             "UP"
           ],
-          "cond": [
-            "pct",
-            70
-          ],
           "action": [
             "goto",
             "LOC_SECRET2"
+          ],
+          "condition": [
+            "pct",
+            70
           ]
         },
         {
@@ -4230,26 +4210,26 @@
           "verbs": [
             "NORTH"
           ],
-          "cond": [
-            "pct",
-            50
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            50
           ]
         },
         {
           "verbs": [
             "NORTH"
           ],
-          "cond": [
-            "pct",
-            75
-          ],
           "action": [
             "goto",
             "LOC_LOWROOM"
+          ],
+          "condition": [
+            "pct",
+            75
           ]
         },
         {
@@ -4265,13 +4245,13 @@
           "verbs": [
             "DOWN"
           ],
-          "cond": [
-            "pct",
-            65
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            65
           ]
         },
         {
@@ -4317,13 +4297,13 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "pct",
-            80
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            80
           ]
         },
         {
@@ -4348,13 +4328,13 @@
           "verbs": [
             "NW"
           ],
-          "cond": [
-            "pct",
-            50
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            50
           ]
         },
         {
@@ -4473,14 +4453,14 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "not",
-            "DRAGON",
-            "DRAGON_BARS"
-          ],
           "action": [
             "goto",
             "LOC_SECRET5"
+          ],
+          "condition": [
+            "not",
+            "DRAGON",
+            "DRAGON_BARS"
           ]
         },
         {
@@ -4503,7 +4483,7 @@
         },
         {
           "verbs": [
-            "RESER"
+            "RESERVOIR"
           ],
           "action": [
             "goto",
@@ -4686,14 +4666,14 @@
           "verbs": [
             "WEST"
           ],
-          "cond": [
-            "not",
-            "DRAGON",
-            "DRAGON_BARS"
-          ],
           "action": [
             "goto",
             "LOC_SECRET5"
+          ],
+          "condition": [
+            "not",
+            "DRAGON",
+            "DRAGON_BARS"
           ]
         },
         {
@@ -5351,14 +5331,14 @@
             "ENTER",
             "CAVERN"
           ],
-          "cond": [
-            "not",
-            "DOOR",
-            "DOOR_RUSTED"
-          ],
           "action": [
             "goto",
             "LOC_WATERFALL"
+          ],
+          "condition": [
+            "not",
+            "DOOR",
+            "DOOR_RUSTED"
           ]
         },
         {
@@ -5606,13 +5586,13 @@
           "verbs": [
             "PLOVER"
           ],
-          "cond": [
-            "carry",
-            "EMERALD"
-          ],
           "action": [
             "special",
             2
+          ],
+          "condition": [
+            "carry",
+            "EMERALD"
           ]
         },
         {
@@ -5725,26 +5705,26 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "carry",
-            "CLAM"
-          ],
           "action": [
             "speak",
             "CLAM_BLOCKER"
+          ],
+          "condition": [
+            "carry",
+            "CLAM"
           ]
         },
         {
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "carry",
-            "OYSTER"
-          ],
           "action": [
             "speak",
             "OYSTER_BLOCKER"
+          ],
+          "condition": [
+            "carry",
+            "OYSTER"
           ]
         },
         {
@@ -5996,13 +5976,13 @@
             "UP",
             "DOWN"
           ],
-          "cond": [
-            "pct",
-            95
-          ],
           "action": [
             "speak",
             "FUTILE_CRAWL"
+          ],
+          "condition": [
+            "pct",
+            95
           ]
         },
         {
@@ -6058,7 +6038,7 @@
         {
           "verbs": [
             "NORTH",
-            "RESER"
+            "RESERVOIR"
           ],
           "action": [
             "goto",
@@ -6123,26 +6103,26 @@
             "MOT_39",
             "MOT_56"
           ],
-          "cond": [
-            "pct",
-            40
-          ],
           "action": [
             "goto",
             "LOC_ALIKE6"
+          ],
+          "condition": [
+            "pct",
+            40
           ]
         },
         {
           "verbs": [
             "DOWN"
           ],
-          "cond": [
-            "pct",
-            50
-          ],
           "action": [
             "goto",
             "LOC_ALIKE9"
+          ],
+          "condition": [
+            "pct",
+            50
           ]
         },
         {
@@ -6288,14 +6268,14 @@
             "MOT_42",
             "CROSS"
           ],
-          "cond": [
-            "not",
-            "RESER",
-            "WATERS_PARTED"
-          ],
           "action": [
             "speak",
             "BAD_DIRECTION"
+          ],
+          "condition": [
+            "not",
+            "RESER",
+            "WATERS_PARTED"
           ]
         },
         {
@@ -6412,27 +6392,27 @@
             "CROSS",
             "NE"
           ],
-          "cond": [
-            "with",
-            "TROLL"
-          ],
           "action": [
             "speak",
             "TROLL_BLOCKS"
+          ],
+          "condition": [
+            "with",
+            "TROLL"
           ]
         },
         {
           "verbs": [
             "MOT_41"
           ],
-          "cond": [
-            "not",
-            "CHASM",
-            "TROLL_BRIDGE"
-          ],
           "action": [
             "speak",
             "BRIDGE_GONE"
+          ],
+          "condition": [
+            "not",
+            "CHASM",
+            "TROLL_BRIDGE"
           ]
         },
         {
@@ -6448,14 +6428,14 @@
           "verbs": [
             "MOT_39"
           ],
-          "cond": [
-            "not",
-            "CHASM",
-            "TROLL_BRIDGE"
-          ],
           "action": [
             "goto",
             "LOC_NOMAKE"
+          ],
+          "condition": [
+            "not",
+            "CHASM",
+            "TROLL_BRIDGE"
           ]
         },
         {
@@ -6620,13 +6600,13 @@
             "CROSS",
             "SW"
           ],
-          "cond": [
-            "with",
-            "TROLL"
-          ],
           "action": [
             "speak",
             "TROLL_BLOCKS"
+          ],
+          "condition": [
+            "with",
+            "TROLL"
           ]
         },
         {
@@ -8039,14 +8019,14 @@
           "verbs": [
             "SOUTH"
           ],
-          "cond": [
-            "not",
-            "VEND",
-            "VEND_BLOCKS"
-          ],
           "action": [
             "goto",
             "LOC_ROUGHHEWN"
+          ],
+          "condition": [
+            "not",
+            "VEND",
+            "VEND_BLOCKS"
           ]
         },
         {
@@ -8142,13 +8122,13 @@
           "verbs": [
             "NORTH"
           ],
-          "cond": [
-            "with",
-            "OGRE"
-          ],
           "action": [
             "speak",
             "OGRE_SNARL"
+          ],
+          "condition": [
+            "with",
+            "OGRE"
           ]
         },
         {
@@ -9529,14 +9509,14 @@
             "MOT_42",
             "CROSS"
           ],
-          "cond": [
-            "not",
-            "RESER",
-            "WATERS_PARTED"
-          ],
           "action": [
             "speak",
             "BAD_DIRECTION"
+          ],
+          "condition": [
+            "not",
+            "RESER",
+            "WATERS_PARTED"
           ]
         },
         {
@@ -9680,13 +9660,13 @@
           "verbs": [
             "UP"
           ],
-          "cond": [
-            "carry",
-            "RABBITFOOT"
-          ],
           "action": [
             "goto",
             "LOC_CLIFFTOP"
+          ],
+          "condition": [
+            "carry",
+            "RABBITFOOT"
           ]
         },
         {
@@ -11406,9 +11386,28 @@
       "message": "Adventuredom stands in awe -- you have now joined the ranks of the\n       W O R L D   C H A M P I O N   A D V E N T U R E R S !\nIt may interest you to know that the Dungeon-Master himself has, to\nmy knowledge, never achieved this threshold in fewer than 330 turns."
     }
   ],
-  "turn_thresholds": {
-    "threshold": 2500
-  },
+  "turn_thresholds": [
+    {
+      "threshold": 350,
+      "point_loss": 2,
+      "message": "Tsk!  A wizard wouldn't have to take 350 turns.  This is going to cost\nyou a couple of points."
+    },
+    {
+      "threshold": 500,
+      "point_loss": 3,
+      "message": "500 turns?  That's another few points you've lost."
+    },
+    {
+      "threshold": 1000,
+      "point_loss": 5,
+      "message": "Are you still at it?  Five points off for exceeding 1000 turns!"
+    },
+    {
+      "threshold": 2500,
+      "point_loss": 10,
+      "message": "Good grief, don't you *EVER* give up?  Do you realize you've spent\nover 2500 turns at this?  That's another ten points off, a total of\ntwenty points lost for taking so long."
+    }
+  ],
   "obituaries": [
     {
       "query": "Oh dear, you seem to have gotten yourself killed.  I might be able to\nhelp you out, but I've never really done this before.  Do you want me\nto try to reincarnate you?",
@@ -11438,7 +11437,7 @@
     "FORES": "MOT_6",
     "FORWARD": "FORWARD",
     "FORWA": "FORWARD",
-    "CONTI": "GO",
+    "CONTI": "FORWARD",
     "ONWAR": "FORWARD",
     "BACK": "BACK",
     "RETUR": "BACK",
@@ -11506,7 +11505,7 @@
     "MOT_33": "MOT_33",
     "CRACK": "MOT_33",
     "MOT_34": "MOT_34",
-    "STEPS": "STEPS",
+    "STEPS": "MOT_34",
     "MOT_35": "MOT_35",
     "DOME": "MOT_35",
     "LEFT": "LEFT",
@@ -11581,10 +11580,142 @@
     "SHELLROOM": "SHELLROOM",
     "SHELL": "SHELLROOM",
     "RESERVOIR": "RESERVOIR",
-    "RESER": "RESER",
+    "RESER": "RESERVOIR",
     "OFFICE": "OFFICE",
     "MAIN": "OFFICE",
     "OFFIC": "OFFICE",
+    "NO_OBJECT": "NO_OBJECT",
+    "KEYS": "KEYS",
+    "KEY": "KEYS",
+    "LAMP": "LAMP",
+    "LANTE": "LAMP",
+    "GRATE": "GRATE",
+    "CAGE": "CAGE",
+    "ROD": "ROD",
+    "ROD2": "ROD2",
+    "BIRD": "BIRD",
+    "DOOR": "DOOR",
+    "PILLOW": "PILLOW",
+    "PILLO": "PILLOW",
+    "VELVE": "PILLOW",
+    "SNAKE": "SNAKE",
+    "FISSURE": "FISSURE",
+    "FISSU": "FISSURE",
+    "OBJ_13": "OBJ_13",
+    "TABLE": "OBJ_13",
+    "CLAM": "CLAM",
+    "OYSTER": "OYSTER",
+    "OYSTE": "OYSTER",
+    "MAGAZINE": "MAGAZINE",
+    "MAGAZ": "MAGAZINE",
+    "ISSUE": "MAGAZINE",
+    "SPELU": "MAGAZINE",
+    "\"SPEL": "MAGAZINE",
+    "DWARF": "DWARF",
+    "DWARV": "DWARF",
+    "KNIFE": "KNIFE",
+    "KNIVE": "KNIFE",
+    "FOOD": "FOOD",
+    "RATIO": "FOOD",
+    "BOTTLE": "BOTTLE",
+    "BOTTL": "BOTTLE",
+    "JAR": "BOTTLE",
+    "WATER": "WATER",
+    "H2O": "WATER",
+    "OIL": "OIL",
+    "MIRROR": "MIRROR",
+    "MIRRO": "MIRROR",
+    "PLANT": "PLANT",
+    "BEANS": "PLANT",
+    "PLANT2": "PLANT2",
+    "OBJ_26": "OBJ_26",
+    "STALA": "OBJ_26",
+    "OBJ_27": "OBJ_27",
+    "SHADO": "OBJ_27",
+    "FIGUR": "OBJ_27",
+    "WINDO": "OBJ_27",
+    "AXE": "AXE",
+    "OBJ_29": "OBJ_29",
+    "DRAWI": "OBJ_29",
+    "OBJ_30": "OBJ_30",
+    "PIRAT": "OBJ_30",
+    "GENIE": "OBJ_30",
+    "DJINN": "OBJ_30",
+    "DRAGON": "DRAGON",
+    "DRAGO": "DRAGON",
+    "CHASM": "CHASM",
+    "TROLL": "TROLL",
+    "TROLL2": "TROLL2",
+    "BEAR": "BEAR",
+    "MESSAG": "MESSAG",
+    "MESSA": "MESSAG",
+    "VOLCANO": "VOLCANO",
+    "VOLCA": "VOLCANO",
+    "GEYSE": "VOLCANO",
+    "VEND": "VEND",
+    "MACHI": "VEND",
+    "VENDI": "VEND",
+    "BATTERY": "BATTERY",
+    "BATTE": "BATTERY",
+    "OBJ_40": "OBJ_40",
+    "CARPE": "OBJ_40",
+    "MOSS": "OBJ_40",
+    "OGRE": "OGRE",
+    "URN": "URN",
+    "CAVITY": "CAVITY",
+    "CAVIT": "CAVITY",
+    "BLOOD": "BLOOD",
+    "RABBITFOOT": "RABBITFOOT",
+    "APPEN": "RABBITFOOT",
+    "LEPOR": "RABBITFOOT",
+    "OBJ_47": "OBJ_47",
+    "MUD": "OBJ_47",
+    "OBJ_48": "OBJ_48",
+    "NOTE": "OBJ_48",
+    "SIGN": "SIGN",
+    "NUGGET": "NUGGET",
+    "GOLD": "NUGGET",
+    "NUGGE": "NUGGET",
+    "OBJ_51": "OBJ_51",
+    "DIAMO": "OBJ_51",
+    "OBJ_52": "OBJ_52",
+    "SILVE": "OBJ_52",
+    "BARS": "OBJ_52",
+    "OBJ_53": "OBJ_53",
+    "JEWEL": "OBJ_53",
+    "COINS": "COINS",
+    "CHEST": "CHEST",
+    "BOX": "CHEST",
+    "TREAS": "CHEST",
+    "EGGS": "EGGS",
+    "EGG": "EGGS",
+    "NEST": "EGGS",
+    "TRIDENT": "TRIDENT",
+    "TRIDE": "TRIDENT",
+    "VASE": "VASE",
+    "MING": "VASE",
+    "SHARD": "VASE",
+    "POTTE": "VASE",
+    "EMERALD": "EMERALD",
+    "EMERA": "EMERALD",
+    "PYRAMID": "PYRAMID",
+    "PLATI": "PYRAMID",
+    "PYRAM": "PYRAMID",
+    "PEARL": "PEARL",
+    "RUG": "RUG",
+    "PERSI": "RUG",
+    "OBJ_63": "OBJ_63",
+    "SPICE": "OBJ_63",
+    "CHAIN": "CHAIN",
+    "RUBY": "RUBY",
+    "JADE": "JADE",
+    "NECKL": "JADE",
+    "AMBER": "AMBER",
+    "GEMST": "AMBER",
+    "SAPPH": "SAPPH",
+    "OBJ_69": "OBJ_69",
+    "EBONY": "OBJ_69",
+    "STATU": "OBJ_69",
     "ACT_NULL": "ACT_NULL",
     "CARRY": "CARRY",
     "G": "CARRY",
@@ -11717,139 +11848,7 @@
     "YES": "YES",
     "NEWS": "NEWS",
     "ACT_VERSION": "ACT_VERSION",
-    "VERSI": "ACT_VERSION",
-    "NO_OBJECT": "NO_OBJECT",
-    "KEYS": "KEYS",
-    "KEY": "KEYS",
-    "LAMP": "LAMP",
-    "LANTE": "LAMP",
-    "GRATE": "GRATE",
-    "CAGE": "CAGE",
-    "ROD": "ROD2",
-    "ROD2": "ROD2",
-    "BIRD": "BIRD",
-    "DOOR": "DOOR",
-    "PILLOW": "PILLOW",
-    "PILLO": "PILLOW",
-    "VELVE": "PILLOW",
-    "SNAKE": "SNAKE",
-    "FISSURE": "FISSURE",
-    "FISSU": "FISSURE",
-    "OBJ_13": "OBJ_13",
-    "TABLE": "OBJ_13",
-    "CLAM": "CLAM",
-    "OYSTER": "OYSTER",
-    "OYSTE": "OYSTER",
-    "MAGAZINE": "MAGAZINE",
-    "MAGAZ": "MAGAZINE",
-    "ISSUE": "MAGAZINE",
-    "SPELU": "MAGAZINE",
-    "\"SPEL": "MAGAZINE",
-    "DWARF": "DWARF",
-    "DWARV": "DWARF",
-    "KNIFE": "KNIFE",
-    "KNIVE": "KNIFE",
-    "FOOD": "FOOD",
-    "RATIO": "FOOD",
-    "BOTTLE": "BOTTLE",
-    "BOTTL": "BOTTLE",
-    "JAR": "BOTTLE",
-    "WATER": "WATER",
-    "H2O": "WATER",
-    "OIL": "OIL",
-    "MIRROR": "MIRROR",
-    "MIRRO": "MIRROR",
-    "PLANT": "PLANT2",
-    "BEANS": "PLANT",
-    "PLANT2": "PLANT2",
-    "OBJ_26": "OBJ_26",
-    "STALA": "OBJ_26",
-    "OBJ_27": "OBJ_27",
-    "SHADO": "OBJ_27",
-    "FIGUR": "OBJ_27",
-    "WINDO": "OBJ_27",
-    "AXE": "AXE",
-    "OBJ_29": "OBJ_29",
-    "DRAWI": "OBJ_29",
-    "OBJ_30": "OBJ_30",
-    "PIRAT": "OBJ_30",
-    "GENIE": "OBJ_30",
-    "DJINN": "OBJ_30",
-    "DRAGON": "DRAGON",
-    "DRAGO": "DRAGON",
-    "CHASM": "CHASM",
-    "TROLL": "TROLL2",
-    "TROLL2": "TROLL2",
-    "BEAR": "BEAR",
-    "MESSAG": "MESSAG",
-    "MESSA": "MESSAG",
-    "VOLCANO": "VOLCANO",
-    "VOLCA": "VOLCANO",
-    "GEYSE": "VOLCANO",
-    "VEND": "VEND",
-    "MACHI": "VEND",
-    "VENDI": "VEND",
-    "BATTERY": "BATTERY",
-    "BATTE": "BATTERY",
-    "OBJ_40": "OBJ_40",
-    "CARPE": "OBJ_40",
-    "MOSS": "OBJ_40",
-    "OGRE": "OGRE",
-    "URN": "URN",
-    "CAVITY": "CAVITY",
-    "CAVIT": "CAVITY",
-    "BLOOD": "BLOOD",
-    "RABBITFOOT": "RABBITFOOT",
-    "APPEN": "RABBITFOOT",
-    "LEPOR": "RABBITFOOT",
-    "OBJ_47": "OBJ_47",
-    "MUD": "OBJ_47",
-    "OBJ_48": "OBJ_48",
-    "NOTE": "OBJ_48",
-    "SIGN": "SIGN",
-    "NUGGET": "NUGGET",
-    "GOLD": "NUGGET",
-    "NUGGE": "NUGGET",
-    "OBJ_51": "OBJ_51",
-    "DIAMO": "OBJ_51",
-    "OBJ_52": "OBJ_52",
-    "SILVE": "OBJ_52",
-    "BARS": "OBJ_52",
-    "OBJ_53": "OBJ_53",
-    "JEWEL": "OBJ_53",
-    "COINS": "COINS",
-    "CHEST": "CHEST",
-    "BOX": "CHEST",
-    "TREAS": "CHEST",
-    "EGGS": "EGGS",
-    "EGG": "EGGS",
-    "NEST": "EGGS",
-    "TRIDENT": "TRIDENT",
-    "TRIDE": "TRIDENT",
-    "VASE": "VASE",
-    "MING": "VASE",
-    "SHARD": "VASE",
-    "POTTE": "VASE",
-    "EMERALD": "EMERALD",
-    "EMERA": "EMERALD",
-    "PYRAMID": "PYRAMID",
-    "PLATI": "PYRAMID",
-    "PYRAM": "PYRAMID",
-    "PEARL": "PEARL",
-    "RUG": "RUG",
-    "PERSI": "RUG",
-    "OBJ_63": "OBJ_63",
-    "SPICE": "OBJ_63",
-    "CHAIN": "CHAIN",
-    "RUBY": "RUBY",
-    "JADE": "JADE",
-    "NECKL": "JADE",
-    "AMBER": "AMBER",
-    "GEMST": "AMBER",
-    "SAPPH": "SAPPH",
-    "OBJ_69": "OBJ_69",
-    "EBONY": "OBJ_69",
-    "STATU": "OBJ_69"
+    "VERSI": "ACT_VERSION"
   },
   "mapData": {
     "nodes": [
@@ -13534,7 +13533,7 @@
       {
         "source": "LOC_MISTHALL",
         "target": "LOC_MISTHALL",
-        "label": "UP, MOT_31, STEPS, MOT_35, MOT_23, EAST",
+        "label": "UP, MOT_31, MOT_34, MOT_35, MOT_23, EAST",
         "direction": "EAST",
         "targetDirection": "EAST"
       },
@@ -14231,7 +14230,7 @@
       {
         "source": "LOC_SECRET1",
         "target": "LOC_RESERVOIR",
-        "label": "RESER"
+        "label": "RESERVOIR"
       },
       {
         "source": "LOC_TIGHTPLACE",
@@ -14515,7 +14514,7 @@
       {
         "source": "LOC_MIRRORCANYON",
         "target": "LOC_RESERVOIR",
-        "label": "NORTH, RESER",
+        "label": "NORTH, RESERVOIR",
         "direction": "NORTH",
         "targetDirection": "SOUTH"
       },
